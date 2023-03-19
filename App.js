@@ -2,6 +2,7 @@ import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import HomeComponent from './components/home.component';
+import NavBottom from './home/navbottom';
 
 import Colors from './constants/colors';
 
@@ -15,6 +16,9 @@ export default function App() {
         >
       <View>
       <HomeComponent />
+      </View>
+      <View>
+        <NavBottom />
       </View>
       </LinearGradient>
   );
