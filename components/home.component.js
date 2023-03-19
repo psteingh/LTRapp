@@ -8,7 +8,7 @@ import Footer from '../home/footer';
 
 function HomeComponent() {
     return (
-        <View>
+        <View style={styles.homeContainer}>
             <Text style={styles.homeText}>Home</Text>
             <TopHead />
             <HomeMid />
@@ -20,7 +20,11 @@ function HomeComponent() {
 export default HomeComponent;
 
 const styles = StyleSheet.create({
+    homeContainer: {
+        margin: 100
+    },
     homeText: {
         color: Colors.primaryLblue
-    }
+    },
+
 });
