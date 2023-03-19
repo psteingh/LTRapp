@@ -4,7 +4,7 @@ import Colors from '../constants/colors';
 
 function NavBottom() {
     return (
-        <View>
+        <View style={styles.navBottomContainer}>
             <Text style={styles.navBottomText}> NavBottom </Text>
         </View>
     );
@@ -13,6 +13,9 @@ function NavBottom() {
 export default NavBottom;
 
 const styles = StyleSheet.create({
+    navBottomContainer: {
+        margin: 100
+    },
     navBottomText: {
         color: Colors.primaryDblue
     }
