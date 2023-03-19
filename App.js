@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
+import HomeComponent from './components/home.component';
+
 import Colors from './constants/colors';
 
 export default function App() {
@@ -12,6 +14,7 @@ export default function App() {
         style={styles.container}
         >
       <View>
+      <HomeComponent />
       <Text>Hello World</Text>
       </View>
       </LinearGradient>
