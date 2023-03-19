@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import HomeComponent from './components/home.component';
@@ -15,7 +15,6 @@ export default function App() {
         >
       <View>
       <HomeComponent />
-      <Text>Hello World</Text>
       </View>
       </LinearGradient>
   );
@@ -24,7 +23,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
 });
