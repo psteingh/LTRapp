@@ -15,12 +15,12 @@ function NavBottom() {
             <Tab.Screen name="AboutUs" component={AboutUsBoard} />
             <Tab.Screen name="LierBoard" component={LierBoard} />
             <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-        <View style={styles.navBottomContainer}>
+        {/* <View style={styles.navBottomContainer}>
             <AboutUsBoard />
             <LierBoard />
             <AboutLiesBoard />
             <Text style={styles.navBottomText}> NavBottom </Text>
-        </View>
+        </View> */}
         </Tab.Navigator>
     );
 }
