@@ -1,7 +1,7 @@
 import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-// import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import HomeComponent from './components/home.component';
 import NavBottom from './home/navbottom';
@@ -10,7 +10,7 @@ import Colors from './constants/colors';
 
 export default function App() {
   return (
-    // <NavigationContainer>
+    <NavigationContainer>
       <LinearGradient
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
@@ -24,7 +24,7 @@ export default function App() {
         <NavBottom />
       </View>
       </LinearGradient>
-    // </NavigationContainer>
+    </NavigationContainer>
   );
 }
 
