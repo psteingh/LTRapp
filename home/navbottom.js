@@ -11,14 +11,15 @@ const Tab = createBottomTabNavigator();
 
 // onPress={() => {navigation.navigate('AboutUsBoard'); }}
 
-function NavBottom({navigation}) {
+function NavBottom() {
     return (
         <Tab.Navigator>
             <Tab.Screen
                 name="AboutUs"
                 component={AboutUsBoard}
                 options={{
-                    title: "About Us"
+                    title: "About Us",
+                    headerShown: false,
                 }}
             />
             
