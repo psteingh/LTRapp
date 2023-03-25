@@ -9,7 +9,9 @@ import AboutLiesBoard from '../boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
-function NavBottom() {
+// onPress={() => {navigation.navigate('AboutUsBoard'); }}
+
+function NavBottom({navigation}) {
     return (
         <Tab.Navigator>
             <Tab.Screen

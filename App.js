@@ -11,7 +11,6 @@ import Colors from './constants/colors';
 export default function App() {
   return (
     <NavigationContainer>
-      
       <LinearGradient
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
