@@ -9,8 +9,6 @@ import AboutLiesBoard from '../boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
-// onPress={() => {navigation.navigate('AboutUsBoard'); }}
-
 function NavBottom() {
     return (
         <Tab.Navigator>
@@ -26,13 +24,6 @@ function NavBottom() {
             <Tab.Screen name="LierBoard" component={LierBoard} />
             <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
         </Tab.Navigator>
-        
-        // <View style={styles.navBottomContainer}>
-        // <AboutUsBoard />
-        // <LierBoard />
-        // <AboutLiesBoard />
-        // <Text style={styles.navBottomText}> NavBottom </Text>
-        // </View>
     );
 }
 
