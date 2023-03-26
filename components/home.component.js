@@ -5,7 +5,7 @@ import Colors from '../constants/colors';
 import TopHead from '../home/tophead';
 import HomeMid from '../home/homemid';
 import Footer from '../home/footer';
-import NavBottom from '../home/navbottom';
+// import NavBottom from '../home/navbottom';
 
 function HomeComponent() {
     return (
@@ -14,7 +14,7 @@ function HomeComponent() {
             <TopHead />
             <HomeMid />
             <Footer />
-            <NavBottom />
+            {/* <NavBottom /> */}
         </View>
     );
 }
