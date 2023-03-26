@@ -2,10 +2,15 @@ import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeComponent from './components/home.component';
 
+import AboutUsBoard from './boardaboutus/aboutusboard.component';
+
 import Colors from './constants/colors';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
@@ -16,6 +21,9 @@ export default function App() {
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         style={styles.container}
         >
+      <Stack.Navigator>
+        <Stack.Screen name="About Us" component={AboutUsBoard} />
+      </Stack.Navigator>
       <HomeComponent />
       </LinearGradient>
     </NavigationContainer>
