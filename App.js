@@ -25,9 +25,11 @@ export default function App() {
         style={styles.container}
         >
       
-      {/* <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomeComponent} />
-        <Stack.Screen name="AboutUs" component={AboutUsBoard} />
+      {/* <Stack.Navigator> */}
+      
+        {/* <Stack.Screen name="Home" component={HomeComponent} /> */}
+      
+        {/* <Stack.Screen name="AboutUs" component={AboutUsBoard} />
         <Stack.Screen name="LierBoard" component={LierBoard} />
         <Stack.Screen name="AboutLies" component={AboutLiesBoard} />
       </Stack.Navigator> */}
