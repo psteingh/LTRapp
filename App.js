@@ -15,7 +15,11 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      style={{
+        backgroundColor: 'transparent'
+      }}
+      >
       <LinearGradient
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
