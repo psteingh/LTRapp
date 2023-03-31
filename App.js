@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// import HomeComponent from './components/home.component';
+import HomeComponent from './components/home.component';
 
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
@@ -23,6 +23,7 @@ export default function App() {
         style={styles.container}
         >
       <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeComponent} />
         <Stack.Screen name="AboutUs" component={AboutUsBoard} />
         <Stack.Screen name="AboutLies" component={AboutLiesBoard} />
       </Stack.Navigator>
