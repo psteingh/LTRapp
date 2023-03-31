@@ -15,32 +15,24 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
 
-  const navTheme = {
-    colors: { background: "red"}
-  };
-
   return (
-    <NavigationContainer theme={navTheme}
-      // colors={{ background: "transparent" }}
-      // style={{
-      //   backgroundColor: "transparent" }}
-    >
+    <NavigationContainer>
       <LinearGradient
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         style={styles.container}
-        // style={{ position: "absolute"}}
         >
       {/* <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeComponent} />
         <Stack.Screen name="AboutUs" component={AboutUsBoard} />
         <Stack.Screen name="AboutLies" component={AboutLiesBoard} />
       </Stack.Navigator> */}
-      
 
       <HomeComponent />
+
       </LinearGradient>
+
     </NavigationContainer>
   );
 }
