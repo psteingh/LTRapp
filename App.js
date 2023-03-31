@@ -16,18 +16,18 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      {/* <LinearGradient
+      <LinearGradient
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         style={styles.container}
-        > */}
+        >
       <Stack.Navigator>
         <Stack.Screen name="AboutUs" component={AboutUsBoard} />
         <Stack.Screen name="AboutLies" component={AboutLiesBoard} />
       </Stack.Navigator>
       {/* <HomeComponent /> */}
-      {/* </LinearGradient> */}
+      </LinearGradient>
     </NavigationContainer>
   );
 }
