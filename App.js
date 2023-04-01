@@ -13,12 +13,10 @@ export default function App() {
     <NavigationContainer>
       <LinearGradient
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 0}}
         style={{
           position: "absolute",
-          left: 0,
-          right: 0,
-          top: 0,
-          height: '100%'
         }} />
 
       {/* <NavBottom /> */}
