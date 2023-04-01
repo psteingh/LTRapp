@@ -1,10 +1,19 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
 import TopHead from '../home/tophead';
 import HomeMid from '../home/homemid';
 import Footer from '../home/footer';
+
+const AboutUsScreen = ({navigation}) => {
+    return (
+        <Button
+            title="About Us"
+            onPress={() => navigation.navigate('AboutUs')}
+             />
+    );
+}
 
 function HomeComponent() {
     return (
