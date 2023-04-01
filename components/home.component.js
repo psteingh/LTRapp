@@ -6,15 +6,6 @@ import TopHead from '../home/tophead';
 import HomeMid from '../home/homemid';
 import Footer from '../home/footer';
 
-const AboutUsScreen = ({navigation}) => {
-    return (
-        <Button
-            title="About Us"
-            onPress={() => navigation.navigate('AboutUs')}
-             />
-    );
-}
-
 function HomeComponent() {
     return (
 
