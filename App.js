@@ -18,7 +18,7 @@ export default function App() {
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         
         style={{
-          position: 'absolute',
+          position: "absolute",
           left: 0,
           right: 0,
           top: 0,
