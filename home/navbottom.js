@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
         margin: 100
     },
     navBottomText: {
-        color: Colors.primaryDblue
+        color: Colors.primaryDgreen
     }
 });
