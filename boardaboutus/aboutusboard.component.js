@@ -2,11 +2,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-function AboutUsBoard({navigation}) {
-    function pressHandler() {
-        navigation.navigate('NavBottom');
-    }
-
+function AboutUsBoard() {
     return (
         <View>
             <Text style={styles.aboutUsBoardText}> About Us Board </Text>

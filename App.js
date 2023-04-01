@@ -2,9 +2,11 @@ import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeComponent from './components/home.component';
+
+import NavBottom from './home/navbottom';
 
 // import AboutUsBoard from './boardaboutus/aboutusboard.component';
 // import LierBoard from './components/lierboard.component';
@@ -35,6 +37,8 @@ export default function App() {
       </Stack.Navigator> */}
 
       <HomeComponent />
+
+      <NavBottom />
 
       </LinearGradient>
 
