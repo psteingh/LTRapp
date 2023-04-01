@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 import { NavigationContainer } from '@react-navigation/native';
 
-import HomeComponent from './components/home.component';
+// import HomeComponent from './components/home.component';
 
 import NavBottom from './home/navbottom';
 
@@ -20,7 +20,7 @@ export default function App() {
         style={styles.container}
         >
 
-      <HomeComponent />
+      {/* <HomeComponent /> */}
 
       <NavBottom />
 

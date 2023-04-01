@@ -4,7 +4,7 @@ import Colors from '../constants/colors';
 
 function AboutUsBoard() {
     return (
-        <View>
+        <View style={styles.aboutUsBoardView}>
             <Text style={styles.aboutUsBoardText}> About Us Board </Text>
         </View>
     );
@@ -13,6 +13,9 @@ function AboutUsBoard() {
 export default AboutUsBoard;
 
 const styles = StyleSheet.create({
+    aboutUsBoardView: {
+        flex: 1
+    },
     aboutUsBoardText: {
         color: Colors.primaryLgreen
     }
