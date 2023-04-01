@@ -12,18 +12,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <LinearGradient
-        // start={{x: 0, y: 0}}
-        // end={{x: 1, y: 0}}
-        
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 0}}
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
-        
-        style={{
-          position: "absolute",
-          left: 0,
-          right: 0,
-          top: 0,
-          bottom: 0,
-        }}
+        style={styles.container}
         />
 
       <NavBottom />
@@ -36,6 +28,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    position: "absolute",
     flex: 1,
   },
 });
