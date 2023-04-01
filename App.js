@@ -12,15 +12,23 @@ export default function App() {
   return (
     <NavigationContainer>
       <LinearGradient
-        start={{x: 0, y: 0}}
-        end={{x: 1, y: 0}}
+        // start={{x: 0, y: 0}}
+        // end={{x: 1, y: 0}}
+        
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
-        style={styles.container}
-        >
+        
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0,
+        }}
+        />
 
       <NavBottom />
 
-      </LinearGradient>
+      {/* </LinearGradient> */}
 
     </NavigationContainer>
   );
