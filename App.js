@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import HomeComponent from './components/home.component';
 
-import NavBottom from './home/navbottom';
+// import NavBottom from './home/navbottom';
 
 // import AboutUsBoard from './boardaboutus/aboutusboard.component';
 // import LierBoard from './components/lierboard.component';
@@ -38,7 +38,7 @@ export default function App() {
 
       <HomeComponent />
 
-      <NavBottom />
+      {/* <NavBottom /> */}
 
       </LinearGradient>
 
