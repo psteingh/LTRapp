@@ -13,7 +13,7 @@ const MyTheme = {
     background: Colors.primaryDblue,
     card: Colors.primaryDgreen,
     text: 'white',
-    border: 'black',
+    border: 'white',
     notification: 'red',
   },
 };
