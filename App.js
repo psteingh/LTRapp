@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native';
 
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import NavBottom from './home/navbottom';
 
