@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native';
 
-// import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
@@ -24,17 +24,24 @@ export default function App() {
 
   return (
     <NavigationContainer theme={MyTheme}>
-      {/* <LinearGradient
+      <LinearGradient
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
-        start={{x: 0, y: 1}}
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0,
+          height: '100%'
+        }}
+      />  
+        
+        {/* start={{x: 0, y: 1}}
         end={{x: 0, y: 0}}
-        style={styles.container}> */}
+        style={styles.container} */}
       
       <NavBottom />
       
-      {/* </LinearGradient> */}
-
-    </NavigationContainer>
+      </NavigationContainer>
   );
 }
 
