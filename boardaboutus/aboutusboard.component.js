@@ -14,6 +14,6 @@ export default AboutUsBoard;
 
 const styles = StyleSheet.create({
     aboutUsBoardText: {
-        color: Colors.primaryLgreen
+        color: Colors.primaryLred
     }
 });

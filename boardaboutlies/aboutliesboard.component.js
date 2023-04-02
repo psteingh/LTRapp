@@ -14,6 +14,6 @@ export default AboutLiesBoard;
 
 const styles = StyleSheet.create({
     aboutLiesBoardText: {
-        color: Colors.primaryLgreen
+        color: Colors.primaryLred
     }
 });

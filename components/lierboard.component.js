@@ -14,6 +14,6 @@ export default LierBoard;
 
 const styles = StyleSheet.create({
     lierBoardText: {
-        color: Colors.primaryLgreen
+        color: Colors.primaryLred
     }
 });
