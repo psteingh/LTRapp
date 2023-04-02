@@ -18,12 +18,11 @@ export default function App() {
         style={styles.container}
         // style={{ position: "absolute" }}
       >
-      <View>
-        <Text>Start screen</Text>
-      </View>
-
+      
+      {/* <Text>Start screen</Text> */}
+      
       <NavBottom />
-
+      
       </LinearGradient>
 
     </NavigationContainer>
@@ -33,7 +32,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+    // alignItems: 'center',
+    // justifyContent: 'center'
   },
 });
