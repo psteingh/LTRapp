@@ -3,7 +3,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 import { NavigationContainer } from '@react-navigation/native';
 
-// import NavBottom from './home/navbottom';
+import NavBottom from './home/navbottom';
 
 import Colors from './constants/colors';
 
@@ -22,7 +22,8 @@ export default function App() {
         <Text>Start screen</Text>
       </View>
 
-      {/* <NavBottom /> */}
+      <NavBottom />
+
       </LinearGradient>
 
     </NavigationContainer>
