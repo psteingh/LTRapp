@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -18,6 +18,9 @@ export default function App() {
         style={styles.container}
         // style={{ position: "absolute" }}
       />
+      <View>
+        <Text>Start screen</Text>
+      </View>
 
       {/* <NavBottom /> */}
 
