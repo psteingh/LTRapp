@@ -11,12 +11,12 @@ import Colors from './constants/colors';
 const MyTheme = {
   dark: false,
   colors: {
-    primary: 'red',
-    background: 'blue',
-    card: 'green',
+    primary: 'yellow',
+    background: Colors.primaryDblue,
+    card: Colors.primaryDgreen,
     text: 'white',
     border: 'black',
-    notification: 'yellow',
+    notification: 'red',
   },
 };
 
