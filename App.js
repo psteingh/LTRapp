@@ -6,22 +6,14 @@ import NavBottom from './home/navbottom';
 
 import Colors from './constants/colors';
 
-const MyTheme = {
-  dark: false,
-  colors: {
-    primary: 'yellow',
-    background: Colors.primaryDblue,
-    card: Colors.primaryDgreen,
-    text: 'white',
-    border: 'white',
-    notification: 'red',
-  },
-};
-
 export default function App() {
 
   return (
-    <NavigationContainer theme={MyTheme}>
+    <NavigationContainer>
+
+      <View>
+        <Text>Start screen</Text>
+      </View>
 
       <NavBottom />
 
