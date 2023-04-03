@@ -11,9 +11,9 @@ export default function App() {
   return (
     <NavigationContainer>
 
-      <View>
+      {/* <View>
         <Text>Start screen</Text>
-      </View>
+      </View> */}
 
       <NavBottom />
 
