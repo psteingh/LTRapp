@@ -1,30 +1,33 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
-
-import  { LinearGradient } from 'expo-linear-gradient';
-
-import NavBottom from './home/navbottom';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Colors from './constants/colors';
+
+import HomeComponent from './components/home.component';
+import AboutUsBoard from './boardaboutus/aboutusboard.component';
+import LierBoard from './components/lierboard.component';
+import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
+
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeComponent} />
+      <Tab.Screen name="AboutUs" component={AboutUsBoard} />
+      <Tab.Screen name="LierBoard" component={LierBoard} />
+      <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
+    </Tab.Navigator>
+  );
+}
 
 export default function App() {
 
   return (
     <NavigationContainer>
-      <LinearGradient
-        colors={[Colors.primaryBlack, Colors.primaryWhite]}
-        start={{x: 0, y: 1}}
-        end={{x: 0, y:0}} >
-
-      {/* <View>
-        <Text>Start screen</Text>
-      </View> */}
-
-      <NavBottom />
-
-      </LinearGradient>
-
+      <MyTabs />
     </NavigationContainer>
   );
 }
