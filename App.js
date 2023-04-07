@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,11 +10,6 @@ import HomeComponent from './components/home.component';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
-
-{/* <LinearGradient
-  colors={[Colors.primaryBlack, Colors.primaryWhite]}
-  start={{x: 0, y: 1}}
-  end={{x: 0, y: 0}}> */}
 
 const Tab = createBottomTabNavigator();
 
@@ -38,8 +33,15 @@ export default function App() {
 
   return (
     <NavigationContainer theme={navTheme}>
+
+    <LinearGradient
+    colors={[Colors.primaryBlack, Colors.primaryWhite]}
+    start={{x: 0, y: 1}}
+    end={{x: 0, y: 0}}>
         
       <MyTabs />
+    
+    </LinearGradient>
       
     </NavigationContainer>
   );
