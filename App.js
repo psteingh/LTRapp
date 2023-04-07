@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -28,15 +28,14 @@ export default function App() {
 
   return (
     // <NavigationContainer>
-      <View >    
+      <View style={styles.container}>    
       <LinearGradient
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         start={{x: 0, y: 1}}
-        end={{x: 0, y: 0}}
-        >
+        end={{x: 0, y: 0}} />
 
-        
-      </LinearGradient>
+      <Text>Start screen</Text>
+
       </View>
     // </NavigationContainer>
   );
@@ -45,7 +44,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center'
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 });
