@@ -26,25 +26,21 @@ function MyTabs() {
 
 export default function App() {
   const navTheme = {
-    LinearGradient: {
-      colors: [Colors.primaryWhite, Colors.primaryBlack],
-      start: {x: 0, y: 0},
-      end: {x: 1, y: 0}
-    }
-  }
-    // colors: { background: Colors.primaryLgreen }}
+    colors: { background: Colors.primaryLgreen }}
 
   return (
     <NavigationContainer theme={navTheme}>
 
-    {/* <LinearGradient
+    <LinearGradient
     colors={[Colors.primaryWhite, Colors.primaryBlack]}
     start={{x: 0, y: 0}}
     end={{x: 1, y: 0}}
-    style={styles.container}> */}
+    style={styles.container}>
         
       <MyTabs />
-      
+
+    </LinearGradient>
+
     </NavigationContainer>
   );
 }
