@@ -29,10 +29,10 @@ export default function App() {
   return (
     // <NavigationContainer>
       <View style={styles.container}>    
-      <LinearGradient
+      {/* <LinearGradient
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         start={{x: 0, y: 1}}
-        end={{x: 0, y: 0}} />
+        end={{x: 0, y: 0}} /> */}
 
       <Text>Start screen</Text>
 
