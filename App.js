@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -11,38 +11,34 @@ import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
-const Tab = createBottomTabNavigator();
+// const Tab = createBottomTabNavigator();
 
-function MyTabs() {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeComponent} />
-      <Tab.Screen name="AboutUs" component={AboutUsBoard} />
-      <Tab.Screen name="LierBoard" component={LierBoard} />
-      <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-    </Tab.Navigator>
-  );
-}
+// function MyTabs() {
+//   return (
+//     <Tab.Navigator>
+//       <Tab.Screen name="Home" component={HomeComponent} />
+//       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
+//       <Tab.Screen name="LierBoard" component={LierBoard} />
+//       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
+//     </Tab.Navigator>
+//   );
+// }
 
 export default function App() {
 
   return (
-    <NavigationContainer>
-    
+    // <NavigationContainer>
+      <View >    
       <LinearGradient
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         start={{x: 0, y: 1}}
         end={{x: 0, y: 0}}
-        // style={styles.container}
-      >
+        >
 
-
+        
       </LinearGradient>
-      
-      
-      <MyTabs />
-   
-    </NavigationContainer>
+      </View>
+    // </NavigationContainer>
   );
 }
 
