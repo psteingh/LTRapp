@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import LinearGradient from 'expo-linear-gradient';
+import { LinearGradient } from 'expo-linear-gradient';
 import Colors from './constants/colors';
 
 import HomeComponent from './components/home.component';
@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     // <NavigationContainer>
-      <View>
+      <View style={styles.container}>
       <LinearGradient
         colors={[Colors.primaryBlack, Colors.primaryWhite]}
         start={{x: 0, y: 1}}
