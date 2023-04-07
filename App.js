@@ -16,17 +16,10 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator>
-      {/* <LinearGradient
-        colors={[Colors.primaryBlack, Colors.primaryWhite]}
-        start={{x: 0, y: 1}}
-        end={{x: 0, y: 0}}
-        style={styles.container}> */}
-      
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      
     </Tab.Navigator>
   );
 }
@@ -35,7 +28,16 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      
+    
+      <LinearGradient
+        colors={[Colors.primaryBlack, Colors.primaryWhite]}
+        start={{x: 0, y: 1}}
+        end={{x: 0, y: 0}}
+        // style={styles.container}
+      >
+
+
+      </LinearGradient>
       
       
       <MyTabs />
