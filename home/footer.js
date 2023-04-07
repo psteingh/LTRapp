@@ -14,6 +14,6 @@ export default Footer;
 
 const styles = StyleSheet.create({
     footerText: {
-        color: Colors.primaryLred
+        color: Colors.primaryDred
     }
 });

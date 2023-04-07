@@ -14,6 +14,6 @@ export default HomeMid;
 
 const styles = StyleSheet.create({
     homeMidText: {
-        color: Colors.primaryLgreen
+        color: Colors.primaryDgreen
     }
 });

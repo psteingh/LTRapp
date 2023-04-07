@@ -14,6 +14,6 @@ export default TopHead;
 
 const styles = StyleSheet.create({
     topHeadText: {
-        color: Colors.primaryLblue
+        color: Colors.primaryDblue
     }
 });
