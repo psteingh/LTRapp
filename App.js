@@ -35,9 +35,10 @@ export default function App() {
     <NavigationContainer theme={navTheme}>
 
     <LinearGradient
-    colors={[Colors.primaryBlack, Colors.primaryWhite]}
-    start={{x: 0, y: 1}}
-    end={{x: 0, y: 0}}>
+    colors={[Colors.primaryWhite, Colors.primaryBlack]}
+    start={{x: 0, y: 0}}
+    end={{x: 1, y: 0}}
+    style={styles.container}>
         
       <MyTabs />
     
