@@ -13,9 +13,23 @@ import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
+{/* <LinearGradient
+    colors={[Colors.primaryWhite, Colors.primaryBlack]}
+    start={{x: 0, y: 0}}
+    end={{x: 1, y: 0}}
+    style={styles.container}>
+</LinearGradient> */}
+
 function MyTabs() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+    screenOptions={{
+      tabBarBackground: () => (
+        <LinearGradient
+        colors={[Colors.primaryWhite, Colors.primaryBlack]}
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 0}} /> ),
+    }}>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
@@ -25,21 +39,13 @@ function MyTabs() {
 }
 
 export default function App() {
-  const navTheme = {
-  colors: { background: Colors.primaryLgreen }}
+  // const navTheme = {
+  // colors: { background: Colors.primaryLgreen }}
 
   return (
-    <NavigationContainer theme={navTheme}>
+    <NavigationContainer>
     
-    <LinearGradient
-    colors={[Colors.primaryWhite, Colors.primaryBlack]}
-    start={{x: 0, y: 0}}
-    end={{x: 1, y: 0}}
-    style={styles.container} >
-
     <MyTabs />
-
-    </LinearGradient>
 
     </NavigationContainer>
   );
