@@ -13,6 +13,19 @@ import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
+const MyTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: () => (
+    <LinearGradient
+    colors={[Colors.primaryWhite, Colors.primaryBlack]}
+    start={{x: 0, y: 0}}
+    end={{x: 1, y: 0}}
+    style={styles.container} />
+    ),
+  }, };
+
 {/* <LinearGradient
     colors={[Colors.primaryWhite, Colors.primaryBlack]}
     start={{x: 0, y: 0}}
@@ -40,33 +53,10 @@ function MyTabs() {
   );
 }
 
-// const MyTheme = {
-//   ...DefaultTheme,
-//   colors: {
-//     ...DefaultTheme.colors,
-//     background: () => (
-//     <LinearGradient
-//     colors={[Colors.primaryWhite, Colors.primaryBlack]}
-//     start={{x: 0, y: 0}}
-//     end={{x: 1, y: 0}}
-//     style={styles.container} />
-//     ),
-//   }, };
-
-
 export default function App() {
   
   return (
-    <NavigationContainer
-    screenOptions={{
-      background: () => (
-        <LinearGradient
-        colors={[Colors.primaryWhite, Colors.primaryBlack]}
-        start={{x: 0, y: 0}}
-        end={{x: 1, y: 0}}
-        style={styles.container} />
-      )
-    }}>
+    <NavigationContainer theme={MyTheme}>
     
     <MyTabs />
 
