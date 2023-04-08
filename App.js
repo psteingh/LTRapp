@@ -51,11 +51,7 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
     // justifyContent: 'center'
   },
-  // tabColor: {
-  //   background: Colors.primaryDgreen
-  // },
-  // linGrad: {
-  //   width: '100%',
-  //   height: '100%'
-  // }
+  contTheme: {
+    background: Colors.primaryDgreen
+  }
 });
