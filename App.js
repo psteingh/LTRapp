@@ -42,7 +42,13 @@ function MyTabs() {
 
 export default function App() {
   const navTheme = {
-  colors: { background: Colors.primaryLgreen }}
+  colors: { background: () => (
+    <LinearGradient
+    colors={[Colors.primaryWhite, Colors.primaryBlack]}
+    start={{x: 0, y: 0}}
+    end={{x: 1, y: 0}}
+    style={styles.container} />
+  ), }}
 
   return (
     <NavigationContainer theme={navTheme}>
