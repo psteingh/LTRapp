@@ -13,25 +13,20 @@ import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
-{/* <LinearGradient
-    colors={[Colors.primaryWhite, Colors.primaryBlack]}
-    start={{x: 0, y: 0}}
-    end={{x: 1, y: 0}}
-    style={styles.container}>
-</LinearGradient> */}
+function LinGrad() {
+  return (
+  <LinearGradient
+  colors={[Colors.primaryWhite, Colors.primaryBlack]}
+  start={{x: 0, y: 0}}
+  end={{x: 1, y: 0}}
+  style={styles.container}/>
+  ); }
 
 function MyTabs() {
   return (
     <Tab.Navigator
     screenOptions={{
-      headerStyle: {backgroundColor: () => (
-        <LinearGradient
-        colors={[Colors.primaryWhite, Colors.primaryBlack]}
-        start={{x: 1, y: 0}}
-        end={{x: 0, y: 0}}
-        style={styles.container}
-        />
-      ),},
+      headerStyle: {backgroundColor: Colors.primaryLblue},
       tabBarBackground: () => (
         <LinearGradient
         colors={[Colors.primaryWhite, Colors.primaryBlack]}
