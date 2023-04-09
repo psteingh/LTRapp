@@ -44,7 +44,7 @@ function MyTabs() {
         <LinearGradient
         colors={[Colors.primaryWhite, Colors.primaryBlack]}
         start={{x: 0, y: 0}}
-        end={{x: 1, y: 0}}
+        end={{x: 0, y: 1}}
         style={styles.container} />
         ),
     }}>
