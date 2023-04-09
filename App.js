@@ -13,7 +13,7 @@ import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
-function LinGrad() {
+const LinGrad = () => {
   return (
   <LinearGradient
   colors={[Colors.primaryWhite, Colors.primaryBlack]}
@@ -27,14 +27,7 @@ function MyTabs() {
     <Tab.Navigator
     screenOptions={{
       headerStyle: {backgroundColor: Colors.primaryLblue},
-      tabBarBackground: () => (
-        <LinearGradient
-        colors={[Colors.primaryWhite, Colors.primaryBlack]}
-        start={{x: 1, y: 0}}
-        end={{x: 0, y: 0}}
-        style={styles.container}
-        />
-        ),
+      tabBarBackground: LinGrad
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
