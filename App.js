@@ -40,6 +40,7 @@ function MyTabs() {
   return (
     <Tab.Navigator
     screenOptions={{
+      headerStyle: {backgroundColor: Colors.primaryLblue},
       tabBarBackground: () => (
         <LinearGradient
         colors={[Colors.primaryWhite, Colors.primaryBlack]}
