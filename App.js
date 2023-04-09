@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { LinearGradient } from 'expo-linear-gradient';
 import Colors from './constants/colors';
 import LinGrad from './constants/lingrad';
 
@@ -14,22 +13,13 @@ import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
 const Tab = createBottomTabNavigator();
 
-const LinearGrad = () => {
-  return (
-  <LinearGradient
-  colors={[Colors.primaryWhite, Colors.primaryBlack]}
-  start={{x: 0, y: 0}}
-  end={{x: 1, y: 0}}
-  style={styles.container}/>
-  ); }
-
 function MyTabs() {
   return (
     <Tab.Navigator
     sceneContainerStyle={{backgroundColor: LinGrad}}
     screenOptions={{
       headerStyle: {backgroundColor: Colors.primaryLblue},
-      tabBarBackground: LinearGrad
+      tabBarBackground: LinGrad
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
