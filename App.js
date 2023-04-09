@@ -25,8 +25,8 @@ const LinGrad = () => {
 function MyTabs() {
   return (
     <Tab.Navigator
-    sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
     screenOptions={{
+      sceneContainerStyle: {backgroundColor: Colors.primaryLgreen},
       headerStyle: {backgroundColor: Colors.primaryLblue},
       tabBarBackground: LinGrad
     }}>
