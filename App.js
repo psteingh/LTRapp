@@ -43,9 +43,10 @@ function MyTabs() {
       tabBarBackground: () => (
         <LinearGradient
         colors={[Colors.primaryWhite, Colors.primaryBlack]}
-        start={{x: 0, y: 0}}
-        end={{x: 0, y: 1}}
-        style={styles.container} />
+        start={{x: 1, y: 0}}
+        end={{x: 0, y: 0}}
+        style={styles.container}
+        />
         ),
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
@@ -60,11 +61,12 @@ export default function App() {
   
   return (
     <NavigationContainer>
+    
     <LinearGradient
         colors={[Colors.primaryWhite, Colors.primaryBlack]}
         start={{x: 0, y: 0}}
         end={{x: 1, y: 0}}
-        style={styles.container} />
+        style={styles.container}/>
     
     <MyTabs />
 
