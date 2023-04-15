@@ -16,10 +16,11 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
-    sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
+    // sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
     screenOptions={{
       headerBackground: LinGrad,
-      tabBarBackground: LinGrad
+      tabBarBackground: LinGrad,
+      backgroundColor: LinGrad
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
