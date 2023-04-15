@@ -18,7 +18,8 @@ function MyTabs() {
     <Tab.Navigator
     sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
     screenOptions={{
-      headerStyle: {backgroundColor: Colors.primaryLblue},
+      headerBackground: LinGrad,
+      // headerStyle: {backgroundColor: Colors.primaryLblue},
       tabBarBackground: LinGrad
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
