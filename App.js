@@ -23,7 +23,6 @@ function MyTabs() {
       headerBackground: LinGrad,
       tabBarBackground: LinGrad
     }}>
-      <LinGrad />
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
