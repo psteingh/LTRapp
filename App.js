@@ -17,7 +17,7 @@ function MyTabs() {
   return (
         
     <Tab.Navigator
-    sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
+    sceneContainerStyle={{backgroundColor: 'transparent'}}
 
     screenOptions={{
       headerBackground: LinGrad,
