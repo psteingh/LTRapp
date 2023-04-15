@@ -35,13 +35,11 @@ function MyTabs() {
 export default function App() {
   
   return (
-    <LinGrad>
     <NavigationContainer>
     
     <MyTabs />
 
     </NavigationContainer>
-    </LinGrad>
   );
 }
 

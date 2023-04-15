@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Colors from '../constants/colors';
 
-function LinGrad({children}) {
+function LinGrad() {
   return (
   <LinearGradient
   colors={[Colors.primaryWhite, Colors.primaryBlack]}
@@ -11,7 +11,6 @@ function LinGrad({children}) {
   end={{x: 1, y: 0}}
   style={styles.container}
   >
-  {children}
   </LinearGradient>
   );
 }
