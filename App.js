@@ -15,7 +15,7 @@ const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
-        
+    <LinGrad>
     <Tab.Navigator
     sceneContainerStyle={{backgroundColor: 'transparent'}}
 
@@ -29,6 +29,7 @@ function MyTabs() {
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
     
     </Tab.Navigator>
+    </LinGrad>
   );
 }
 
