@@ -17,10 +17,10 @@ function MyTabs() {
   return (
     <Tab.Navigator
     // sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
+    sceneContainerStyle={(props) => <LinGrad {...props}/> }
     screenOptions={{
       headerBackground: LinGrad,
-      tabBarBackground: LinGrad,
-      backgroundColor: LinGrad
+      tabBarBackground: LinGrad
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
