@@ -16,7 +16,7 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
-      sceneContainerStyle={{backgroundColor: LinGrad}}
+      sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
       screenOptions={{
       headerBackground: LinGrad,
       tabBarBackground: LinGrad
