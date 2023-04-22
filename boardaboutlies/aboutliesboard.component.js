@@ -5,11 +5,9 @@ import LinGrad from '../constants/lingrad';
 
 function AboutLiesBoard() {
     return (
-        <LinGrad>
         <View>
             <Text style={styles.aboutLiesBoardText}> About Lies Board </Text>
         </View>
-        </LinGrad>
     );
 }
 
