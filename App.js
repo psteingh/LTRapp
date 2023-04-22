@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -28,7 +28,6 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-    
     </Tab.Navigator>
   );
 }
