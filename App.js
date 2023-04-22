@@ -11,17 +11,19 @@ import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
+{/* <Tab.Navigator
+    sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
+    screenOptions={{
+      headerBackground: LinGrad,
+      tabBarBackground: LinGrad
+    }}></Tab.Navigator> */}
+
+
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
-    <Tab.Navigator
-    sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
-
-    screenOptions={{
-      headerBackground: LinGrad,
-      tabBarBackground: LinGrad
-    }}>
+    <Tab.Navigator>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
