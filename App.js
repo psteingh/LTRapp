@@ -1,9 +1,8 @@
-import { View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Colors from './constants/colors';
 import LinGradHeadTab from './constants/lingradheadtab';
 
 import HomeComponent from './components/home.component';
@@ -16,9 +15,6 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
-
-      // sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
-    
       screenOptions={{
       headerBackground: LinGradHeadTab,
       tabBarBackground: LinGradHeadTab
