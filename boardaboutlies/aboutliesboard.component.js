@@ -6,7 +6,7 @@ import LinGradScreen from '../constants/lingradscreen';
 function AboutLiesBoard() {
     return (
         <LinGradScreen>
-        <View>
+        <View style={styles.viewContainer}>
             <Text style={styles.aboutLiesBoardText}> About Lies Board </Text>
         </View>
         </LinGradScreen>
@@ -16,6 +16,9 @@ function AboutLiesBoard() {
 export default AboutLiesBoard;
 
 const styles = StyleSheet.create({
+    viewContainer: {
+        flex: 1
+    },
     aboutLiesBoardText: {
         color: Colors.primaryLred
     }
