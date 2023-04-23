@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Colors from './constants/colors';
-import LinGrad from './constants/lingrad';
+import LinGradHeadTab from './constants/lingradheadtab';
 
 import HomeComponent from './components/home.component';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
@@ -20,8 +20,8 @@ function MyTabs() {
       // sceneContainerStyle={{backgroundColor: Colors.primaryLgreen}}
     
       screenOptions={{
-      headerBackground: LinGrad,
-      tabBarBackground: LinGrad
+      headerBackground: LinGradHeadTab,
+      tabBarBackground: LinGradHeadTab
     }}>
       <Tab.Screen name="Home" component={HomeComponent} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />

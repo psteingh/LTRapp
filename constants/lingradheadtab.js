@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 import { LinearGradient } from 'expo-linear-gradient';
-import Colors from '../constants/colors';
+import Colors from './colors';
 
-function LinGrad() {
+function LinGradHeadTab() {
   return (
   <LinearGradient
   colors={[Colors.primaryWhite, Colors.primaryBlack]}
@@ -15,7 +15,7 @@ function LinGrad() {
   );
 }
 
-export default LinGrad;
+export default LinGradHeadTab;
 
 const styles = StyleSheet.create({
   container: {
