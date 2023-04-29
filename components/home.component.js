@@ -11,7 +11,7 @@ function HomeComponent() {
     return (
         <View style={styles.homeContainer}>
         <LinGradScreen />
-        <Text style={styles.homeText}>Home</Text>
+        <Text style={styles.homeText}> Home </Text>
         
         <TopHead />
         <HomeMid />
@@ -24,8 +24,7 @@ export default HomeComponent;
 
 const styles = StyleSheet.create({
     homeContainer: {
-        flex: 1,
-        margin: 100
+        flex: 1
     },
     homeText: {
         fontSize: 20,
