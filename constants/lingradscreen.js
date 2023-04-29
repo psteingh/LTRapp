@@ -9,7 +9,7 @@ function LinGradScreen() {
   colors={[Colors.primaryWhite, Colors.primaryBlack]}
   start={{x: 0, y: 0}}
   end={{x: 1, y: 0}}
-  style={styles.container}
+  style={styles.background}
   >
   </LinearGradient>
   );
@@ -18,9 +18,11 @@ function LinGradScreen() {
 export default LinGradScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center'
+  background: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0    
   }
 });
