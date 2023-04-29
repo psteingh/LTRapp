@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'transparent',
         borderWidth: 2,
         borderColor: Colors.primaryLgreen,
-        margin: 15,
-        padding: 15
+        margin: 10,
+        padding: 20,
     }
 });
