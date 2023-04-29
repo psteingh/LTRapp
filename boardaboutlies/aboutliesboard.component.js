@@ -30,8 +30,7 @@ export default AboutLiesBoard;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        // backgroundColor: 'orange'
+        flex: 1
     },
     background: {
         position: 'absolute',
@@ -39,7 +38,6 @@ const styles = StyleSheet.create({
         right: 0,
         top: 0,
         bottom: 0
-        // height: 600
     },
     aboutLiesBoardText: {
         fontSize: 20,
