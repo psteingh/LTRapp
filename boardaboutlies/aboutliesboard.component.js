@@ -15,7 +15,7 @@ function AboutLiesBoard() {
     return (
         <View style={styles.container}>
         <LinearGradient
-            colors={['blue', 'transparent']}
+            colors={['blue', 'green']}
             style={styles.background}
              />
         <Text style={styles.aboutLiesBoardText}>
@@ -31,14 +31,15 @@ export default AboutLiesBoard;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'orange'
+        // backgroundColor: 'orange'
     },
     background: {
         position: 'absolute',
         left: 0,
         right: 0,
         top: 0,
-        height: 300
+        bottom: 0
+        // height: 600
     },
     aboutLiesBoardText: {
         fontSize: 20,
