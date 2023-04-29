@@ -16,7 +16,8 @@ export default AboutLiesBoard;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        alignItems: 'center'
     },
     aboutLiesBoardText: {
         fontSize: 20,
