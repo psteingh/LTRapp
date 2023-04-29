@@ -15,7 +15,7 @@ function AboutLiesBoard() {
     return (
         <View style={styles.container}>
         <LinearGradient
-            colors={['rgba(0,0,0,0.8)', 'transparent']}
+            colors={['blue', 'transparent']}
             style={styles.background}
              />
         <Text style={styles.aboutLiesBoardText}>
