@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
     aboutLiesBoardText: {
         fontSize: 20,
         color: Colors.primaryLred,
-        backgroundColor: 'transparent'        
+        backgroundColor: 'transparent',
+        borderWidth: 2,
+        borderColor: Colors.primaryLgreen,
+        margin: 15,
+        padding: 15
     }
 });
