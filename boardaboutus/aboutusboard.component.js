@@ -1,10 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
+import LinGradScreen from '../constants/lingradscreen';
 
 function AboutUsBoard() {
     return (
-        <View>
+        <View style={styles.container}>
+        <LinGradScreen />
             <Text style={styles.aboutUsBoardText}> About Us Board </Text>
         </View>
     );
@@ -13,7 +15,12 @@ function AboutUsBoard() {
 export default AboutUsBoard;
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1
+    },
     aboutUsBoardText: {
-        color: Colors.primaryLred
+        fontSize: 20,
+        color: Colors.primaryLred,
+        backgroundColor: 'transparent'
     }
 });

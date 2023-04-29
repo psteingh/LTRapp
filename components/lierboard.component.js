@@ -1,10 +1,12 @@
 import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
+import LinGradScreen from '../constants/lingradscreen';
 
 function LierBoard() {
     return (
-        <View>
+        <View style={styles.container}>
+        <LinGradScreen />
             <Text style={styles.lierBoardText}> Lier Board </Text>
         </View>
     );
@@ -13,7 +15,12 @@ function LierBoard() {
 export default LierBoard;
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1
+    },
     lierBoardText: {
-        color: Colors.primaryLred
+        fontSize: 20,
+        color: Colors.primaryLred,
+        backgroundColor: 'transparent'
     }
 });
