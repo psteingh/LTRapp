@@ -7,10 +7,7 @@ function AboutLiesBoard() {
     return (
         <View style={styles.container}>
         <LinGradScreen />
-        <Text style={styles.aboutLiesBoardText}>
-            About Lies Board
-        </Text>
-
+        <Text style={styles.aboutLiesBoardText}> About Lies Board </Text>
         </View>
     );
 }
