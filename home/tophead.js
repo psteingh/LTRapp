@@ -14,6 +14,8 @@ export default TopHead;
 
 const styles = StyleSheet.create({
     topHeadText: {
-        color: Colors.primaryDblue
+        color: Colors.primaryOffWhite,
+        fontFamily: 'Roboto',
+        fontWeight: 'bold'
     }
 });
