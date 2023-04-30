@@ -8,7 +8,7 @@ function AboutUsBoard() {
     return (
         <View style={styles.container}>
         <LinGradScreen />
-        <TitleText> Test TitleText component </TitleText>
+        <TitleText>Test TitleText component</TitleText>
             <Text style={styles.aboutUsBoardText}> About Us Board </Text>
         </View>
     );
