@@ -15,6 +15,7 @@ export default TitleText;
 const styles = StyleSheet.create({
     titleText: {
         fontSize: 20,
+        fontFamily: 'LibreBaskerville',
         color: Colors.primaryLred,
         backgroundColor: 'transparent',
         borderWidth: 2,

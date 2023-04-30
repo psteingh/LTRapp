@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -37,16 +37,10 @@ export default function App() {
   
   return (
     <NavigationContainer>
-    <View>
-      <Text style={styles.libreBaskerville}>Libre Baskerville Test</Text>
-    </View>
     <MyTabs />        
     </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  libreBaskerville: {
-    fontFamily: 'LibreBaskerville'
-  }
  });
