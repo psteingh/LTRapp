@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
-import Colors from '../constants/colors';
 import LinGradScreen from '../constants/lingradscreen';
+import TitleText from '../constants/titletext';
 
 import TopHead from '../home/tophead';
 import HomeMid from '../home/homemid';
@@ -11,7 +11,7 @@ function HomeComponent() {
     return (
         <View style={styles.homeContainer}>
         <LinGradScreen />
-        <Text style={styles.homeText}> Home </Text>
+        <TitleText>Home</TitleText>
         
         <TopHead />
         <HomeMid />
@@ -25,11 +25,5 @@ export default HomeComponent;
 const styles = StyleSheet.create({
     homeContainer: {
         flex: 1
-    },
-    homeText: {
-        fontSize: 20,
-        color: Colors.primaryLblue,
-        backgroundColor: 'transparent'
-    },
-
+    }
 });
