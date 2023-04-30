@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -9,6 +10,13 @@ import HomeComponent from './components/home.component';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
+
+const [loaded] = useFonts({
+  LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf')
+});
+  if (!loaded) {
+    return null;
+  }
 
 const Tab = createBottomTabNavigator();
 
