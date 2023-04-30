@@ -28,17 +28,10 @@ function MyTabs() {
   );
 }
 
-// const [loaded] = useFonts({
-//   LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf'),
-//   Roboto: require('./assets/fonts/Roboto-Regular.ttf')
-// });
-//   if (!loaded) {
-//     return null; }
-
-
 export default function App() {
   const [loaded] = useFonts({
-    LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf')
+    LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf'),
+    Roboto: require('./assets/fonts/Roboto-Regular.ttf')
   });
     if (!loaded) {return null;}
   
