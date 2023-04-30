@@ -37,6 +37,10 @@ function MyTabs() {
 
 
 export default function App() {
+  const [loaded] = useFonts({
+    LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf')
+  });
+    if (!loaded) {return null;}
   
   return (
     <NavigationContainer>
