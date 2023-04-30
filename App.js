@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,13 +10,6 @@ import HomeComponent from './components/home.component';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
-
-const [loaded] = useFonts({
-  LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf')
-});
-  if (!loaded) {
-    return null;
-  }
 
 const Tab = createBottomTabNavigator();
 
@@ -36,12 +29,24 @@ function MyTabs() {
 }
 
 export default function App() {
+  const [loaded] = useFonts({
+    LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf')
+  });
+    if (!loaded) {
+      return null; }
   
   return (
     <NavigationContainer>
+    <View>
+      <Text style={styles.libreBaskerville}>Libre Baskerville Test</Text>
+    </View>
     <MyTabs />        
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({ });
+const styles = StyleSheet.create({
+  libreBaskerville: {
+    fontFamily: 'LibreBaskerville'
+  }
+ });
