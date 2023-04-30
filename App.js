@@ -31,7 +31,9 @@ function MyTabs() {
 export default function App() {
   const [loaded] = useFonts({
     LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf'),
-    Roboto: require('./assets/fonts/Roboto-Regular.ttf')
+    LibreBaskervilleBold: require('./assets/fonts/LibreBaskerville-Bold.ttf'),
+    Roboto: require('./assets/fonts/Roboto-Regular.ttf'),
+    RobotoBold: require('./assets/fonts/Roboto-Bold.ttf')
   });
     if (!loaded) {return null;}
   
