@@ -2,10 +2,10 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from './colors';
 
-function TitleText() {
+function TitleText({children}) {
     return (
         <View>
-            <Text style={styles.titleText}></Text>
+            <Text style={styles.titleText}>{children}</Text>
         </View>
     );
 }
