@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: Colors.primaryOffWhite,
         backgroundColor: 'transparent',
-        borderWidth: 2,
+        borderWidth: 1,
         borderColor: Colors.primaryLgreen,
-        margin: 10,
-        padding: 20,
+        margin: 5,
+        paddingLeft: 15,
     }
 });
