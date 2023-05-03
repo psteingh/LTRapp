@@ -4,8 +4,13 @@ import Colors from '../constants/colors';
 
 function HomeMid() {
     return (
-        <View>
-            <Text style={styles.homeMidText}> HomeMid </Text>
+        <View style={styles.homeMidContainer}>
+            <View style={styles.homeMidChildContainer}>
+            <Text style={styles.homeMidText}>Lier Board</Text>
+            </View>
+            <View style={styles.homeMidChildContainer}>
+            <Text style={styles.homeMidText}>List of Lies</Text>
+            </View>
         </View>
     );
 }
@@ -13,6 +18,12 @@ function HomeMid() {
 export default HomeMid;
 
 const styles = StyleSheet.create({
+    homeMidContainer: {
+        flex: 1
+    },
+    homeMidChildContainer: {
+        flex: 3
+    },
     homeMidText: {
         color: Colors.primaryDgreen
     }
