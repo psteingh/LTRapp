@@ -5,7 +5,7 @@ import Colors from '../constants/colors';
 function Carousel() {
     return (
         <View style={styles.carouselContainer}>
-            <Text style={styles.carouselText}>Carousel</Text>
+            <Text style={styles.carouselText}>When did I tell them a Lie?</Text>
         </View>
     );
 }

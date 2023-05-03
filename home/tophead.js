@@ -8,7 +8,7 @@ import SubTitle from './subtitle';
 function TopHead() {
     return (
         <View style={styles.topHeadContainer}>
-            <Text style={styles.topHeadText}>TopHead</Text>
+            <Text style={styles.topHeadText}>Lies To Remember</Text>
             <View>
                 <Carousel />
             </View>
@@ -23,7 +23,8 @@ export default TopHead;
 
 const styles = StyleSheet.create({
     topHeadContainer: {
-        backgroundColor: Colors.primaryDblue
+        backgroundColor: Colors.primaryDblue,
+        alignItems: 'center'
     },
     topHeadText: {
         fontFamily: 'LibreBaskervilleBold',
