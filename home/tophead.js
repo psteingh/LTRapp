@@ -26,9 +26,8 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.primaryDblue
     },
     topHeadText: {
-        fontFamily: 'LibreBackervilleBold',
+        fontFamily: 'LibreBaskervilleBold',
         fontSize: 45,
         color: Colors.primaryOffWhite,
-        
     }
 });

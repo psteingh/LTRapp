@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     },
     carouselText: {
         fontFamily: 'RobotoBold',
-        fontSize: 25
+        fontSize: 25,
+        color: Colors.primaryWhite
     }
 });

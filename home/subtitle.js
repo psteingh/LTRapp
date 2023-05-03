@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     },
     subTitleText: {
         fontFamily: 'RobotoBold',
-        fontSize: 15
+        fontSize: 15,
+        color: Colors.primaryWhite
     }
 });
