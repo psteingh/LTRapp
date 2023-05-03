@@ -14,11 +14,13 @@ export default Carousel;
 
 const styles = StyleSheet.create({
     carouselContainer: {
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        margin: 5
     },
     carouselText: {
         fontFamily: 'RobotoBold',
         fontSize: 25,
-        color: Colors.primaryWhite
+        color: Colors.primaryWhite,
+        margin: 5
     }
 });

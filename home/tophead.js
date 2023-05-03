@@ -24,11 +24,13 @@ export default TopHead;
 const styles = StyleSheet.create({
     topHeadContainer: {
         backgroundColor: Colors.primaryDblue,
-        alignItems: 'center'
+        alignItems: 'center',
+        margin: 5
     },
     topHeadText: {
         fontFamily: 'LibreBaskervilleBold',
-        fontSize: 45,
+        fontSize: 35,
         color: Colors.primaryOffWhite,
+        margin: 5
     }
 });

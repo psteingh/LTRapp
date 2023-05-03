@@ -14,11 +14,13 @@ export default SubTitle;
 
 const styles = StyleSheet.create({
     subTitleContainer: {
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        margin: 5
     },
     subTitleText: {
         fontFamily: 'RobotoBold',
         fontSize: 15,
-        color: Colors.primaryWhite
+        color: Colors.primaryWhite,
+        margin: 5
     }
 });
