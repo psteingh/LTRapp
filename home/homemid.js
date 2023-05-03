@@ -19,10 +19,14 @@ export default HomeMid;
 
 const styles = StyleSheet.create({
     homeMidContainer: {
-        flex: 1
+        flex: 1,
+        flexDirection: 'row',
+        margin: 5
     },
     homeMidChildContainer: {
-        flex: 3
+        flex: 3,
+        borderWidth: 1,
+        borderColor: Colors.primaryLred
     },
     homeMidText: {
         color: Colors.primaryDgreen
