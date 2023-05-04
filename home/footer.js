@@ -24,9 +24,7 @@ const styles = StyleSheet.create({
     footerContainer: {
         flex: 1,
         flexDirection: 'column',
-        margin: 5,
-        borderWidth: 1,
-        borderColor: Colors.primaryDblue
+        margin: 5
     },
     footerChildContainer: {
         flex: 2,
@@ -35,6 +33,6 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     footerText: {
-        color: Colors.primaryDred
+        color: Colors.primaryDgreen
     }
 });
