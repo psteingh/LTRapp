@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     },
     homeMidChildContainer: {
         flex: 3,
+        alignItems: 'center',
         borderWidth: 1,
         borderColor: Colors.primaryLred
     },
