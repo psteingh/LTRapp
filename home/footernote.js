@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
     footerNoteText: {
         fontFamily: 'RobotoBold',
-        fontSize: 15,
+        fontSize: 10,
         color: Colors.primaryWhite,
         margin: 5
     }

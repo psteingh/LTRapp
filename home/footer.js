@@ -30,9 +30,9 @@ const styles = StyleSheet.create({
         margin: 5
     },
     footerText: {
-        fontFamily: 'LibreBaskervilleBold',
-        fontSize: 35,
-        color: Colors.primaryOffWhite,
+        fontFamily: 'Roboto',
+        fontSize: 10,
+        color: Colors.primaryWhite,
         margin: 5
     }
 });
