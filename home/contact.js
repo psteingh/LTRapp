@@ -1,10 +1,11 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
 function Contact() {
     return (
         <View style={styles.contactContainer}>
+        <Button title="Temp"/>
             <Text style={styles.contactText}>Contact Us</Text>
         </View>
     );
