@@ -12,6 +12,9 @@ function Footer() {
             <FooterNote />
             </View>
             <View>
+            <Image
+                style={styles.imageLtdLogo}
+                source={require('../assets/images/ltrbrand.png')} />
             <Text style={styles.footerText}>LTR logo</Text>
             </View>
             <View>
@@ -27,6 +30,11 @@ const styles = StyleSheet.create({
     footerContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
+        margin: 5
+    },
+    imageLtdLogo: {
+        width: 100,
+        height: 100,
         margin: 5
     },
     footerText: {
