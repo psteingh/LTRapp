@@ -1,9 +1,11 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
 import FooterNote from './footernote';
 import Contact from './contact';
+
+import LtrLogo from '../constants/ltrlogo';
 
 function Footer() {
     return (
@@ -12,10 +14,10 @@ function Footer() {
             <FooterNote />
             </View>
             <View>
-            <Image
-                style={styles.imageLtdLogo}
-                source={require('../assets/images/ltrbrand.png')} />
-            {/* <Text style={styles.footerText}>LTR logo</Text> */}
+            <Text style={styles.footerText}>LTR logo</Text>
+            </View>
+            <View>
+            <LtrLogo />
             </View>
             <View>
             <Contact />
@@ -30,11 +32,6 @@ const styles = StyleSheet.create({
     footerContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
-        margin: 5
-    },
-    imageLtdLogo: {
-        width: 10,
-        height: 10,
         margin: 5
     },
     footerText: {
