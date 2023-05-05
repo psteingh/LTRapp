@@ -5,7 +5,7 @@ import Colors from '../constants/colors';
 import FooterNote from './footernote';
 import Contact from './contact';
 
-import LtrLogo from '../constants/ltrlogo';
+import LtrLogoFooter from '../constants/ltrlogofooter';
 
 function Footer() {
     return (
@@ -14,7 +14,7 @@ function Footer() {
             <FooterNote />
             </View>
             <View>
-            <LtrLogo />
+            <LtrLogoFooter />
             </View>
             <View>
             <Contact />
