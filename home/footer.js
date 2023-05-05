@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
@@ -12,9 +12,6 @@ function Footer() {
         <View style={styles.footerContainer}>
             <View>
             <FooterNote />
-            </View>
-            <View>
-            <Text style={styles.footerText}>LTR logo</Text>
             </View>
             <View>
             <LtrLogo />
@@ -32,12 +29,6 @@ const styles = StyleSheet.create({
     footerContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
-        margin: 5
-    },
-    footerText: {
-        fontFamily: 'Roboto',
-        fontSize: 10,
-        color: Colors.primaryWhite,
         margin: 5
     }
 });
