@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     flex: 1
   },
   imageLtrLogo: {
-    width: 50,
-    height: 50,
+    width: 20,
+    height: 10,
     margin: 5
   }
 });
