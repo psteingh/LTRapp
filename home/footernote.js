@@ -5,7 +5,9 @@ import Colors from '../constants/colors';
 function FooterNote() {
     return (
         <View style={styles.footerNoteContainer}>
-            <Text style={styles.footerNoteText}>Due to limited ...</Text>
+            <Text style={styles.footerNoteText}>
+            Due to limited server space, lawyers & politicians
+            are not allowed to use this app.</Text>
         </View>
     );
 }
