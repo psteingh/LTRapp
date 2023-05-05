@@ -7,7 +7,7 @@ function FooterNote() {
         <View style={styles.footerNoteContainer}>
             <Text style={styles.footerNoteText}>
             Due to limited server space, lawyers & politicians
-            are not allowed to use this app.</Text>
+            are not allowed to use this app</Text>
         </View>
     );
 }
@@ -20,9 +20,9 @@ const styles = StyleSheet.create({
         margin: 5
     },
     footerNoteText: {
-        fontFamily: 'RobotoBold',
+        fontFamily: 'Roboto',
         fontSize: 10,
         color: Colors.primaryWhite,
-        margin: 5
+        margin: 2
     }
 });
