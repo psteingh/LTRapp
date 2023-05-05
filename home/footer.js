@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
@@ -15,7 +15,7 @@ function Footer() {
             <Image
                 style={styles.imageLtdLogo}
                 source={require('../assets/images/ltrbrand.png')} />
-            <Text style={styles.footerText}>LTR logo</Text>
+            {/* <Text style={styles.footerText}>LTR logo</Text> */}
             </View>
             <View>
             <Contact />
@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
         margin: 5
     },
     imageLtdLogo: {
-        width: 100,
-        height: 100,
+        width: 10,
+        height: 10,
         margin: 5
     },
     footerText: {
