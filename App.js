@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -17,16 +17,14 @@ import Contact from './home/contact';
 
 const Stack = createNativeStackNavigator();
 
-function ContactScreen({navigation}) {
-  return (
-      <View>
-          <Text>Contact test</Text>
-          <Button
-              title="Testing"
-              onPress={() => navigation.navigate('Contact') } />
-      </View>
-  )
-}
+// function ContactScreen({navigation}) {
+//   return (
+//       <View>
+//           <Button
+//               title="Testing"
+//               onPress={() => navigation.navigate('Contact') } />
+//       </View>
+//   )}
 
 const Tab = createBottomTabNavigator();
 
@@ -41,6 +39,7 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
+      <Tab.Screen name="Contact" component={Contact} />
     </Tab.Navigator>
   );
 }
@@ -58,7 +57,7 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}} />
-      <Stack.Screen name="Contact" component={ContactScreen} />
+      <Stack.Screen name="Home" component={HomeComponent} />
     </Stack.Navigator>
     </NavigationContainer>
   );
