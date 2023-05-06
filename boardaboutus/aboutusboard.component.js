@@ -31,13 +31,13 @@ import TitleText from '../constants/titletext';
 //         </View>
 //     )}
   
-  function TestScreen({navigation}) {
+  function AboutLiesScreen({navigation}) {
       return (
           <View>
-            <Text>Test Screen</Text>
+            <Text>About Lies Screen</Text>
             <Button
-              title="Go to Home"
-              onPress={() => navigation.navigate('Home') } />
+              title="Go to About Lies Board"
+              onPress={() => navigation.navigate('AboutLies') } />
           </View>
     )}
 
@@ -47,7 +47,7 @@ function AboutUsBoard() {
         <View style={styles.container}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
-        <TestScreen />
+        <AboutLiesScreen />
         </View>
     );
 }
