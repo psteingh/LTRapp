@@ -46,7 +46,7 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name="MyTabs" component={MyTabs} />
+      <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}} />
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
     </NavigationContainer>
