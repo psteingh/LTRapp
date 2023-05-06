@@ -46,9 +46,9 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator>
+      <Stack.Screen name="MyTabs" component={MyTabs} />
       <Stack.Screen name="Contact" component={Contact} />
     </Stack.Navigator>
-    <MyTabs />        
     </NavigationContainer>
   );
 }
