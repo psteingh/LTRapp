@@ -55,6 +55,12 @@ function MyTabs() {
   );
 }
 
+const TestScreen = ({navigation}) => {
+  return (
+    <Button title="Testing" onPress={() => navigation.navigate('Test')}/>
+  );
+};
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -70,7 +76,7 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="MyTabs" component={MyTabs} />
-      <Stack.Screen name="Home" component={HomeComponent} />
+      <Stack.Screen name="Test" component={TestScreen} />
     </Stack.Navigator>
     </NavigationContainer>
   );
