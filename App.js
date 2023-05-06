@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';
+
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
