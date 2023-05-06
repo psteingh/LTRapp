@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
@@ -6,6 +6,17 @@ import FooterNote from './footernote';
 import Contact from './contact';
 
 import LtrLogoFooter from '../constants/ltrlogofooter';
+
+function ContactScreen({navigation}) {
+    return (
+        <View>
+            <Text>Contact test</Text>
+            <Button
+                title="Testing"
+                onPress={() => navigation.navigate('Contact') } />
+        </View>
+    )
+}
 
 function Footer() {
     return (
@@ -19,6 +30,10 @@ function Footer() {
             <View>
             <Contact />
             </View>
+            <View>
+                <ContactScreen />
+            </View>
+
         </View>
     );
 }
