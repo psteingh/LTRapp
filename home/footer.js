@@ -7,17 +7,6 @@ import Contact from './contact';
 
 import LtrLogoFooter from '../constants/ltrlogofooter';
 
-function ContactScreen({navigation}) {
-    return (
-        <View>
-            <Text>Contact test</Text>
-            <Button
-                title="Testing"
-                onPress={() => navigation.navigate('Contact') } />
-        </View>
-    )
-}
-
 function Footer() {
     return (
         <View style={styles.footerContainer}>
@@ -29,9 +18,6 @@ function Footer() {
             </View>
             <View>
             <Contact />
-            </View>
-            <View>
-                <ContactScreen />
             </View>
 
         </View>
