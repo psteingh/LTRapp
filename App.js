@@ -17,14 +17,23 @@ import Contact from './home/contact';
 
 const Stack = createNativeStackNavigator();
 
-// function ContactScreen({navigation}) {
-//   return (
-//       <View>
-//           <Button
-//               title="Testing"
-//               onPress={() => navigation.navigate('Contact') } />
-//       </View>
-//   )}
+function AScreen({navigation}) {
+  return (
+      <View>
+          <Button
+              title="Go to BScreen"
+              onPress={() => navigation.navigate('BScreen') } />
+      </View>
+  )}
+
+function BScreen({navigation}) {
+  return (
+      <View>
+        <Button
+          title="Go to AScreen"
+          onPress={() => navigation.navigate('AScreen') } />
+      </View>
+  )}
 
 const Tab = createBottomTabNavigator();
 
@@ -57,7 +66,8 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}} />
-      <Stack.Screen name="Home" component={HomeComponent} />
+      <Stack.Screen name="AScreen" component={AScreen} />
+      <Stack.Screen name="BScreen" component={BScreen} />
     </Stack.Navigator>
     </NavigationContainer>
   );
