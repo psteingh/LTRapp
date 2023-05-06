@@ -1,12 +1,12 @@
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-{/* <Text style={styles.contactText}>Contact Us</Text> */}
-
 function Contact() {
     return (
-        <Button style={styles.contactContainer} title='Contact Us' />
+        <View style={styles.contactContainer}>
+        <Text style={styles.contactText}>Contact Us</Text>
+        </View>
         
     );
 }
