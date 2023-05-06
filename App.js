@@ -17,25 +17,25 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Contact from './home/contact';
 
-function HomeScreen({navigation}) {
-  return (
-      <View>
-        <Text>Homes Screen</Text>
-          <Button
-              title="Go to Details"
-              onPress={() => navigation.navigate('Details') } />
-      </View>
-  )}
+// function HomeScreen({navigation}) {
+//   return (
+//       <View>
+//         <Text>Homes Screen</Text>
+//           <Button
+//               title="Go to Details"
+//               onPress={() => navigation.navigate('Details') } />
+//       </View>
+//   )}
 
-function DetailScreen({navigation}) {
-  return (
-      <View>
-        <Text>Details Screen</Text>
-        <Button
-          title="Go to Homes"
-          onPress={() => navigation.navigate('Homes') } />
-      </View>
-  )}
+// function DetailScreen({navigation}) {
+//   return (
+//       <View>
+//         <Text>Details Screen</Text>
+//         <Button
+//           title="Go to Homes"
+//           onPress={() => navigation.navigate('Homes') } />
+//       </View>
+//   )}
 
 const Tab = createBottomTabNavigator();
 
@@ -70,8 +70,7 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="MyTabs" component={MyTabs} />
-      <Stack.Screen name="Homes" component={HomeScreen} />
-      <Stack.Screen name="Details" component={DetailScreen} />
+      <Stack.Screen name="Home" component={HomeComponent} />
     </Stack.Navigator>
     </NavigationContainer>
   );
