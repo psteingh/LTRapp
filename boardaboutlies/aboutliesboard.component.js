@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/lingradscreen';
 import TitleText from '../constants/titletext';
