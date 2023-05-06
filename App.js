@@ -20,10 +20,18 @@ import Contact from './home/contact';
 function HomeScreen({navigation}) {
   return (
       <View>
+      <View>
         <Text>Homes Screen</Text>
           <Button
               title="Go to Details"
               onPress={() => navigation.navigate('Details') } />
+      </View>
+      <View>
+        <Text>Details Screen</Text>
+        <Button
+          title="Go to Test"
+          onPress={() => navigation.navigate('Test') } />
+      </View>
       </View>
   )}
 
@@ -32,8 +40,8 @@ function DetailScreen({navigation}) {
       <View>
         <Text>Details Screen</Text>
         <Button
-          title="Go to Homes"
-          onPress={() => navigation.navigate('Homes') } />
+          title="Go to Test"
+          onPress={() => navigation.navigate('Test') } />
       </View>
   )}
 
@@ -79,10 +87,10 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator>
-      {/* <Stack.Screen name="MyTabs" component={MyTabs} /> */}
       <Stack.Screen name="Homes" component={HomeScreen} />
       <Stack.Screen name="Details" component={DetailScreen} />
       <Stack.Screen name="Test" component={TestScreen} />
+      <Stack.Screen name="MyTabs" component={MyTabs} />
     </Stack.Navigator>
     </NavigationContainer>
   );
