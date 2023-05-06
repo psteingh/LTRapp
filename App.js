@@ -11,6 +11,8 @@ import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
+import Contact from './home/contact';
+
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
@@ -24,6 +26,7 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
+      <Tab.Screen name="Contact" component={Contact} />
     </Tab.Navigator>
   );
 }
