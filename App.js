@@ -15,23 +15,23 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Contact from './home/contact';
 
-const Stack = createNativeStackNavigator();
-
-function AScreen({navigation}) {
+function HomeScreen({navigation}) {
   return (
       <View>
+        <Text>Homes Screen</Text>
           <Button
-              title="Go to BScreen"
-              onPress={() => navigation.navigate('BScreen') } />
+              title="Go to Details"
+              onPress={() => navigation.navigate('Details') } />
       </View>
   )}
 
-function BScreen({navigation}) {
+function DetailScreen({navigation}) {
   return (
       <View>
+        <Text>Details Screen</Text>
         <Button
-          title="Go to AScreen"
-          onPress={() => navigation.navigate('AScreen') } />
+          title="Go to Homes"
+          onPress={() => navigation.navigate('Homes') } />
       </View>
   )}
 
@@ -53,6 +53,8 @@ function MyTabs() {
   );
 }
 
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   const [loaded] = useFonts({
     LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf'),
@@ -65,9 +67,9 @@ export default function App() {
   return (
     <NavigationContainer>
     <Stack.Navigator>
-      <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}} />
-      <Stack.Screen name="AScreen" component={AScreen} />
-      <Stack.Screen name="BScreen" component={BScreen} />
+      <Stack.Screen name="MyTabs" component={MyTabs} />
+      <Stack.Screen name="Homes" component={HomeScreen} />
+      <Stack.Screen name="Details" component={DetailScreen} />
     </Stack.Navigator>
     </NavigationContainer>
   );

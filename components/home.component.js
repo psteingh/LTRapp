@@ -1,4 +1,4 @@
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/lingradscreen';
 
@@ -6,16 +6,7 @@ import TopHead from '../home/tophead';
 import HomeMid from '../home/homemid';
 import Footer from '../home/footer';
 
-function ContactScreen({navigation}) {
-    return (
-        <View>
-            <Button
-                title="Testing"
-                onPress={() => navigation.navigate('Contact') } />
-        </View>
-    )}
-
-function HomeComponent() {
+    function HomeComponent() {
     return (
         <View style={styles.homeContainer}>
         <LinGradScreen />
@@ -23,7 +14,7 @@ function HomeComponent() {
         <TopHead />
         <HomeMid />
         <Footer />
-        <ContactScreen />
+        
         </View>
     );
     }
