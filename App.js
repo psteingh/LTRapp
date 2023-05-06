@@ -11,7 +11,11 @@ import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import Contact from './home/contact';
+
+const Stack = createNativeStackNavigator();
 
 const Tab = createBottomTabNavigator();
 
@@ -26,7 +30,6 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Tab.Screen name="Contact" component={Contact} />
     </Tab.Navigator>
   );
 }
@@ -42,6 +45,9 @@ export default function App() {
   
   return (
     <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="Contact" component={Contact} />
+    </Stack.Navigator>
     <MyTabs />        
     </NavigationContainer>
   );
