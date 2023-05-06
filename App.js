@@ -17,6 +17,17 @@ import Contact from './home/contact';
 
 const Stack = createNativeStackNavigator();
 
+function ContactScreen({navigation}) {
+  return (
+      <View>
+          <Text>Contact test</Text>
+          <Button
+              title="Testing"
+              onPress={() => navigation.navigate('Contact') } />
+      </View>
+  )
+}
+
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
@@ -47,7 +58,7 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen name="MyTabs" component={MyTabs} options={{headerShown: false}} />
-      <Stack.Screen name="Contact" component={Contact} />
+      <Stack.Screen name="Contact" component={ContactScreen} />
     </Stack.Navigator>
     </NavigationContainer>
   );
