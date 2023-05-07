@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,9 +12,6 @@ import HomeComponent from './components/home.component';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
-
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 import Contact from './home/contact';
 
 const Tab = createBottomTabNavigator();
@@ -35,8 +32,6 @@ function MyTabs() {
   );
 }
 
-const Stack = createNativeStackNavigator();
-
 export default function App() {
   const [loaded] = useFonts({
     LibreBaskerville: require('./assets/fonts/LibreBaskerville-Regular.ttf'),
@@ -48,15 +43,7 @@ export default function App() {
   
   return (
     <NavigationContainer>
-    <Stack.Navigator initialRouteName='MyTabs'>
-    <Stack.Screen name="MyTabs" component={MyTabs} />
-
-    {/* <Stack.Screen name="Home" component={HomeComponent} />
-    <Stack.Screen name="AboutUs" component={AboutUsBoard} />
-    <Stack.Screen name="LierBoard" component={LierBoard} />
-    <Stack.Screen name="AboutLies" component={AboutLiesBoard} />
-    <Stack.Screen name="Contact" component={Contact} /> */}
-    </Stack.Navigator>
+    <MyTabs />
     </NavigationContainer>
   );
 }
