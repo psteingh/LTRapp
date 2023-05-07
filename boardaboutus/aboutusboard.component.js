@@ -3,51 +3,25 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 import LinGradScreen from '../constants/lingradscreen';
 import TitleText from '../constants/titletext';
 
-// function HomeScreen({navigation}) {
-//     return (
-//         <View>
-//         <View>
-//           <Text>Homes Screen</Text>
-//             <Button
-//                 title="Go to Details"
-//                 onPress={() => navigation.navigate('Details') } />
-//         </View>
-//         <View>
-//           <Text>Details Screen</Text>
-//           <Button
-//             title="Go to Test"
-//             onPress={() => navigation.navigate('Test') } />
-//         </View>
-//         </View>
-//     )}
-  
-//   function DetailScreen({navigation}) {
-//     return (
-//         <View>
-//           <Text>Details Screen</Text>
-//           <Button
-//             title="Go to Test"
-//             onPress={() => navigation.navigate('Test') } />
-//         </View>
-//     )}
-  
-  function AboutLiesScreen({navigation}) {
-      return (
-          <View>
-            <Text>About Lies Screen</Text>
-            <Button
-              title="Go to About Lies Board"
-              onPress={() => navigation.navigate('AboutLies') } />
-          </View>
-    )}
+import ContactTile from '../constants/ContactTile';
 
+function AboutUsBoard({navigation}) {
+    function renderContactItem() {
+        function pressHandler() {
+            navigation.navigate('AboutLies');
+        }
 
-function AboutUsBoard() {
+    return (
+        <ContactTile
+            onPress={pressHandler} />
+    );
+    }
+
     return (
         <View style={styles.container}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
-        <AboutLiesScreen />
+        <Button renderItem={renderContactItem} />
         </View>
     );
 }

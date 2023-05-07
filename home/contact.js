@@ -1,5 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 
+import ContactTile from '../constants/ContactTile';
+
 import Colors from '../constants/colors';
 
 function Contact() {
