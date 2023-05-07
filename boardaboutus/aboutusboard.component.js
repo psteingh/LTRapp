@@ -21,7 +21,9 @@ function AboutUsBoard({navigation}) {
         <View style={styles.container}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
-        <Button renderItem={renderContactItem} />
+        <Button
+            title="Testing"
+            renderItem={renderContactItem} />
         </View>
     );
 }
