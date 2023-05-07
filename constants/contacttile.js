@@ -1,14 +1,14 @@
 import { Pressable, View, Text, StyleSheet } from 'react-native';
 
-function ContactTile({title, color, onPress}) {
+function ContactTile({onPress}) {
     return (
         <View style={styles.gridItem}>
         <Pressable
             style={({ pressed }) => [styles.button,
                 pressed ? styles.buttonPressed : null,]}
                 onPress={onPress}>
-            <View style={[styles.innerContainer, {backgroundColor: color}]}>
-                <Text style={styles.title}>{title}</Text>
+            <View style={styles.innerContainer}>
+                <Text style={styles.title}>Contact Tile</Text>
             </View>
         </Pressable>
         </View>
