@@ -1,18 +1,23 @@
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, FlatList, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/lingradscreen';
 import TitleText from '../constants/titletext';
 
-import ContactTile from '../constants/ContactTile';
+// import ContactTile from '../constants/ContactTile';
+
+import CategoryGridTile from '../constants/CategoryGridTile';
+import { CATEGORIES } from './dummy-data';
 
 function AboutUsBoard({navigation}) {
-    function renderContactItem() {
+    function renderCategoryItem(itemData) {
         function pressHandler() {
             navigation.navigate('AboutLies');
         }
 
     return (
-        <ContactTile
+        <CategoryGridTile
+            title={itemData.item.title}
+            color={itemData.item.color}
             onPress={pressHandler} />
     );
     }
@@ -21,9 +26,11 @@ function AboutUsBoard({navigation}) {
         <View style={styles.container}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
-        <Button
-            title="Testing"
-            renderItem={renderContactItem} />
+        <FlatList
+            data={CATEGORIES}
+            keyExtractor={(item) => item.id}
+            renderItem={renderCategoryItem}
+            numColumns={2} />
         </View>
     );
 }
