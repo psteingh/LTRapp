@@ -48,14 +48,14 @@ export default function App() {
   
   return (
     <NavigationContainer>
-    <Stack.Navigator initialRouteName='AboutUs'>
-    {/* <Stack.Screen name="MyTabs" component={MyTabs} /> */}
+    <Stack.Navigator initialRouteName='MyTabs'>
+    <Stack.Screen name="MyTabs" component={MyTabs} />
 
-    <Stack.Screen name="Home" component={HomeComponent} />
+    {/* <Stack.Screen name="Home" component={HomeComponent} />
     <Stack.Screen name="AboutUs" component={AboutUsBoard} />
     <Stack.Screen name="LierBoard" component={LierBoard} />
     <Stack.Screen name="AboutLies" component={AboutLiesBoard} />
-    <Stack.Screen name="Contact" component={Contact} />
+    <Stack.Screen name="Contact" component={Contact} /> */}
     </Stack.Navigator>
     </NavigationContainer>
   );
