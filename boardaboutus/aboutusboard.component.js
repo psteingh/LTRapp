@@ -27,9 +27,9 @@ function AboutUsBoard({navigation}) {
         <View style={styles.container}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
-        <CategoryGridTile
-            renderItem={renderCategoryItem}
-         />
+        <Button
+            title="Go to About Lies"
+            onPress={() => navigation.navigate("AboutLies")} />
         <FlatList
             data={CATEGORIES}
             keyExtractor={(item) => item.id}
