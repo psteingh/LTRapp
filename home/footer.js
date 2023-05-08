@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import FooterNote from './footernote';
-import Contact from './contact';
+import ContactButton from './ContactButton';
 
 import LtrLogoFooter from '../constants/ltrlogofooter';
 
@@ -17,7 +17,7 @@ function Footer() {
             <LtrLogoFooter />
             </View>
             <View>
-            <Contact />
+            <ContactButton />
             </View>
 
         </View>

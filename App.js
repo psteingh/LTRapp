@@ -5,6 +5,7 @@ import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import LinGradHeadTab from './constants/lingradheadtab';
 
@@ -12,7 +13,7 @@ import HomeComponent from './components/home.component';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
-import Contact from './home/contact';
+import ContactPage from './home/ContactPage';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,10 +28,11 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Tab.Screen name="Contact" component={Contact} />
     </Tab.Navigator>
   );
 }
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   const [loaded] = useFonts({
@@ -43,7 +45,10 @@ export default function App() {
   
   return (
     <NavigationContainer>
-    <MyTabs />
+    <Stack.Navigator>
+      <Stack.Screen name="MyTabs" component={MyTabs} />
+      <Stack.Screen name="Contact Page" component={ContactPage} />
+    </Stack.Navigator>
     </NavigationContainer>
   );
 }

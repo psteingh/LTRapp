@@ -2,16 +2,16 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-function Contact() {
+function ContactButton() {
     return (
         <View style={styles.contactContainer}>
-        <Text style={styles.contactText}>Contact Us</Text>
+        <Text style={styles.contactText}>ContactButton</Text>
         </View>
         
     );
 }
 
-export default Contact;
+export default ContactButton;
 
 const styles = StyleSheet.create({
     contactContainer: {
