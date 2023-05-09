@@ -14,7 +14,7 @@ import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 import ContactPage from './home/ContactPage';
-import ContactButton from './home/ContactButton';
+// import ContactButton from './home/ContactButton';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,6 +29,7 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
+      <Tab.Screen name="ContactPage" component={ContactPage} />
     </Tab.Navigator>
   );
 }
@@ -53,8 +54,9 @@ export default function App() {
         options={{
           headerShown: false
         }} />
-      <Stack.Screen name="ContactButton" component={ContactButton} />
-      <Stack.Screen name="ContactPage" component={ContactPage} />
+
+      {/* <Stack.Screen name="ContactButton" component={ContactButton} /> */}
+      
     </Stack.Navigator>
     </NavigationContainer>
   );
