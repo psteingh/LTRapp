@@ -6,9 +6,9 @@ function ContactButton({navigation}) {
     return (
         <View style={styles.contactContainer}>
         <Text style={styles.contactText}>ContactButton</Text>
-        <Button
+        {/* <Button
             title="Test Contact Page"
-            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
+            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} /> */}
         </View>
         
     );
