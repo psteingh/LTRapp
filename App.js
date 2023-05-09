@@ -28,11 +28,11 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Stack.Screen
+      <Tab.Screen
         name="ContactPage"
         component={ContactPage}
         options={{
-          headerShown: false
+          tabBarShowLabel: false
         }} />
     </Tab.Navigator>
   );
