@@ -32,7 +32,7 @@ function MyTabs() {
         name="ContactPage"
         component={ContactPage}
         options={{
-          tabBarShowLabel: false
+          tabBarButton: (props) => null
         }} />
     </Tab.Navigator>
   );
