@@ -8,7 +8,7 @@ function ContactButton({navigation}) {
         <Text style={styles.contactText}>ContactButton</Text>
         <Button
             title="Test Contact Page"
-            onPress={() => navigation.navigate('ContactPage')} />
+            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
         </View>
         
     );

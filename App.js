@@ -14,6 +14,7 @@ import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 import ContactPage from './home/ContactPage';
+import ContactButton from './home/ContactButton';
 
 const Tab = createBottomTabNavigator();
 
@@ -52,7 +53,8 @@ export default function App() {
         options={{
           headerShown: false
         }} />
-      <Stack.Screen name="Contact Page" component={ContactPage} />
+      <Stack.Screen name="ContactButton" component={ContactButton} />
+      <Stack.Screen name="ContactPage" component={ContactPage} />
     </Stack.Navigator>
     </NavigationContainer>
   );
