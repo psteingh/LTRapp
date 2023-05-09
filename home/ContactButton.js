@@ -1,11 +1,14 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-function ContactButton() {
+function ContactButton({navigation}) {
     return (
         <View style={styles.contactContainer}>
         <Text style={styles.contactText}>ContactButton</Text>
+        <Button
+            title="Test Contact Page"
+            onPress={() => navigation.navigate('ContactPage')} />
         </View>
         
     );
