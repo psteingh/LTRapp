@@ -28,7 +28,12 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Stack.Screen name="ContactPage" component={ContactPage} />
+      <Stack.Screen
+        name="ContactPage"
+        component={ContactPage}
+        options={{
+          headerShown: false
+        }} />
     </Tab.Navigator>
   );
 }
@@ -53,7 +58,7 @@ export default function App() {
         options={{
           headerShown: false
         }} />
-
+      
     </Stack.Navigator>
     </NavigationContainer>
   );
