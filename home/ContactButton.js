@@ -4,11 +4,11 @@ import Colors from '../constants/colors';
 
 function ContactButton({navigation}) {
     return (
-        <View style={styles.contactContainer}>
-        <Text style={styles.contactText}>ContactButton</Text>
-        {/* <Button
-            title="Test Contact Page"
-            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} /> */}
+        <View style={styles.contactButtonContainer}>
+        <Text style={styles.contactButtonText}>ContactButton</Text>
+        <Button
+            title="Go to Contact Page"
+            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
         </View>
         
     );
@@ -17,13 +17,13 @@ function ContactButton({navigation}) {
 export default ContactButton;
 
 const styles = StyleSheet.create({
-    contactContainer: {
+    contactButtonContainer: {
         backgroundColor: Colors.primaryLgreen,
         margin: 5,
         borderWidth: 1,
         borderColor: Colors.primaryDgreen
     },
-    contactText: {
+    contactButtonText: {
         fontFamily: 'RobotoBold',
         fontSize: 10,
         color: Colors.primaryWhite,
