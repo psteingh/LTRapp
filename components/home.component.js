@@ -1,4 +1,4 @@
-import { View, StyleSheet } from 'react-native';
+import { View, Button, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/lingradscreen';
 
@@ -13,6 +13,11 @@ import Footer from '../home/footer';
         
         <TopHead />
         <HomeMid />
+
+        <Button
+            title="Go to Contact Page"
+            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
+
         <Footer />
         
         </View>

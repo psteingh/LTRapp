@@ -1,4 +1,4 @@
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
@@ -16,11 +16,11 @@ function Footer() {
             <View>
             <LtrLogoFooter />
             </View>
-            <View>
+            {/* <View>
             <Button
                 title="Go to Contact Page"
                 onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
-            </View>
+            </View> */}
             {/* <View>
             <ContactButton />
             </View> */}
