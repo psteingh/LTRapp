@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import FooterNote from './FooterNote';
-import LtrLogoFooter from '../constants/ltrlogofooter';
+import LtrLogoFooter from '../constants/LtrLogoFooter';
 
 function Footer() {
     return (

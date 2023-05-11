@@ -1,11 +1,11 @@
 import { View, StyleSheet } from 'react-native';
 
-import LinGradScreen from '../constants/lingradscreen';
-import TitleText from '../constants/titletext';
+import LinGradScreen from '../constants/LinGradScreen';
+import TitleText from '../constants/TitleText';
 
   function AboutLiesBoard() {
     return (
-        <View style={styles.container}>
+        <View style={styles.aboutLiesBoardContainer}>
         <LinGradScreen />
         <TitleText>About Lies Board</TitleText>
         </View>
@@ -15,7 +15,7 @@ import TitleText from '../constants/titletext';
 export default AboutLiesBoard;
 
 const styles = StyleSheet.create({
-    container: {
+    aboutLiesBoardContainer: {
         flex: 1
     }
 });

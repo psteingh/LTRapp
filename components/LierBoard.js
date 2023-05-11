@@ -1,17 +1,13 @@
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
-import LinGradScreen from '../constants/lingradscreen';
-import TitleText from '../constants/titletext';
+import LinGradScreen from '../constants/LinGradScreen';
+import TitleText from '../constants/TitleText';
 
-function LierBoard({navigation}) {
+function LierBoard() {
     return (
-        <View style={styles.container}>
+        <View style={styles.lierBoardContainer}>
         <LinGradScreen />
         <TitleText>Lier Board</TitleText>
-        <Button
-            title="MT CP"
-            onPress={() => navigation.navigate('MyTabs',
-            { screen: 'ContactPage' }) } />
         </View>
     );
 }
@@ -19,7 +15,7 @@ function LierBoard({navigation}) {
 export default LierBoard;
 
 const styles = StyleSheet.create({
-    container: {
+    lierBoardContainer: {
         flex: 1
     }
 });

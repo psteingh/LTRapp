@@ -1,11 +1,11 @@
 import { View, Button, StyleSheet } from 'react-native';
 
-import LinGradScreen from '../constants/lingradscreen';
-import TitleText from '../constants/titletext';
+import LinGradScreen from '../constants/LinGradScreen';
+import TitleText from '../constants/TitleText';
 
 function AboutUsBoard({navigation}) {
     return (
-        <View style={styles.container}>
+        <View style={styles.aboutUsBoardContainer}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
         <Button
@@ -18,7 +18,7 @@ function AboutUsBoard({navigation}) {
 export default AboutUsBoard;
 
 const styles = StyleSheet.create({
-    container: {
+    aboutUsBoardContainer: {
         flex: 1
     }
 });

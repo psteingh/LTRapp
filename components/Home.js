@@ -2,7 +2,7 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-import LinGradScreen from '../constants/lingradscreen';
+import LinGradScreen from '../constants/LinGradScreen';
 
 import TopHead from '../home/TopHead';
 import HomeMid from '../home/HomeMid';
