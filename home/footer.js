@@ -16,6 +16,11 @@ function Footer({navigation}) {
             </View>
 
             <Button
+            title="MT CP"
+            onPress={() => navigation.navigate('MyTabs',
+            { screen: 'ContactPage' }) } />
+
+            {/* <Button
                 title="MT HC CP"
                 onPress={() => navigation.navigate('MyTabs',
                 {screen: 'HomeComponent', params: {screen: 'ContactPage'}})} />
@@ -27,7 +32,7 @@ function Footer({navigation}) {
                 title="MT HC FT CP"
                 onPress={() => navigation.navigate('MyTabs',
                 {screen: 'HomeComponent', params:
-                {screen: 'Footer', params: {screen: 'ContactPage'}}})} />
+                {screen: 'Footer', params: {screen: 'ContactPage'}}})} /> */}
 
 
         </View>
