@@ -16,11 +16,10 @@ function Footer({navigation}) {
             <View>
             <LtrLogoFooter />
             </View>
-            <View>
             <Button
                 title="FB Go to Contact Page"
-                onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
-            </View>
+                onPress={() => navigation.navigate('MyTabs',
+                {screen: 'HomeComponent', params: {screen: 'ContactPage'}})} />
             <View>
             <ContactButton />
             </View>
