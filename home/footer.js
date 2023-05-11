@@ -3,11 +3,11 @@ import { View, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import FooterNote from './footernote';
-// import ContactButton from './ContactButton';
+import ContactButton from './ContactButton';
 
 import LtrLogoFooter from '../constants/ltrlogofooter';
 
-function Footer() {
+function Footer({navigation}) {
     return (
         <View style={styles.footerContainer}>
             <View>
@@ -16,14 +16,14 @@ function Footer() {
             <View>
             <LtrLogoFooter />
             </View>
-            {/* <View>
+            <View>
             <Button
-                title="Go to Contact Page"
+                title="FB Go to Contact Page"
                 onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
-            </View> */}
-            {/* <View>
+            </View>
+            <View>
             <ContactButton />
-            </View> */}
+            </View>
 
         </View>
     );
