@@ -3,8 +3,6 @@ import { View, Button, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import FooterNote from './footernote';
-// import ContactButton from './ContactButton';
-
 import LtrLogoFooter from '../constants/ltrlogofooter';
 
 function Footer({navigation}) {
@@ -16,11 +14,22 @@ function Footer({navigation}) {
             <View>
             <LtrLogoFooter />
             </View>
+
             <Button
                 title="MT HC CP"
                 onPress={() => navigation.navigate('MyTabs',
                 {screen: 'HomeComponent', params: {screen: 'ContactPage'}})} />
-            
+            <Button
+                title="MT FT CP"
+                onPress={() => navigation.navigate('MyTabs',
+                {screen: 'Footer', params: {screen: 'ContactPage'}})} />
+            <Button
+                title="MT HC FT CP"
+                onPress={() => navigation.navigate('MyTabs',
+                {screen: 'HomeComponent', params:
+                {screen: 'Footer', params: {screen: 'ContactPage'}}})} />
+
+
         </View>
     );
 }

@@ -9,8 +9,9 @@ function LierBoard({navigation}) {
         <LinGradScreen />
         <TitleText>Lier Board</TitleText>
         <Button
-            title="Go to Contact Page"
-            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
+            title="MT CP"
+            onPress={() => navigation.navigate('MyTabs',
+            { screen: 'ContactPage' }) } />
         </View>
     );
 }
