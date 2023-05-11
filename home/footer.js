@@ -1,11 +1,11 @@
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-import FooterNote from './footernote';
+import FooterNote from './FooterNote';
 import LtrLogoFooter from '../constants/ltrlogofooter';
 
-function Footer({navigation}) {
+function Footer() {
     return (
         <View style={styles.footerContainer}>
             <View>
@@ -14,24 +14,6 @@ function Footer({navigation}) {
             <View>
             <LtrLogoFooter />
             </View>
-
-            <Button
-            title="MT CP"
-            onPress={() => navigation.navigate('MyTabs',
-            { screen: 'ContactPage' }) } />
-
-            <Button
-                title="MT HC FT CP"
-                onPress={() => navigation.navigate('MyTabs',
-                {screen: 'HomeComponent', params: { screen: 'Footer',
-                 params: {screen: 'ContactPage'} } }) } />
-            
-            <Button
-                title="MT FT HC CP"
-                onPress={() => navigation.navigate('MyTabs',
-                {screen: 'Footer', params: { screen: 'HomeComponent', 
-                 params: {screen: 'ContactPage'} } }) } />
-            
         </View>
     );
 }

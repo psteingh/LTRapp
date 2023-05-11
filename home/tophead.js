@@ -2,8 +2,8 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-import Carousel from './carousel';
-import SubTitle from './subtitle';
+import Carousel from './Carousel';
+import SubTitle from './SubTitle';
 
 function TopHead() {
     return (

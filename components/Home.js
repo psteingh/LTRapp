@@ -2,30 +2,29 @@ import { View, Button, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/lingradscreen';
 
-import TopHead from '../home/tophead';
-import HomeMid from '../home/homemid';
-import Footer from '../home/footer';
+import TopHead from '../home/TopHead';
+import HomeMid from '../home/HomeMid';
+import Footer from '../home/Footer';
 
-    function HomeComponent({navigation}) {
+    function Home({navigation}) {
     return (
         <View style={styles.homeContainer}>
         <LinGradScreen />
         
         <TopHead />
         <HomeMid />
+        <Footer />
 
         <Button
             title="MT CP"
             onPress={() => navigation.navigate('MyTabs',
             { screen: 'ContactPage' }) } />
 
-        <Footer />
-        
         </View>
     );
     }
 
-export default HomeComponent;
+export default Home;
 
 const styles = StyleSheet.create({
     homeContainer: {

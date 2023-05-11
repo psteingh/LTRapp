@@ -9,13 +9,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import LinGradHeadTab from './constants/lingradheadtab';
 
-import HomeComponent from './components/home.component';
+import Home from './components/Home';
 import AboutUsBoard from './boardaboutus/aboutusboard.component';
 import LierBoard from './components/lierboard.component';
 import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
 import ContactPage from './home/ContactPage';
-
-import Footer from './home/footer';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,13 +24,11 @@ function MyTabs() {
       headerBackground: LinGradHeadTab,
       tabBarBackground: LinGradHeadTab
     }}>
-      <Tab.Screen name="Home" component={HomeComponent} />
+      <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
       <Tab.Screen name="ContactPage" component={ContactPage}
-        options={{ tabBarButton: (props) => null }} />
-      <Tab.Screen name="Footer" component={Footer}
         options={{ tabBarButton: (props) => null }} />
     </Tab.Navigator>
   );
