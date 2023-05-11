@@ -7,7 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import LinGradHeadTab from './constants/lingradheadtab';
+import LinGradHeadTab from './constants/LinGradHeadTab';
 
 import Home from './components/Home';
 import AboutUsBoard from './boardaboutus/AboutUsBoard';
