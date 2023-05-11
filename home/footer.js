@@ -21,22 +21,17 @@ function Footer({navigation}) {
             { screen: 'ContactPage' }) } />
 
             <Button
-                title="MT HC CP"
-                onPress={() => navigation.navigate('MyTabs',
-                {screen: 'HomeComponent', params: {screen: 'ContactPage'} }) } />
-            
-            <Button
-                title="MT FT CP"
-                onPress={() => navigation.navigate('MyTabs',
-                {screen: 'Footer', params: {screen: 'ContactPage'} }) } />
-            
-            {/* <Button
                 title="MT HC FT CP"
                 onPress={() => navigation.navigate('MyTabs',
-                {screen: 'HomeComponent', params:
-                {screen: 'Footer', params: {screen: 'ContactPage'}}})} /> */}
-
-
+                {screen: 'HomeComponent', params: { screen: 'Footer',
+                 params: {screen: 'ContactPage'} } }) } />
+            
+            <Button
+                title="MT FT HC CP"
+                onPress={() => navigation.navigate('MyTabs',
+                {screen: 'Footer', params: { screen: 'HomeComponent', 
+                 params: {screen: 'ContactPage'} } }) } />
+            
         </View>
     );
 }
