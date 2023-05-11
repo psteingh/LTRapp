@@ -10,9 +10,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LinGradHeadTab from './constants/lingradheadtab';
 
 import Home from './components/Home';
-import AboutUsBoard from './boardaboutus/aboutusboard.component';
-import LierBoard from './components/lierboard.component';
-import AboutLiesBoard from './boardaboutlies/aboutliesboard.component';
+import AboutUsBoard from './boardaboutus/AboutUsBoard';
+import LierBoard from './components/LierBoard';
+import AboutLiesBoard from './boardaboutlies/AboutLiesBoard';
 import ContactPage from './home/ContactPage';
 
 const Tab = createBottomTabNavigator();
