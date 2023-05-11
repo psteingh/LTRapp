@@ -20,15 +20,17 @@ function Footer({navigation}) {
             onPress={() => navigation.navigate('MyTabs',
             { screen: 'ContactPage' }) } />
 
-            {/* <Button
+            <Button
                 title="MT HC CP"
                 onPress={() => navigation.navigate('MyTabs',
-                {screen: 'HomeComponent', params: {screen: 'ContactPage'}})} />
+                {screen: 'HomeComponent', params: {screen: 'ContactPage'} }) } />
+            
             <Button
                 title="MT FT CP"
                 onPress={() => navigation.navigate('MyTabs',
-                {screen: 'Footer', params: {screen: 'ContactPage'}})} />
-            <Button
+                {screen: 'Footer', params: {screen: 'ContactPage'} }) } />
+            
+            {/* <Button
                 title="MT HC FT CP"
                 onPress={() => navigation.navigate('MyTabs',
                 {screen: 'HomeComponent', params:
