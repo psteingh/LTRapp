@@ -10,11 +10,11 @@ import TitleText from '../constants/TitleText';
         <View style={styles.logInContainer}>
         <LinGradScreen />
         <TitleText>Login</TitleText>
-        <View style={styles.signUpPressableContainer}>
+        <View style={styles.logInPressableContainer}>
         <Pressable
-            style={styles.signUpButtonContainer}
+            style={styles.logInButtonContainer}
             onPress={() => navigation.navigate("SignUp")} >
-        <Text style={styles.signUpButtonText}>Sign Up Page</Text>
+        <Text style={styles.logInButtonText}>Sign Up Page</Text>
         </Pressable>
         </View>
         </View>
@@ -27,16 +27,16 @@ const styles = StyleSheet.create({
     logInContainer: {
         flex: 1
     },
-    signUpPressableContainer: {
+    logInPressableContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
         margin: 5
     },
-    signUpButtonContainer: {
+    logInButtonContainer: {
         backgroundColor: Colors.primaryLgreen,
         margin: 5
     },
-    signUpButtonText: {
+    logInButtonText: {
         fontFamily: 'Roboto',
         fontSize: 10,
         color: Colors.primaryWhite,
