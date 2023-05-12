@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     footerContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
-        margin: 5
+        marginHorizontal: 5,
+        marginTop: 5
     }
 });
