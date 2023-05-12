@@ -17,12 +17,14 @@ import Footer from '../home/Footer';
         <HomeMid />
         <Footer />
 
+        <View style={styles.pressableContainer}>
         <Pressable
             style={styles.contactButtonContainer}
             onPress={() => navigation.navigate('MyTabs',
             {screen: 'ContactPage'})} >
         <Text style={styles.contactButtonText}>Contact Us</Text>
         </Pressable>
+        </View>
 
         </View>
     );
@@ -33,6 +35,11 @@ export default Home;
 const styles = StyleSheet.create({
     homeContainer: {
         flex: 1
+    },
+    pressableContainer: {
+        backgroundColor: Colors.primaryDblue,
+        alignItems: 'center',
+        margin: 5
     },
     contactButtonContainer: {
         backgroundColor: Colors.primaryLgreen,
