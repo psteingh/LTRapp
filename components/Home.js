@@ -1,4 +1,4 @@
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Pressable, Button, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
@@ -17,8 +17,15 @@ import Footer from '../home/Footer';
         <HomeMid />
         <Footer />
 
+        <Pressable
+            style={styles.contactButtonContainer}
+            onPress={() => navigation.navigate('MyTabs',
+            {screen: 'ContactPage'})} >
+        <Text style={styles.contactButtonText}>Contact Us</Text>
+        </Pressable>
+
         {/* <View style={styles.contactButtonContainer}> */}
-        {/* <Text style={styles.contactButtonText}>Contact Us</Text> */}
+        
         <Button
             title="Go to Contact Page"
             onPress={() => navigation.navigate('MyTabs',
