@@ -36,9 +36,7 @@ const styles = StyleSheet.create({
     },
     contactButtonContainer: {
         backgroundColor: Colors.primaryLgreen,
-        margin: 5,
-        borderWidth: 1,
-        borderColor: Colors.primaryDgreen
+        margin: 5
     },
     contactButtonText: {
         fontFamily: 'Roboto',
