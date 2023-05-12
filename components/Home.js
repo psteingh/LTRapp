@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
     pressableContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
-        margin: 5
     },
     contactButtonContainer: {
         backgroundColor: Colors.primaryLgreen,
