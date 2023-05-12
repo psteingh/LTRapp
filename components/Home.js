@@ -17,14 +17,13 @@ import Footer from '../home/Footer';
         <HomeMid />
         <Footer />
 
-        <View style={styles.contactButtonContainer}>
-        <Text style={styles.contactButtonText}>Contact Us</Text>
+        {/* <View style={styles.contactButtonContainer}> */}
+        {/* <Text style={styles.contactButtonText}>Contact Us</Text> */}
         <Button
             title="Go to Contact Page"
             onPress={() => navigation.navigate('MyTabs',
             {screen: 'ContactPage'})}
             style={styles.contactButton} />
-        </View>
 
         </View>
     );
