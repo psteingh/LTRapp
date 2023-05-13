@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import Colors from './constants/colors';
 import LinGradHeadTab from './constants/LinGradHeadTab';
 
 import Home from './components/Home';
@@ -24,7 +25,8 @@ function MyTabs() {
     <Tab.Navigator
       screenOptions={{
       headerBackground: LinGradHeadTab,
-      tabBarBackground: LinGradHeadTab
+      tabBarBackground: LinGradHeadTab,
+      headerTintColor: Colors.primaryYellow
     }}>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
