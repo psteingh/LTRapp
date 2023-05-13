@@ -9,7 +9,7 @@ import TitleText from '../constants/TitleText';
     return (
         <View style={styles.logInContainer}>
         <LinGradScreen />
-        <TitleText>Login</TitleText>
+        <TitleText>Log In</TitleText>
         <View style={styles.logInPressableContainer}>
         <Pressable
             style={styles.logInButtonContainer}

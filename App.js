@@ -30,7 +30,7 @@ function MyTabs() {
       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Tab.Screen name="Login" component={LogIn} />
+      <Tab.Screen name="LogIn" component={LogIn} />
       <Tab.Screen name="SignUp" component={SignUp} />
       <Tab.Screen name="ContactPage" component={ContactPage}
         options={{ tabBarButton: (props) => null }} />

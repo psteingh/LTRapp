@@ -14,7 +14,7 @@ import TitleText from '../constants/TitleText';
         <Pressable
             style={styles.signUpButtonContainer}
             onPress={() => navigation.navigate("LogIn")} >
-        <Text style={styles.signUpButtonText}>Login Page</Text>
+        <Text style={styles.signUpButtonText}>Log In Page</Text>
         </Pressable>
         </View>
         </View>
