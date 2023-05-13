@@ -2,6 +2,8 @@ import { View, Text, Image, Pressable, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
+import GoToButton from '../constants/GoToButton';
+
 function HomeMid({navigation}) {
     return (
         <View style={styles.homeMidContainer}>
@@ -20,9 +22,10 @@ function HomeMid({navigation}) {
                 onPress={() => navigation.navigate('MyTabs',
                 {screen: 'LierBoard'})} >
             <Text style={styles.contactButtonText}>Go to Lier Board</Text>
-            </Pressable> 
+            </Pressable>
             </View>
             </View>
+            <GoToButton screenName='LierBoard' />
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
             <Text style={styles.homeMidDescription}>
