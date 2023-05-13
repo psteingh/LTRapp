@@ -6,11 +6,14 @@ function HomeMid({navigation}) {
     return (
         <View style={styles.homeMidContainer}>
             <View style={styles.homeMidChildContainer}>
-            <Pressable
-                onPress={() => navigation.navigate("LierBoard")}>
+            
             <Text style={styles.homeMidTitle}>Lier Board</Text>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
+
+            <Pressable
+                onPress={() => navigation.navigate('MyTabs',
+                {screen: 'LierBoard'})} >
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
