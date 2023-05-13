@@ -1,16 +1,13 @@
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/LinGradScreen';
 import TitleText from '../constants/TitleText';
 
-function AboutUsBoard({navigation}) {
+function AboutUsBoard() {
     return (
         <View style={styles.aboutUsBoardContainer}>
         <LinGradScreen />
         <TitleText>About Us Board</TitleText>
-        <Button
-            title="Go to About Lies"
-            onPress={() => navigation.navigate("AboutLies")} />
         </View>
     );
 }
