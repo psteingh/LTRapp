@@ -10,14 +10,18 @@ function HomeMid({navigation}) {
             <Text style={styles.homeMidTitle}>Lier Board</Text>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
-
-            <Pressable
-                onPress={() => navigation.navigate('MyTabs',
-                {screen: 'LierBoard'})} >
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
-            </Pressable>
+            
+            <View style={styles.pressableContainer}>
+            <Pressable
+                style={styles.contactButtonContainer}
+                onPress={() => navigation.navigate('MyTabs',
+                {screen: 'LierBoard'})} >
+            <Text style={styles.contactButtonText}>Go to Lier Board</Text>
+            </Pressable> 
+            </View>
             </View>
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
@@ -34,6 +38,22 @@ function HomeMid({navigation}) {
 export default HomeMid;
 
 const styles = StyleSheet.create({
+    pressableContainer: {
+        backgroundColor: Colors.primaryDblue,
+        alignItems: 'center',
+        marginHorizontal: 5,
+        marginBottom: 5
+    },
+    contactButtonContainer: {
+        backgroundColor: Colors.primaryLgreen,
+        margin: 5
+    },
+    contactButtonText: {
+        fontFamily: 'Roboto',
+        fontSize: 10,
+        color: Colors.primaryWhite,
+        margin: 5
+    },
     homeMidContainer: {
         flex: 1,
         flexDirection: 'row',
