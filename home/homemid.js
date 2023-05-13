@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     },
     homeMidDescription: {
         color: Colors.primaryWhite,
-        fontSize: 12,
+        fontSize: 9,
         fontFamily: 'RobotoBold'
     }
 });
