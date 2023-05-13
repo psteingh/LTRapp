@@ -10,13 +10,16 @@ function HomeMid() {
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
             <Image
-                style={styles.imageLierBoard}
+                style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
             </View>
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
             <Text style={styles.homeMidDescription}>
             Private ...Users can store & track their lies</Text>
+            <Image
+                style={styles.homeMidImage}
+                source={require('../assets/images/ltrvault.png')} />
             </View>
         </View>
     );
@@ -46,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize: 9,
         fontFamily: 'RobotoBold'
     },
-    imageLierBoard: {
+    homeMidImage: {
         margin: 5,
         width: 100,
         height: 100
