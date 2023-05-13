@@ -1,17 +1,20 @@
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, Pressable, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-function HomeMid() {
+function HomeMid({navigation}) {
     return (
         <View style={styles.homeMidContainer}>
             <View style={styles.homeMidChildContainer}>
+            <Pressable
+                onPress={() => navigation.navigate("LierBoard")}>
             <Text style={styles.homeMidTitle}>Lier Board</Text>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
+            </Pressable>
             </View>
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
