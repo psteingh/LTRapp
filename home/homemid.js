@@ -6,10 +6,10 @@ function HomeMid() {
     return (
         <View style={styles.homeMidContainer}>
             <View style={styles.homeMidChildContainer}>
-            <Text style={styles.homeMidText}>Lier Board</Text>
+            <Text style={styles.homeMidTitle}>Lier Board</Text>
             </View>
             <View style={styles.homeMidChildContainer}>
-            <Text style={styles.homeMidText}>List of Lies</Text>
+            <Text style={styles.homeMidTitle}>List of Lies</Text>
             </View>
         </View>
     );
@@ -29,7 +29,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: Colors.primaryLred
     },
-    homeMidText: {
-        color: Colors.primaryDgreen
+    homeMidTitle: {
+        color: Colors.primaryOffWhite,
+        fontSize: 25,
+        fontFamily: 'LibreBaskervilleBold'
     }
 });
