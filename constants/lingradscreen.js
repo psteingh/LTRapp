@@ -7,8 +7,8 @@ function LinGradScreen() {
   return (
   <LinearGradient
   colors={[Colors.primaryWhite, Colors.primaryBlack]}
-  start={{x: 0, y: 0}}
-  end={{x: 1, y: 0}}
+  start={{x: 1, y: 0}}
+  end={{x: 0, y: 0}}
   style={styles.background}
   >
   </LinearGradient>
