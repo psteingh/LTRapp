@@ -7,9 +7,13 @@ function HomeMid() {
         <View style={styles.homeMidContainer}>
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>Lier Board</Text>
+            <Text style={styles.homeMidDescription}>
+            Public ...see lies Users have made public</Text>
             </View>
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
+            <Text style={styles.homeMidDescription}>
+            Private ...Users can store & track their lies</Text>
             </View>
         </View>
     );
@@ -31,7 +35,12 @@ const styles = StyleSheet.create({
     },
     homeMidTitle: {
         color: Colors.primaryOffWhite,
-        fontSize: 25,
+        fontSize: 20,
         fontFamily: 'LibreBaskervilleBold'
+    },
+    homeMidDescription: {
+        color: Colors.primaryWhite,
+        fontSize: 12,
+        fontFamily: 'RobotoBold'
     }
 });
