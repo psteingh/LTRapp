@@ -8,10 +8,11 @@ function ButtonUseNav({screenName}) {
     const navigation = useNavigation();
     return (
         <View>
+        <View style={styles.buttonUseNavContainer}>
         <Button
             title={`${screenName}`}
-            onPress={() => navigation.navigate(screenName)}
-            style={styles.buttonUseNavContainer} />
+            onPress={() => navigation.navigate(screenName)} />
+        </View>
         <View style={styles.pressableContainer}>
         <Pressable style={styles.contactButtonContainer}>
         <Text style={styles.contactButtonText}>{`${screenName}`}</Text>
