@@ -1,10 +1,10 @@
-import { View, Text, Image, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
 import GoToButton from '../constants/GoToButton';
 
-function HomeMid({navigation}) {
+function HomeMid() {
     return (
         <View style={styles.homeMidContainer}>
 
@@ -16,15 +16,6 @@ function HomeMid({navigation}) {
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
-            
-            <View style={styles.pressableContainer}>
-            <Pressable
-                style={styles.contactButtonContainer}
-                onPress={() => navigation.navigate('MyTabs',
-                {screen: 'LierBoard'})} >
-            <Text style={styles.contactButtonText}>Go to Lier Board</Text>
-            </Pressable>
-            </View>
             <GoToButton screenName='LierBoard' />
             </View>
             
@@ -43,22 +34,6 @@ function HomeMid({navigation}) {
 export default HomeMid;
 
 const styles = StyleSheet.create({
-    pressableContainer: {
-        backgroundColor: Colors.primaryDblue,
-        alignItems: 'center',
-        marginHorizontal: 5,
-        marginBottom: 5
-    },
-    contactButtonContainer: {
-        backgroundColor: Colors.primaryLgreen,
-        margin: 5
-    },
-    contactButtonText: {
-        fontFamily: 'Roboto',
-        fontSize: 10,
-        color: Colors.primaryWhite,
-        margin: 5
-    },
     homeMidContainer: {
         flex: 1,
         flexDirection: 'row',
