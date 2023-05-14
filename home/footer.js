@@ -4,6 +4,7 @@ import Colors from '../constants/colors';
 
 import FooterNote from './FooterNote';
 import LtrLogoFooter from '../constants/LtrLogoFooter';
+import ContactButton from './ContactButton';
 
 function Footer() {
     return (
@@ -13,6 +14,9 @@ function Footer() {
             </View>
             <View>
             <LtrLogoFooter />
+            </View>
+            <View>
+            <ContactButton />
             </View>
         </View>
     );
