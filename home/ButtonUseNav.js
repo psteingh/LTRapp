@@ -8,7 +8,7 @@ function ButtonUseNav({screenName}) {
     const navigation = useNavigation();
     return (
         <Button
-            title={`Button ${screenName}`}
+            title={`${screenName}`}
             onPress={() => navigation.navigate(screenName)}
             style={styles.buttonUseNavContainer} />
     );
