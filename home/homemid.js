@@ -26,6 +26,7 @@ function HomeMid() {
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrvault.png')} />
+            <ButtonUseNav screenName='LogIn' />
             </View>
         </View>
     );
