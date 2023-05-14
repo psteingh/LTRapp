@@ -16,7 +16,7 @@ function Footer() {
             <LtrLogoFooter />
             </View>
             <View>
-            <ContactButton />
+            <ContactButton screenName='ContactPage' />
             </View>
         </View>
     );
