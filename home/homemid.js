@@ -7,6 +7,7 @@ import GoToButton from '../constants/GoToButton';
 function HomeMid({navigation}) {
     return (
         <View style={styles.homeMidContainer}>
+
             <View style={styles.homeMidChildContainer}>
             
             <Text style={styles.homeMidTitle}>Lier Board</Text>
@@ -24,8 +25,9 @@ function HomeMid({navigation}) {
             <Text style={styles.contactButtonText}>Go to Lier Board</Text>
             </Pressable>
             </View>
-            </View>
             <GoToButton screenName='LierBoard' />
+            </View>
+            
             <View style={styles.homeMidChildContainer}>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
             <Text style={styles.homeMidDescription}>
