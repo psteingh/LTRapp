@@ -7,14 +7,12 @@ import Colors from '../constants/colors';
 function ButtonUseNav({screenName}) {
     const navigation = useNavigation();
     return (
-        <View>
         <View style={styles.pressableContainer}>
         <Pressable
             onPress={() => navigation.navigate(screenName)}
             style={styles.contactButtonContainer}>
         <Text style={styles.contactButtonText}>{`${screenName}`}</Text>
         </Pressable>
-        </View>
         </View>
     );
 }
