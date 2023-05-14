@@ -2,7 +2,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-import GoToButton from '../constants/GoToButton';
+import ButtonUseNav from './ButtonUseNav';
 
 function HomeMid() {
     return (
@@ -16,7 +16,7 @@ function HomeMid() {
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
-            <GoToButton screenName='LierBoard' />
+            <ButtonUseNav screenName='LierBoard' />
             </View>
             
             <View style={styles.homeMidChildContainer}>
