@@ -1,14 +1,18 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
+
 import Colors from '../constants/colors';
 
-function ContactButton({navigation}) {
+function ContactButton({screenName}) {
+    const navigation = useNavigation();
     return (
         <View style={styles.contactButtonContainer}>
         <Text style={styles.contactButtonText}>ContactButton</Text>
         <Button
-            title="Go to Contact Page"
-            onPress={() => navigation.navigate('MyTabs', {screen: 'ContactPage'})} />
+            title={`Button ${screenName}`}
+            onPress={() => navigation.navigate(screenName)}
+            style={styles.contactButtonText} />
         </View>
         
     );
