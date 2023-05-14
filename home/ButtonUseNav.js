@@ -1,4 +1,4 @@
-import { View, Text, Button, Pressable, StyleSheet } from 'react-native';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -8,13 +8,10 @@ function ButtonUseNav({screenName}) {
     const navigation = useNavigation();
     return (
         <View>
-        <View style={styles.buttonUseNavContainer}>
-        <Button
-            title={`${screenName}`}
-            onPress={() => navigation.navigate(screenName)} />
-        </View>
         <View style={styles.pressableContainer}>
-        <Pressable style={styles.contactButtonContainer}>
+        <Pressable
+            onPress={() => navigation.navigate(screenName)}
+            style={styles.contactButtonContainer}>
         <Text style={styles.contactButtonText}>{`${screenName}`}</Text>
         </Pressable>
         </View>
@@ -41,10 +38,6 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto',
         fontSize: 10,
         color: Colors.primaryWhite,
-        margin: 5
-    },
-    buttonUseNavContainer: {
-        backgroundColor: Colors.primaryLgreen,
         margin: 5
     }
 });
