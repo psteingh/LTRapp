@@ -9,7 +9,7 @@ import ButtonUseNav from '../home/ButtonUseNav';
         <View style={styles.signUpContainer}>
         <LinGradScreen />
         <TitleText>Sign Up</TitleText>
-        <View>
+        <View style={styles.signUpButtonUseNavCont}>
             <ButtonUseNav screenName='LogIn' />
         </View>
         </View>
@@ -21,5 +21,9 @@ export default SignUp;
 const styles = StyleSheet.create({
     signUpContainer: {
         flex: 1
+    },
+    signUpButtonUseNavCont: {
+        marginHorizontal: 5,
+        alignItems: 'center'
     }
 });
