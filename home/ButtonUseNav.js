@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     pressableContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
+        borderRadius: 5,
         margin: 5
     },
     contactButtonContainer: {
