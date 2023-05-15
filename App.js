@@ -1,6 +1,4 @@
 import 'react-native-gesture-handler';
-
-import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -65,6 +63,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
- });
