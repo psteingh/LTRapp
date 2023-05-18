@@ -1,14 +1,17 @@
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, Pressable, StyleSheet } from 'react-native';
 
-import ButtonUseNav from '../home/ButtonUseNav';
-
-function LtrLogoFooter() {
+function LtrLogoFooter({navigation}) {
   return (
     <View>
+    <View>
+      <Pressable
+        onPress={() => navigation.navigate('ContactPage')}>
       <Image
         style={styles.imageLtrLogoFooter}
         source={require('../assets/images/ltrbrand.png')} />
-      <ButtonUseNav screenName='ContactPage' />
+      
+      </Pressable>
+    </View>
     </View>
   );
 }
