@@ -1,11 +1,14 @@
 import { View, Image, StyleSheet } from 'react-native';
 
+import ButtonUseNav from '../home/ButtonUseNav';
+
 function LtrLogoFooter() {
   return (
     <View>
       <Image
         style={styles.imageLtrLogoFooter}
         source={require('../assets/images/ltrbrand.png')} />
+      <ButtonUseNav screenName='ContactPage' />
     </View>
   );
 }
