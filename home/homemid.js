@@ -8,16 +8,14 @@ function HomeMid() {
     return (
         <View style={styles.homeMidContainer}>
 
-            <View>
-            <HomeMidUseNav screenName='LierBoard'>
             <View style={styles.homeMidChildContainer}>
+            <HomeMidUseNav screenName='LierBoard'>
             <Text style={styles.homeMidTitle}>Lier Board</Text>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
-            </View>
             </HomeMidUseNav>
             </View>
             
