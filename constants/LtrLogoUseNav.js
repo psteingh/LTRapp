@@ -9,7 +9,7 @@ function LtrLogoUseNav({screenName}) {
         <Pressable
             onPress={() => navigation.navigate(screenName)}>
         <Image
-        style={styles.imageLtrLogoFooter}
+        style={styles.imageLtrLogoUseNav}
         source={require('../assets/images/ltrbrand.png')} />
         </Pressable>
         </View>
@@ -19,7 +19,7 @@ function LtrLogoUseNav({screenName}) {
 export default LtrLogoUseNav;
 
 const styles = StyleSheet.create({
-    imageLtrLogoFooter: {
+    imageLtrLogoUseNav: {
         width: 40,
         height: 20,
         margin: 5
