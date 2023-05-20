@@ -4,7 +4,7 @@ import Colors from '../constants/colors';
 
 import FooterNote from './FooterNote';
 import LtrLogoUseNav from '../constants/LtrLogoUseNav';
-import ButtonUseNav from './ButtonUseNav';
+import ButtonUseNav from '../constants/ButtonUseNav';
 
 function Footer() {
     return (

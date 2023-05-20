@@ -2,7 +2,7 @@ import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/LinGradScreen';
 import TitleText from '../constants/TitleText';
-import ButtonUseNav from '../home/ButtonUseNav';
+import ButtonUseNav from '../constants/ButtonUseNav';
 
   function SignUp() {
     return (

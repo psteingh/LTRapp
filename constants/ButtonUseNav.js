@@ -2,7 +2,7 @@ import { View, Text, Pressable, StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-import Colors from '../constants/colors';
+import Colors from './colors';
 
 function ButtonUseNav({screenName}) {
     const navigation = useNavigation();
