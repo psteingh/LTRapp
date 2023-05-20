@@ -2,12 +2,13 @@ import { View, Pressable, StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-function HomeMidUseNav({screenName}) {
+function HomeMidUseNav({screenName, children}) {
     const navigation = useNavigation();
     return (
         <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}>
+        <View>{children}</View>
         </Pressable>
         </View>
     );

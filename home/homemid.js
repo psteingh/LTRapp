@@ -3,33 +3,31 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import HomeMidUseNav from '../constants/HomeMidUseNav';
-import ButtonUseNav from './ButtonUseNav';
 
 function HomeMid() {
     return (
         <View style={styles.homeMidContainer}>
 
             <View style={styles.homeMidChildContainer}>
-            <View>
-            <HomeMidUseNav screenName='LierBoard'/>            
+            <HomeMidUseNav screenName='LierBoard'>            
             <Text style={styles.homeMidTitle}>Lier Board</Text>
-            </View>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
-            <ButtonUseNav screenName='LierBoard' />
+            </HomeMidUseNav>
             </View>
             
             <View style={styles.homeMidChildContainer}>
+            <HomeMidUseNav screenName='LogIn'>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
             <Text style={styles.homeMidDescription}>
             Private ...Users can store & track their lies</Text>
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrvault.png')} />
-            <ButtonUseNav screenName='LogIn' />
+            </HomeMidUseNav>
             </View>
         </View>
     );
