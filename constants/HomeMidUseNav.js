@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 function HomeMidUseNav({screenName}) {
     const navigation = useNavigation();
     return (
-        <View style={styles.homeMidUseNavCont}>
+        <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}>
         </Pressable>

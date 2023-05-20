@@ -10,8 +10,10 @@ function HomeMid() {
         <View style={styles.homeMidContainer}>
 
             <View style={styles.homeMidChildContainer}>
+            <View>
             <HomeMidUseNav screenName='LierBoard'/>            
             <Text style={styles.homeMidTitle}>Lier Board</Text>
+            </View>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
             <Image
