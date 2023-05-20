@@ -2,15 +2,12 @@ import { View, Image, Pressable, StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-import Colors from './colors';
-
 function LtrLogoUseNav({screenName}) {
     const navigation = useNavigation();
     return (
-        <View style={styles.pressableContainer}>
+        <View>
         <Pressable
-            onPress={() => navigation.navigate(screenName)}
-            style={styles.contactButtonContainer}>
+            onPress={() => navigation.navigate(screenName)}>
         <Image
         style={styles.imageLtrLogoFooter}
         source={require('../assets/images/ltrbrand.png')} />
@@ -22,20 +19,9 @@ function LtrLogoUseNav({screenName}) {
 export default LtrLogoUseNav;
 
 const styles = StyleSheet.create({
-    pressableContainer: {
-        backgroundColor: Colors.primaryDblue,
-        alignItems: 'center',
-        borderRadius: 5,
-        margin: 5
-    },
-    contactButtonContainer: {
-        backgroundColor: Colors.primaryLgreen,
-        margin: 5
-    },
     imageLtrLogoFooter: {
-        width: 20,
-        height: 10,
-        margin: 2
+        width: 40,
+        height: 20,
+        margin: 5
     }
-
 });
