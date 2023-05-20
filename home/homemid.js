@@ -37,7 +37,6 @@ export default HomeMid;
 
 const styles = StyleSheet.create({
     homeMidContainer: {
-        flex: 1,
         flexDirection: 'row',
         margin: 5
     },
