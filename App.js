@@ -23,7 +23,7 @@ function MyTabs() {
     <Tab.Navigator
       screenOptions={{
       headerBackground: LinGradHeadTab,
-      tabBarBackground: LinGradHeadTab,
+      tabBarBackground: Colors.primaryDblue,
       headerTintColor: Colors.primaryYellow
     }}>
       <Tab.Screen name="Home" component={Home} />
