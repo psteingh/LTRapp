@@ -19,11 +19,6 @@ function HomeMidUseNav({screenName, children}) {
 export default HomeMidUseNav;
 
 const styles = StyleSheet.create({
-    homeMidUseNavCont: {
-        alignItems: 'center',
-        borderWidth: 2,
-        borderColor: Colors.primaryLblue
-    },
     homeMidUseNavChildCont: {
         alignItems: 'center',
         borderWidth: 1,
