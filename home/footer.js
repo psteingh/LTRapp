@@ -3,7 +3,6 @@ import { View, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import FooterNote from './FooterNote';
-import LtrLogoFooter from '../constants/LtrLogoFooter';
 import LtrLogoUseNav from '../constants/LtrLogoUseNav';
 import ButtonUseNav from './ButtonUseNav';
 
@@ -12,9 +11,6 @@ function Footer() {
         <View style={styles.footerContainer}>
             <View>
             <FooterNote />
-            </View>
-            <View>
-            <LtrLogoFooter />
             </View>
             <View>
             <LtrLogoUseNav screenName='ContactPage' />
