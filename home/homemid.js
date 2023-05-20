@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
+import HomeMidUseNav from '../constants/HomeMidUseNav';
 import ButtonUseNav from './ButtonUseNav';
 
 function HomeMid() {
@@ -9,7 +10,7 @@ function HomeMid() {
         <View style={styles.homeMidContainer}>
 
             <View style={styles.homeMidChildContainer}>
-            
+            <HomeMidUseNav screenName='LierBoard'/>            
             <Text style={styles.homeMidTitle}>Lier Board</Text>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
