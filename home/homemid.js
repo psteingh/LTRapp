@@ -42,14 +42,13 @@ const styles = StyleSheet.create({
     },
     homeMidChildContainer: {
         flex: 3,
-        borderWidth: 1,
-        borderColor: Colors.primaryLred,
         marginVertical: 5
     },
     homeMidTitle: {
         color: Colors.primaryOffWhite,
         fontSize: 20,
-        fontFamily: 'LibreBaskervilleBold'
+        fontFamily: 'LibreBaskervilleBold',
+        marginVertical: 5
     },
     homeMidDescription: {
         color: Colors.primaryWhite,

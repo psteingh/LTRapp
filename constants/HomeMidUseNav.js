@@ -1,7 +1,5 @@
 import { View, Pressable, StyleSheet } from 'react-native';
 
-import Colors from '../constants/colors';
-
 import { useNavigation } from '@react-navigation/native';
 
 function HomeMidUseNav({screenName, children}) {
@@ -20,8 +18,6 @@ export default HomeMidUseNav;
 
 const styles = StyleSheet.create({
     homeMidUseNavChildCont: {
-        alignItems: 'center',
-        borderWidth: 1,
-        borderColor: Colors.primaryYellow
+        alignItems: 'center'
     }
 });
