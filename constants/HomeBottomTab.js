@@ -13,7 +13,7 @@ import ContactPage from '../home/ContactPage';
 
 const Tab = createBottomTabNavigator();
 
-function BottomTab() {
+function HomeBottomTab() {
   return (
     <Tab.Navigator
       screenOptions={{
@@ -36,4 +36,4 @@ function BottomTab() {
   );
 }
 
-export default BottomTab;
+export default HomeBottomTab;

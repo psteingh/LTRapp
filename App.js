@@ -7,7 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import BottomTab from './constants/BottomTab';
+import HomeBottomTab from './constants/HomeBottomTab';
 
 // import Colors from './constants/colors';
 // import LinGradHeadTab from './constants/LinGradHeadTab';
@@ -60,8 +60,8 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
-        name="Bottom Tab"
-        component={BottomTab}
+        name="HomeBottomTab"
+        component={HomeBottomTab}
         options={{
           headerShown: false
         }} />
