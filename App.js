@@ -2,44 +2,48 @@ import 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Colors from './constants/colors';
-import LinGradHeadTab from './constants/LinGradHeadTab';
+import BottomTab from './constants/BottomTab';
 
-import Home from './components/Home';
-import AboutUsBoard from './boardaboutus/AboutUsBoard';
-import LierBoard from './components/LierBoard';
-import AboutLiesBoard from './boardaboutlies/AboutLiesBoard';
-import LogIn from './components/LogIn';
-import SignUp from './components/SignUp';
-import ContactPage from './home/ContactPage';
+// import Colors from './constants/colors';
+// import LinGradHeadTab from './constants/LinGradHeadTab';
 
-const Tab = createBottomTabNavigator();
+// import Home from './components/Home';
+// import AboutUsBoard from './boardaboutus/AboutUsBoard';
+// import LierBoard from './components/LierBoard';
+// import AboutLiesBoard from './boardaboutlies/AboutLiesBoard';
+// import LogIn from './components/LogIn';
+// import SignUp from './components/SignUp';
+// import ContactPage from './home/ContactPage';
 
-function MyTabs() {
-  return (
-    <Tab.Navigator
-      screenOptions={{
-      headerTintColor: Colors.primaryYellow,
-      headerBackground: LinGradHeadTab,
-      tabBarStyle: {backgroundColor: Colors.primaryDblue},
-      tabBarActiveTintColor: Colors.primaryWhite,
-      tabBarInactiveTintColor: Colors.primaryYellow
+// const Tab = createBottomTabNavigator();
+
+// function MyTabs() {
+//   return (
+//     <Tab.Navigator
+//       screenOptions={{
+//       headerTintColor: Colors.primaryYellow,
+//       headerBackground: LinGradHeadTab,
+//       tabBarStyle: {backgroundColor: Colors.primaryDblue},
+//       tabBarActiveTintColor: Colors.primaryWhite,
+//       tabBarInactiveTintColor: Colors.primaryYellow
       
-    }}>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="AboutUs" component={AboutUsBoard} />
-      <Tab.Screen name="LierBoard" component={LierBoard} />
-      <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Tab.Screen name="LogIn" component={LogIn} />
-      <Tab.Screen name="SignUp" component={SignUp} />
-      <Tab.Screen name="ContactPage" component={ContactPage}
-        options={{ tabBarButton: (props) => null }} />
-    </Tab.Navigator>
-  );
-}
+//     }}>
+//       <Tab.Screen name="Home" component={Home} />
+//       <Tab.Screen name="AboutUs" component={AboutUsBoard} />
+//       <Tab.Screen name="LierBoard" component={LierBoard} />
+//       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
+//       <Tab.Screen name="LogIn" component={LogIn} />
+//       <Tab.Screen name="SignUp" component={SignUp} />
+//       <Tab.Screen name="ContactPage" component={ContactPage}
+//         options={{ tabBarButton: (props) => null }} />
+//     </Tab.Navigator>
+//   );
+// }
 
 const Stack = createNativeStackNavigator();
 
@@ -56,8 +60,8 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
-        name="MyTabs"
-        component={MyTabs}
+        name="Bottom Tab"
+        component={BottomTab}
         options={{
           headerShown: false
         }} />
