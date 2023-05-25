@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import Colors from './colors';
 import LinGradHeadTab from './LinGradHeadTab';
@@ -12,6 +13,7 @@ import SignUp from '../components/SignUp';
 import ContactPage from '../home/ContactPage';
 
 const Tab = createBottomTabNavigator();
+const Icon = MaterialCommunityIcons();
 
 function HomeBottomTab() {
   return (
@@ -29,7 +31,7 @@ function HomeBottomTab() {
         name="AboutUs"
         component={AboutUsBoard}
         options={{
-          tabBarIcon: () => (<Icon name="assistant" />),
+          tabBarIcon: () => (<Icon name="assistant"/>),
         }} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
