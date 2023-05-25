@@ -25,7 +25,12 @@ function HomeBottomTab() {
       
     }}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="AboutUs" component={AboutUsBoard} />
+      <Tab.Screen
+        name="AboutUs"
+        component={AboutUsBoard}
+        options={{
+          tabBarIcon: () => (<Icon name="assistant" />),
+        }} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
       <Tab.Screen name="LogIn" component={LogIn} />

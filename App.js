@@ -1,10 +1,13 @@
 import 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import HomeBottomTab from './constants/HomeBottomTab';
+
+const Icon = MaterialCommunityIcons();
 
 const Stack = createNativeStackNavigator();
 
