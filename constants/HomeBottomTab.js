@@ -13,7 +13,6 @@ import SignUp from '../components/SignUp';
 import ContactPage from '../home/ContactPage';
 
 const Tab = createBottomTabNavigator();
-const Icon = MaterialCommunityIcons();
 
 function HomeBottomTab() {
   return (
@@ -32,8 +31,8 @@ function HomeBottomTab() {
         component={AboutUsBoard}
         options={{
           tabBarIcon: ({color, size}) => (
-          <Icon name="assistant" color={color} size={size}/>),
-        }} />
+          <MaterialCommunityIcons
+            name="assistant" color={color} size={size}/> ), }} />
       <Tab.Screen name="LierBoard" component={LierBoard} />
       <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
       <Tab.Screen name="LogIn" component={LogIn} />
