@@ -20,7 +20,6 @@ function HomeBottomTab() {
   return (
     <Tab.Navigator
       screenOptions={{
-      headerTintColor: Colors.primaryYellow,
       headerBackground: LinGradHeadTab,
       tabBarStyle: {backgroundColor: Colors.primaryDblue},
       tabBarActiveTintColor: Colors.primaryWhite,
