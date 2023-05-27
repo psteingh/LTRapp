@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     position: 'relative'
   },
   aboutUsImage: {
-    width: 5
+    width: 400,
+    height: 200
   }
 });
