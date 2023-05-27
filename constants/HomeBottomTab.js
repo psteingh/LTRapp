@@ -24,8 +24,8 @@ function HomeBottomTab() {
       headerBackground: LinGradHeadTab,
       tabBarStyle: {backgroundColor: Colors.primaryDblue},
       tabBarActiveTintColor: Colors.primaryWhite,
-      tabBarInactiveTintColor: Colors.primaryLgreen
-      
+      tabBarInactiveTintColor: Colors.primaryLgreen,
+      headerShown: false
     }}>
       <Tab.Screen
         name="Home"
