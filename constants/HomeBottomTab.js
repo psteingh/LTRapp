@@ -80,8 +80,7 @@ export default HomeBottomTab;
 
 const styles = StyleSheet.create({
   imageLtrLogoTabBarIcon: {
-    margin: 5,
-    width: 40,
-    height: 20
+    width: 30,
+    height: 15
   }
 });
