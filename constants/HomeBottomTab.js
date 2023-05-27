@@ -22,7 +22,7 @@ function HomeBottomTab() {
       headerBackground: LinGradHeadTab,
       tabBarStyle: {backgroundColor: Colors.primaryDblue},
       tabBarActiveTintColor: Colors.primaryWhite,
-      tabBarInactiveTintColor: Colors.primaryYellow
+      tabBarInactiveTintColor: Colors.primaryLgreen
       
     }}>
       <Tab.Screen name="Home" component={Home} />
@@ -33,10 +33,34 @@ function HomeBottomTab() {
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="assistant" color={color} size={size}/> ), }} />
-      <Tab.Screen name="LierBoard" component={LierBoard} />
-      <Tab.Screen name="AboutLies" component={AboutLiesBoard} />
-      <Tab.Screen name="LogIn" component={LogIn} />
-      <Tab.Screen name="SignUp" component={SignUp} />
+      <Tab.Screen
+        name="LierBoard"
+        component={LierBoard}
+        options={{
+          tabBarIcon: ({color, size}) => (
+          <MaterialCommunityIcons
+            name="view-list" color={color} size={size}/> ), }} />
+      <Tab.Screen
+        name="AboutLies"
+        component={AboutLiesBoard}
+        options={{
+          tabBarIcon: ({color, size}) => (
+          <MaterialCommunityIcons
+            name="book-information-variant" color={color} size={size}/> ), }} />
+      <Tab.Screen
+        name="LogIn"
+        component={LogIn}
+        options={{
+          tabBarIcon: ({color, size}) => (
+          <MaterialCommunityIcons
+            name="login" color={color} size={size}/> ), }} />
+      <Tab.Screen
+        name="SignUp"
+        component={SignUp}
+        options={{
+          tabBarIcon: ({color, size}) => (
+          <MaterialCommunityIcons
+            name="arrow-up-bold-box-outline" color={color} size={size}/> ), }} />
       <Tab.Screen name="ContactPage" component={ContactPage}
         options={{ tabBarButton: (props) => null }} />
     </Tab.Navigator>
