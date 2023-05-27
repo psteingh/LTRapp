@@ -1,3 +1,5 @@
+import { Image, StyleSheet } from 'react-native';
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -25,7 +27,14 @@ function HomeBottomTab() {
       tabBarInactiveTintColor: Colors.primaryLgreen
       
     }}>
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{
+          tabBarIcon: () => (
+          <Image
+            style={styles.imageLtrLogoTabBarIcon}
+            source={require('../assets/images/ltrbrand.png')} /> ), }} />
       <Tab.Screen
         name="AboutUs"
         component={AboutUsBoard}
@@ -68,3 +77,11 @@ function HomeBottomTab() {
 }
 
 export default HomeBottomTab;
+
+const styles = StyleSheet.create({
+  imageLtrLogoTabBarIcon: {
+    margin: 5,
+    width: 40,
+    height: 20
+  }
+});
