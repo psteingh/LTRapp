@@ -20,12 +20,10 @@ export default function App() {
     if (!loaded) {return null;}
   
   return (
-    <>
-    <StatusBar style={styles.statusBarContainer} />
     <NavigationContainer>
     <Stack.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: 'tomato'}
+        headerStyle: { backgroundColor: 'transparent'}
       }}>
       <Stack.Screen
         name="HomeBottomTab"
@@ -35,7 +33,6 @@ export default function App() {
         }} />
     </Stack.Navigator>
     </NavigationContainer>
-    </>
   );
 }
 
