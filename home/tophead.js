@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     topHeadContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
-        margin: 5
+        marginTop: 30,
+        marginHorizontal: 5
     },
     topHeadText: {
         fontFamily: 'LibreBaskervilleBold',
