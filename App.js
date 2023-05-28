@@ -23,7 +23,10 @@ export default function App() {
     <>
     <StatusBar style={styles.statusBarContainer} />
     <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: 'tomato'}
+      }}>
       <Stack.Screen
         name="HomeBottomTab"
         component={HomeBottomTab}
