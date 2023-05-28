@@ -10,11 +10,9 @@ import Footer from '../home/Footer';
     return (
         <View style={styles.homeContainer}>
         <LinGradScreen />
-        <View style={styles.homeSubContainer}>        
         <TopHead />
         <HomeMid />
         <Footer />
-        </View>
         </View>
     );
     }
