@@ -1,7 +1,7 @@
 import { View, StyleSheet } from 'react-native';
 import 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -20,8 +20,6 @@ export default function App() {
     if (!loaded) {return null;}
   
   return (
-    <View>
-    <StatusBar />
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -33,6 +31,5 @@ export default function App() {
       
     </Stack.Navigator>
     </NavigationContainer>
-    </View>
   );
 }
