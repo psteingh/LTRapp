@@ -10,7 +10,7 @@ function TextTitle({children}) {
     );
 }
 
-export default TextText;
+export default TextTitle;
 
 const styles = StyleSheet.create({
     textTitle: {
