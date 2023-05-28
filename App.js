@@ -21,7 +21,7 @@ export default function App() {
   
   return (
     <>
-    <StatusBar style='light' />
+    <StatusBar style={styles.statusBarContainer} />
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -35,3 +35,9 @@ export default function App() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  statusBarContainer: {
+    marginBottom: 10
+  }
+});
