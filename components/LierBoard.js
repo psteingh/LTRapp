@@ -1,13 +1,13 @@
 import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/LinGradScreen';
-import TitleText from '../constants/TitleText';
+import TextTitle from '../constants/TextTitle';
 
 function LierBoard() {
     return (
         <View style={styles.lierBoardContainer}>
         <LinGradScreen />
-        <TitleText>Lier Board</TitleText>
+        <TextTitle>Lier Board</TextTitle>
         </View>
     );
 }

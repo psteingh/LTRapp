@@ -1,14 +1,14 @@
 import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/LinGradScreen';
-import TitleText from '../constants/TitleText';
+import TextTitle from '../constants/TextTitle';
 import ButtonUseNav from '../constants/ButtonUseNav';
 
   function SignUp() {
     return (
         <View style={styles.signUpContainer}>
         <LinGradScreen />
-        <TitleText>Sign Up</TitleText>
+        <TextTitle>Sign Up</TextTitle>
         <View style={styles.signUpButtonUseNavCont}>
             <ButtonUseNav screenName='LogIn' />
         </View>

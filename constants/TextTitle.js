@@ -2,18 +2,18 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from './colors';
 
-function TitleText({children}) {
+function TextTitle({children}) {
     return (
         <View>
-            <Text style={styles.titleText}>{children}</Text>
+            <Text style={styles.textTitle}>{children}</Text>
         </View>
     );
 }
 
-export default TitleText;
+export default TextText;
 
 const styles = StyleSheet.create({
-    titleText: {
+    textTitle: {
         fontFamily: 'LibreBaskervilleBold',
         fontSize: 20,
         color: Colors.primaryOffWhite,
