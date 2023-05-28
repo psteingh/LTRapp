@@ -1,3 +1,4 @@
+import { View, StyleSheet } from 'react-native';
 import 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
@@ -19,7 +20,7 @@ export default function App() {
     if (!loaded) {return null;}
   
   return (
-    <>
+    <View>
     <StatusBar />
     <NavigationContainer>
     <Stack.Navigator>
@@ -32,6 +33,6 @@ export default function App() {
       
     </Stack.Navigator>
     </NavigationContainer>
-    </>
+    </View>
   );
 }
