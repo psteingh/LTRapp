@@ -1,4 +1,3 @@
-import { View, StyleSheet } from 'react-native';
 import 'react-native-gesture-handler';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
@@ -20,11 +19,10 @@ export default function App() {
     if (!loaded) {return null;}
   
   return (
+    <>
+    <StatusBar style="light" />
     <NavigationContainer>
-    <Stack.Navigator
-      screenOptions={{
-        headerStyle: { backgroundColor: 'transparent'}
-      }}>
+    <Stack.Navigator>
       <Stack.Screen
         name="HomeBottomTab"
         component={HomeBottomTab}
@@ -33,6 +31,7 @@ export default function App() {
         }} />
     </Stack.Navigator>
     </NavigationContainer>
+    </>
   );
 }
 

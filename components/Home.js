@@ -22,8 +22,5 @@ export default Home;
 const styles = StyleSheet.create({
     homeContainer: {
         flex: 1
-    },
-    homeSubContainer: {
-        marginTop: 30
     }
 });
