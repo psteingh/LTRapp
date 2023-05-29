@@ -6,6 +6,8 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Colors from './colors';
 import LinGradHeadTab from './LinGradHeadTab';
 
+import { StatusBar } from 'expo-status-bar';
+
 import Home from '../components/Home';
 import AboutUsBoard from '../boardaboutus/AboutUsBoard';
 import LierBoard from '../components/LierBoard';
@@ -18,6 +20,8 @@ const Tab = createBottomTabNavigator();
 
 function HomeBottomTab() {
   return (
+    <>
+    <StatusBar />
     <Tab.Navigator
       screenOptions={{
       // headerBackground: LinGradHeadTab,
@@ -72,6 +76,7 @@ function HomeBottomTab() {
       <Tab.Screen name="ContactPage" component={ContactPage}
         options={{ tabBarButton: (props) => null }} />
     </Tab.Navigator>
+    </>
   );
 }
 
