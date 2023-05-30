@@ -1,15 +1,15 @@
-import { View, Image, StyleSheet } from 'react-native';
+import { View, ImageBackground, StyleSheet } from 'react-native';
 
 import TextImage from '../constants/TextImage';
 
 function AboutUsImage() {
   return (
     <View>
-      <Image
+      <ImageBackground
         style={styles.aboutUsImage}
         source={require('../assets/images/ltrdeceive.png')}>
       <TextImage>About Us</TextImage>
-      </Image>
+      </ImageBackground>
     </View>
   );
 }
