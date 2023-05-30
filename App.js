@@ -3,8 +3,6 @@ import { useFonts } from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-
 import HomeBottomTab from './constants/HomeBottomTab';
 
 const Stack = createNativeStackNavigator();
@@ -19,7 +17,6 @@ export default function App() {
     if (!loaded) {return null;}
   
   return (
-    <SafeAreaView>
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -30,6 +27,5 @@ export default function App() {
         }} />
     </Stack.Navigator>
     </NavigationContainer>
-    </SafeAreaView>
   );
 }
