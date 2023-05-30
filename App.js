@@ -22,9 +22,11 @@ export default function App() {
   
   return (
     <>
+    <View style={styles.underStatusBar}>
     <StatusBar
       backgroundColor='green' />
-    <View style={styles.underStatusBar}></View>
+    </View>
+    {/* <View style={styles.underStatusBar}></View> */}
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -41,6 +43,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   underStatusBar: {
-    marginTop: 35
+    marginVertical: 10
   }
 });
