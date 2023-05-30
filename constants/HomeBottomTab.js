@@ -4,7 +4,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import Colors from './colors';
-import LinGradHeadTab from './LinGradHeadTab';
 
 import Home from '../components/Home';
 import AboutUsBoard from '../boardaboutus/AboutUsBoard';
@@ -20,7 +19,6 @@ function HomeBottomTab() {
   return (
     <Tab.Navigator
       screenOptions={{
-      // headerBackground: LinGradHeadTab,
       tabBarStyle: {backgroundColor: Colors.primaryDblue},
       tabBarActiveTintColor: Colors.primaryWhite,
       tabBarInactiveTintColor: Colors.primaryLgreen,

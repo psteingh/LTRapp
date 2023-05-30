@@ -26,7 +26,6 @@ export default function App() {
     <StatusBar
       backgroundColor='green' />
     </View>
-    {/* <View style={styles.underStatusBar}></View> */}
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
