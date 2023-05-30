@@ -17,10 +17,12 @@ const styles = StyleSheet.create({
         fontFamily: 'LibreBaskervilleBold',
         fontSize: 20,
         color: Colors.primaryOffWhite,
-        backgroundColor: 'transparent',
-        borderWidth: 1,
-        borderColor: Colors.primaryLgreen,
-        margin: 5,
-        paddingLeft: 15,
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
+        justifyContent: 'center',
+        alignItems: 'center'
     }
 });
