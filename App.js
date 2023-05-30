@@ -1,3 +1,5 @@
+import { View, Text, StyleSheet } from 'react-native';
+
 import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -20,8 +22,10 @@ export default function App() {
   
   return (
     <>
-    <StatusBar
-      backgroundColor='red' />
+    <StatusBar style={styles.statusBarContainer} />
+    <View style={styles.underStatusBar} >
+      <Text>Under Status Bar</Text>
+    </View>
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -35,3 +39,12 @@ export default function App() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  statusBarContainer: {
+    backgroundColor: 'green'
+  },
+  underStatusBar: {
+    marginTop: 5
+  }
+});
