@@ -5,7 +5,7 @@ import Colors from './colors';
 function TextImage({children}) {
     return (
         <View style={styles.textImage}>
-            <Text style={styles.textImage}>{children}</Text>
+            <Text style={styles.textImageFont}>{children}</Text>
         </View>
     );
 }
@@ -14,15 +14,12 @@ export default TextImage;
 
 const styles = StyleSheet.create({
     textImage: {
-        fontFamily: 'LibreBaskervilleBold',
-        fontSize: 30,
-        color: Colors.primaryOffWhite,
-        // position: 'absolute',
-        // left: 0,
-        // right: 0,
-        // top: 0,
-        // bottom: 0,
-        justifyContent: 'center',
+        marginTop: 40,
         alignItems: 'center'
-    }
+    },
+    textImageFont: {
+        fontFamily: 'LibreBaskervilleBold',
+        fontSize: 40,
+        color: Colors.primaryOffWhite,
+    },
 });

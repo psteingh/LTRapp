@@ -1,4 +1,4 @@
-import { View, Text, ImageBackground, StyleSheet } from 'react-native';
+import { View, ImageBackground, StyleSheet } from 'react-native';
 
 import ImageText from '../constants/ImageText';
 import TextImage from '../constants/TextImage';
@@ -10,7 +10,6 @@ function AboutUsImage() {
       <ImageBackground
         style={styles.aboutUsImage}
         source={require('../assets/images/ltrdeceive.png')}>
-      <Text>Image Text Test</Text>
       <TextImage>About Us</TextImage>
       </ImageBackground>
       </ImageText>
