@@ -4,8 +4,8 @@ import Colors from './colors';
 
 function TextImage({children}) {
     return (
-        <View>
-            <Text style={styles.textImage}>{children}</Text>
+        <View style={styles.textImage}>
+            <Text>{children}</Text>
         </View>
     );
 }
