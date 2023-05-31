@@ -1,15 +1,15 @@
 import { View, StyleSheet } from 'react-native';
 
-function ImageText({children}) {
+function ImageWithText({children}) {
   return (
-  <View style={styles.background}>{children}</View>
+  <View style={styles.imageWithTextBackground}>{children}</View>
   );
 }
 
-export default ImageText;
+export default ImageWithText;
 
 const styles = StyleSheet.create({
-  background: {
+  imageWithTextBackground: {
     position: 'absolute',
     left: 0,
     right: 0,
