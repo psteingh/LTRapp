@@ -3,9 +3,9 @@ import { View, Text, StyleSheet } from 'react-native';
 function AboutUsTop() {
     return (
         <View style={styles.boardTopContainer}>
-            <Text style={styles.boardTitle}>Title</Text>
-            <Text style={styles.boardMid}>Mid</Text>
-            <Text style={styles.boardBottom}>Bottom</Text>
+            <View><Text style={styles.boardTitle}>Title</Text></View>
+            <View><Text style={styles.boardMid}>Mid</Text></View>
+            <View><Text style={styles.boardBottom}>Bottom</Text></View>
         </View>
     );
 }
