@@ -6,7 +6,7 @@ import AboutUsImage from './AboutUsImage';
 
 function AboutUsBoard() {
     return (
-        <View style={styles.aboutUsBoardContainer}>
+        <View style={styles.boardContainer}>
         <LinGradScreen />
         <AboutUsImage />
         </View>
@@ -16,7 +16,7 @@ function AboutUsBoard() {
 export default AboutUsBoard;
 
 const styles = StyleSheet.create({
-    aboutUsBoardContainer: {
+    boardContainer: {
         flex: 1
     }
 });

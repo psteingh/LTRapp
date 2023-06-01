@@ -3,16 +3,16 @@ import { View, StyleSheet } from 'react-native';
 import LinGradScreen from '../constants/LinGradScreen';
 import TextTitle from '../constants/TextTitle';
 
-  function AboutLiesBoard() {
+  function BibleBoard() {
     return (
         <View style={styles.boardContainer}>
         <LinGradScreen />
-        <TextTitle>About Lies Board</TextTitle>
+        <TextTitle>Bible Board</TextTitle>
         </View>
     );
 }
 
-export default AboutLiesBoard;
+export default BibleBoard;
 
 const styles = StyleSheet.create({
     boardContainer: {
