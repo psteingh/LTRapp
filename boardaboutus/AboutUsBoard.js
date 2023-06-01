@@ -11,7 +11,7 @@ function AboutUsBoard() {
         <View style={styles.boardContainer}>
         <LinGradScreen />
         <AboutUsImage />
-        <AboutUsNav />
+        <AboutUsNav screenName='Home' />
         <AboutUsTop />
         </View>
     );
