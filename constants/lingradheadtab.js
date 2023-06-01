@@ -9,7 +9,7 @@ function LinGradHeadTab() {
   colors={[Colors.primaryWhite, Colors.primaryBlack]}
   start={{x: 1, y: 0}}
   end={{x: 0, y: 0}}
-  style={styles.container}
+  style={styles.linGradHeadTabContainer}
   >
   </LinearGradient>
   );
@@ -18,7 +18,7 @@ function LinGradHeadTab() {
 export default LinGradHeadTab;
 
 const styles = StyleSheet.create({
-  container: {
+  linGradHeadTabContainer: {
     flex: 1
   }
 });

@@ -5,7 +5,7 @@ import TextTitle from '../constants/TextTitle';
 
 function LierBoard() {
     return (
-        <View style={styles.lierBoardContainer}>
+        <View style={styles.boardContainer}>
         <LinGradScreen />
         <TextTitle>Lier Board</TextTitle>
         </View>
@@ -15,7 +15,7 @@ function LierBoard() {
 export default LierBoard;
 
 const styles = StyleSheet.create({
-    lierBoardContainer: {
+    boardContainer: {
         flex: 1
     }
 });
