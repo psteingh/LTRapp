@@ -14,7 +14,11 @@ export default TextImage;
 
 const styles = StyleSheet.create({
     textImage: {
-        marginTop: 40,
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        top: 0,
+        bottom: 0,
         alignItems: 'center'
     },
     textImageFont: {
