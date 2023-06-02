@@ -1,11 +1,13 @@
 import { View, Text, StyleSheet } from 'react-native';
 
+import TextTop from '../constants/TextTop';
+
 function AboutUsTop() {
     return (
         <View style={styles.boardTopContainer}>
             <Text style={styles.boardTitle}>Title</Text>
-            <View><Text style={styles.boardMid}>Mid</Text></View>
-            <View><Text style={styles.boardBottom}>Bottom</Text></View>
+            <View><TextTop>Mid</TextTop></View>
+            <View><Text>Bottom</Text></View>
         </View>
     );
 }
@@ -19,11 +21,5 @@ const styles = StyleSheet.create({
     boardTitle: {
         fontSize: 30,
         color: 'white'
-    },
-    boardMid: {
-        padding: 5,
-    },
-    boardBottom: {
-        padding: 5,
     }
 });
