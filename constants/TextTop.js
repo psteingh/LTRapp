@@ -14,9 +14,6 @@ export default TextTop;
 
 const styles = StyleSheet.create({
     textTop: {
-        color: Colors.primaryWhite,
-        backgroundColor: 'transparent',
-        borderWidth: 1,
-        borderColor: Colors.primaryYellow,
+        color: Colors.primaryWhite
     }
 });
