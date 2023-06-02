@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     textImageFont: {
-        fontFamily: 'LibreBaskervilleBold',
+        fontFamily: 'RobotoBold',
         fontSize: 40,
         color: Colors.primaryOffWhite,
     },
