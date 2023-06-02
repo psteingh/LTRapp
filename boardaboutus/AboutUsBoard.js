@@ -10,9 +10,13 @@ function AboutUsBoard() {
     return (
         <View style={styles.boardContainer}>
         <LinGradScreen />
-        <AboutUsImage />
-        <AboutUsNav screenName='Home' />
+        
         <AboutUsTop />
+        
+        <AboutUsNav screenName='Home' />
+        
+        <AboutUsImage />
+        
         </View>
     );
 }
