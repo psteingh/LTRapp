@@ -22,10 +22,8 @@ const styles = StyleSheet.create({
     },
     boardMid: {
         padding: 5,
-        color: 'white'
     },
     boardBottom: {
         padding: 5,
-        color: 'white'
     }
 });
