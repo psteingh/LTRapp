@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     },
     textImageFont: {
         fontFamily: 'RobotoBold',
-        fontSize: 40,
+        fontSize: 30,
         color: Colors.primaryOffWhite,
     },
 });
