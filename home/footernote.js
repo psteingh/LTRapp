@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
         margin: 5
     },
     footerNoteText: {
-        fontFamily: 'Roboto',
         fontSize: 10,
         color: Colors.primaryWhite,
         margin: 2
