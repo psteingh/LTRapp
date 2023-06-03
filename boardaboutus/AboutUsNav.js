@@ -25,13 +25,13 @@ export default AboutUsNav;
 
 const styles = StyleSheet.create({
     aboutNavContainer: {
-        margin: 5,
         flexDirection: 'row',
+        margin: 5,
+        justifyContent: 'space-evenly',
         borderWidth: 1,
         borderColor: 'green'
     },
     aboutNavChildContainer: {
-        flex: 1.5,
-        marginVertical: 5
+        margin: 2,
     }
 });

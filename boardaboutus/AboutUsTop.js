@@ -18,6 +18,7 @@ export default AboutUsTop;
 const styles = StyleSheet.create({
     boardTopContainer: {
         alignItems: 'center',
+        margin: 5,
         borderWidth: 1,
         borderColor: 'green'
     }
