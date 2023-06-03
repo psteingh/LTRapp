@@ -6,9 +6,9 @@ import TextMidBottom from '../constants/TextMidBottom';
 function AboutUsTop() {
     return (
         <View style={styles.boardTopContainer}>
-            <TextTitle>Title</TextTitle>
-            <TextMidBottom>Mid</TextMidBottom>
-            <TextMidBottom>Bottom</TextMidBottom>
+            <TextTitle>The purpose of Lies To Remember</TextTitle>
+            <TextMidBottom>Is for you to be able to track the lies you tell</TextMidBottom>
+            <TextMidBottom>It is not to correct a problem</TextMidBottom>
         </View>
     );
 }
