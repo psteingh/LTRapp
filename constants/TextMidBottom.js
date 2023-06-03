@@ -2,18 +2,18 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from './colors';
 
-function TextTopMidBottom({children}) {
+function TextMidBottom({children}) {
     return (
         <View>
-            <Text style={styles.textTopMidBottom}>{children}</Text>
+            <Text style={styles.textMidBottom}>{children}</Text>
         </View>
     );
 }
 
-export default TextTopMidBottom;
+export default TextMidBottom;
 
 const styles = StyleSheet.create({
-    textTopMidBottom: {
+    textMidBottom: {
         color: Colors.primaryWhite
     }
 });
