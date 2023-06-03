@@ -15,11 +15,11 @@ export default TextTitle;
 const styles = StyleSheet.create({
     textTitle: {
         fontFamily: 'RobotoBold',
-        fontSize: 20,
+        fontSize: 15,
         color: Colors.primaryWhite,
         borderWidth: 1,
-        borderColor: Colors.primaryLgreen,
-        margin: 15,
-        padding: 5
+        borderColor: 'green',
+        margin: 5,
+        padding: 2
     }
 });
