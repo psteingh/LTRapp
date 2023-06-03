@@ -1,14 +1,14 @@
 import { View, StyleSheet } from 'react-native';
 
-import TextImage from '../constants/TextImage';
-import TextTop from '../constants/TextTop';
+import TextTopTitle from '../constants/TextTopTitle';
+import TextTopMidBottom from '../constants/TextTopMidBottom';
 
 function AboutUsTop() {
     return (
         <View style={styles.boardTopContainer}>
-            <TextImage>Title</TextImage>
-            <TextTop>Mid</TextTop>
-            <TextTop>Bottom</TextTop>
+            <TextTopTitle>Title</TextTopTitle>
+            <TextTopMidBottom>Mid</TextTopMidBottom>
+            <TextTopMidBottom>Bottom</TextTopMidBottom>
         </View>
     );
 }
