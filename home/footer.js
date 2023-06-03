@@ -4,7 +4,7 @@ import Colors from '../constants/colors';
 
 import FooterNote from './FooterNote';
 import LtrLogoUseNav from '../constants/LtrLogoUseNav';
-import ButtonUseNav from '../constants/ButtonUseNav';
+import ContactUseNav from '../constants/ContactUseNav';
 
 function Footer() {
     return (
@@ -16,7 +16,7 @@ function Footer() {
             <LtrLogoUseNav screenName='ContactPage' />
             </View>
             <View>
-            <ButtonUseNav screenName='ContactPage' />
+            <ContactUseNav screenName='ContactPage' />
             </View>
         </View>
     );
