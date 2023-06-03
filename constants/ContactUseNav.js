@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
     },
     contactButtonText: {
         color: Colors.primaryWhite,
-        margin: 5
+        margin: 5,
+        fontSize: 14
     }
 });
