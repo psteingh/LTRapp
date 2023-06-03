@@ -9,7 +9,7 @@ function AboutUsNav({screenName}) {
     return (
         <View>
         <View>
-        <LtrLogoUseNav screenName='ContactPage' />
+        <LtrLogoUseNav screenName='Home' />
         </View>
         <View>
         <Pressable
