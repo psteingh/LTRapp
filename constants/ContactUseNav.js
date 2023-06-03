@@ -21,6 +21,7 @@ export default ContactUseNav;
 
 const styles = StyleSheet.create({
     pressableContainer: {
+        justifyContent: 'center',
         alignItems: 'center'
     },
     contactButtonContainer: {
@@ -29,8 +30,6 @@ const styles = StyleSheet.create({
         margin: 5
     },
     contactButtonText: {
-        fontFamily: 'Roboto',
-        fontSize: 10,
         color: Colors.primaryWhite,
         margin: 5
     }
