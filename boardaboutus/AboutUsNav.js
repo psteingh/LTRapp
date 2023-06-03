@@ -1,10 +1,16 @@
 import { View, Image, Pressable, StyleSheet } from 'react-native';
 
+import LtrLogoUseNav from '../constants/LtrLogoUseNav';
+
 import { useNavigation } from '@react-navigation/native';
 
 function AboutUsNav({screenName}) {
     const navigation = useNavigation();
     return (
+        <View>
+        <View>
+        <LtrLogoUseNav screenName='ContactPage' />
+        </View>
         <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}>
@@ -12,6 +18,7 @@ function AboutUsNav({screenName}) {
         style={styles.imageLtrLogoUseNav}
         source={require('../assets/images/ltrbrand.png')} />
         </Pressable>
+        </View>
         </View>
     );
 }
