@@ -12,6 +12,7 @@ import AboutLiesBoard from '../boardaboutlies/AboutLiesBoard';
 import LogIn from '../components/LogIn';
 import SignUp from '../components/SignUp';
 import ContactPage from '../home/ContactPage';
+import MusingsBoard from '../boardmusings/MusingsBoard';
 
 const Tab = createBottomTabNavigator();
 
@@ -67,7 +68,13 @@ function HomeBottomTab() {
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="arrow-up-bold-box-outline" color={color} size={size}/> ), }} />
-      <Tab.Screen name="ContactPage" component={ContactPage}
+      <Tab.Screen
+        name="ContactPage"
+        component={ContactPage}
+        options={{ tabBarButton: (props) => null }} />
+      <Tab.Screen
+        name="Musings"
+        component={MusingsBoard}
         options={{ tabBarButton: (props) => null }} />
     </Tab.Navigator>
   );

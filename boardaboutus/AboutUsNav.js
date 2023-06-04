@@ -10,10 +10,10 @@ function AboutUsNav() {
         <NavLtrLogo screenName='Home' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <NavButton screenName='LierBoard' />
+        <NavButton screenName='AboutUs' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <NavButton screenName='AboutLies' />
+        <NavButton screenName='Musings' />
         </View>
         <View style={styles.aboutNavChildContainer}>
         <NavButton screenName='ContactPage' />
