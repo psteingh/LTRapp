@@ -37,6 +37,7 @@ function HomeBottomTab() {
         name="AboutUs"
         component={AboutUsBoard}
         options={{
+          title: 'About Us',
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="assistant" color={color} size={size}/> ), }} />
@@ -44,6 +45,7 @@ function HomeBottomTab() {
         name="LierBoard"
         component={LierBoard}
         options={{
+          title: 'Lier Board',
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="view-list" color={color} size={size}/> ), }} />
@@ -51,6 +53,7 @@ function HomeBottomTab() {
         name="AboutLies"
         component={AboutLiesBoard}
         options={{
+          title: 'About Lies',
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="book-information-variant" color={color} size={size}/> ), }} />
@@ -58,6 +61,7 @@ function HomeBottomTab() {
         name="LogIn"
         component={LogIn}
         options={{
+          title: 'Login',
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="login" color={color} size={size}/> ), }} />
@@ -65,6 +69,7 @@ function HomeBottomTab() {
         name="SignUp"
         component={SignUp}
         options={{
+          title: 'Sign Up',
           tabBarIcon: ({color, size}) => (
           <MaterialCommunityIcons
             name="arrow-up-bold-box-outline" color={color} size={size}/> ), }} />
