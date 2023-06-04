@@ -2,22 +2,22 @@ import { View, Pressable, StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-function HomeMidUseNav({screenName, children}) {
+function NavHomeMid({screenName, children}) {
     const navigation = useNavigation();
     return (
         <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}>
-        <View style={styles.homeMidUseNavChildCont}>{children}</View>
+        <View style={styles.NavHomeMidChildCont}>{children}</View>
         </Pressable>
         </View>
     );
 }
 
-export default HomeMidUseNav;
+export default NavHomeMid;
 
 const styles = StyleSheet.create({
-    homeMidUseNavChildCont: {
+    NavHomeMidChildCont: {
         alignItems: 'center'
     }
 });

@@ -3,8 +3,8 @@ import { View, StyleSheet } from 'react-native';
 import Colors from '../constants/colors';
 
 import FooterNote from './FooterNote';
-import LtrLogoUseNav from '../constants/LtrLogoUseNav';
-import ContactUseNav from '../constants/ContactUseNav';
+import NavLtrLogo from '../constants/NavLtrLogo';
+import NavContact from '../constants/NavContact';
 
 function Footer() {
     return (
@@ -13,10 +13,10 @@ function Footer() {
             <FooterNote />
             </View>
             <View>
-            <LtrLogoUseNav screenName='ContactPage' />
+            <NavLtrLogo screenName='ContactPage' />
             </View>
             <View>
-            <ContactUseNav screenName='ContactPage' />
+            <NavContact screenName='ContactPage' />
             </View>
         </View>
     );

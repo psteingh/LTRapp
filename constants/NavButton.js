@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import Colors from './colors';
 
-function ButtonUseNav({screenName}) {
+function NavButton({screenName}) {
     const navigation = useNavigation();
     return (
         <View style={styles.pressableContainer}>
@@ -17,7 +17,7 @@ function ButtonUseNav({screenName}) {
     );
 }
 
-export default ButtonUseNav;
+export default NavButton;
 
 const styles = StyleSheet.create({
     pressableContainer: {

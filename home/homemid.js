@@ -2,32 +2,32 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-import HomeMidUseNav from '../constants/HomeMidUseNav';
+import NavHomeMid from '../constants/NavHomeMid';
 
 function HomeMid() {
     return (
         <View style={styles.homeMidContainer}>
 
             <View style={styles.homeMidChildContainer}>
-            <HomeMidUseNav screenName='LierBoard'>
+            <NavHomeMid screenName='LierBoard'>
             <Text style={styles.homeMidTitle}>Lier Board</Text>
             <Text style={styles.homeMidDescription}>
             Public ...see lies Users have made public</Text>
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrcatalog.png')} />
-            </HomeMidUseNav>
+            </NavHomeMid>
             </View>
             
             <View style={styles.homeMidChildContainer}>
-            <HomeMidUseNav screenName='LogIn'>
+            <NavHomeMid screenName='LogIn'>
             <Text style={styles.homeMidTitle}>List of Lies</Text>
             <Text style={styles.homeMidDescription}>
             Private ...Users can store & track their lies</Text>
             <Image
                 style={styles.homeMidImage}
                 source={require('../assets/images/ltrvault.png')} />
-            </HomeMidUseNav>
+            </NavHomeMid>
             </View>
         </View>
     );

@@ -2,24 +2,24 @@ import { View, Image, Pressable, StyleSheet } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
-function LtrLogoUseNav({screenName}) {
+function NavLtrLogo({screenName}) {
     const navigation = useNavigation();
     return (
         <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}>
         <Image
-        style={styles.imageLtrLogoUseNav}
+        style={styles.imageNavLtrLogo}
         source={require('../assets/images/ltrbrand.png')} />
         </Pressable>
         </View>
     );
 }
 
-export default LtrLogoUseNav;
+export default NavLtrLogo;
 
 const styles = StyleSheet.create({
-    imageLtrLogoUseNav: {
+    imageNavLtrLogo: {
         width: 40,
         height: 20,
         margin: 5

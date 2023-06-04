@@ -2,15 +2,15 @@ import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/LinGradScreen';
 import TextTitle from '../constants/TextTitle';
-import ButtonUseNav from '../constants/ButtonUseNav';
+import NavButton from '../constants/NavButton';
 
   function LogIn() {
     return (
         <View style={styles.logInContainer}>
         <LinGradScreen />
         <TextTitle>Log In</TextTitle>
-        <View style={styles.logInButtonUseNavCont}>
-            <ButtonUseNav screenName='SignUp' />
+        <View style={styles.logInNavButtonCont}>
+            <NavButton screenName='SignUp' />
         </View>
         </View>
     );
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     logInContainer: {
         flex: 1
     },
-    logInButtonUseNavCont: {
+    logInNavButtonCont: {
         marginHorizontal: 5,
         alignItems: 'center'
     }

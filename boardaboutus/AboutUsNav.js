@@ -1,21 +1,21 @@
 import { View, StyleSheet } from 'react-native';
 
-import LtrLogoUseNav from '../constants/LtrLogoUseNav';
+import NavLtrLogo from '../constants/NavLtrLogo';
 
 function AboutUsNav() {
     return (
         <View style={styles.aboutNavContainer}>
         <View style={styles.aboutNavChildContainer}>
-        <LtrLogoUseNav screenName='Home' />
+        <NavLtrLogo screenName='Home' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <LtrLogoUseNav screenName='LierBoard' />
+        <NavLtrLogo screenName='LierBoard' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <LtrLogoUseNav screenName='AboutLies' />
+        <NavLtrLogo screenName='AboutLies' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <LtrLogoUseNav screenName='ContactPage' />
+        <NavLtrLogo screenName='ContactPage' />
         </View>
         </View>
     );
