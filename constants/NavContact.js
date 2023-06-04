@@ -7,11 +7,11 @@ import Colors from './colors';
 function NavContact({screenName}) {
     const navigation = useNavigation();
     return (
-        <View style={styles.pressableContainer}>
+        <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}
-            style={styles.contactButtonContainer}>
-        <Text style={styles.contactButtonText}>{`${screenName}`}</Text>
+            style={styles.navContactContainer}>
+        <Text style={styles.navContactText}>{`${screenName}`}</Text>
         </Pressable>
         </View>
     );
@@ -20,16 +20,12 @@ function NavContact({screenName}) {
 export default NavContact;
 
 const styles = StyleSheet.create({
-    pressableContainer: {
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    contactButtonContainer: {
+    navContactContainer: {
         backgroundColor: Colors.primaryLgreen,
         borderRadius: 5,
         margin: 5
     },
-    contactButtonText: {
+    navContactText: {
         color: Colors.primaryWhite,
         margin: 5
     }
