@@ -1,6 +1,7 @@
 import { View, StyleSheet } from 'react-native';
 
 import NavLtrLogo from '../constants/NavLtrLogo';
+import NavButton from '../constants/NavButton';
 
 function AboutUsNav() {
     return (
@@ -9,13 +10,13 @@ function AboutUsNav() {
         <NavLtrLogo screenName='Home' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <NavLtrLogo screenName='LierBoard' />
+        <NavButton screenName='LierBoard' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <NavLtrLogo screenName='AboutLies' />
+        <NavButton screenName='AboutLies' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <NavLtrLogo screenName='ContactPage' />
+        <NavButton screenName='ContactPage' />
         </View>
         </View>
     );

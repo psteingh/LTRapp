@@ -7,11 +7,11 @@ import Colors from './colors';
 function NavButton({screenName}) {
     const navigation = useNavigation();
     return (
-        <View style={styles.pressableContainer}>
+        <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}
-            style={styles.contactButtonContainer}>
-        <Text style={styles.contactButtonText}>{`${screenName}`}</Text>
+            style={styles.navButtonContainer}>
+        <Text style={styles.navButtonText}>{`${screenName}`}</Text>
         </Pressable>
         </View>
     );
@@ -20,19 +20,12 @@ function NavButton({screenName}) {
 export default NavButton;
 
 const styles = StyleSheet.create({
-    pressableContainer: {
-        backgroundColor: Colors.primaryDblue,
-        alignItems: 'center',
-        borderRadius: 5,
+    navButtonContainer: {
+        backgroundColor: Colors.primaryLblue,
+        borderRadius: 6,
         margin: 5
     },
-    contactButtonContainer: {
-        backgroundColor: Colors.primaryLgreen,
-        margin: 5
-    },
-    contactButtonText: {
-        fontFamily: 'Roboto',
-        fontSize: 10,
+    navButtonText: {
         color: Colors.primaryWhite,
         margin: 5
     }
