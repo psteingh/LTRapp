@@ -71,7 +71,9 @@ function HomeBottomTab() {
       <Tab.Screen
         name="ContactPage"
         component={ContactPage}
-        options={{ tabBarButton: (props) => null }} />
+        options={{
+          title: 'Contact Us',
+          tabBarButton: (props) => null }} />
       <Tab.Screen
         name="Musings"
         component={MusingsBoard}
