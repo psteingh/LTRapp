@@ -4,15 +4,15 @@ import { useNavigation } from '@react-navigation/native';
 
 import Colors from './colors';
 
-function NavContact({screenName, options}) {
+function NavContact({screenName}) {
     const navigation = useNavigation();
+    console.log(screenName);
     return (
         <View>
         <Pressable
             onPress={() => navigation.navigate(screenName)}
             style={styles.navContactContainer}>
         <Text style={styles.navContactText}>{`${screenName}`}</Text>
-        <Text style={styles.navContactText}>{`${options}`}</Text>
         </Pressable>
         </View>
     );
