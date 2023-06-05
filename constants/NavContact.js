@@ -12,7 +12,7 @@ function NavContact({screenName, options}) {
             onPress={() => navigation.navigate(screenName)}
             style={styles.navContactContainer}>
         <Text style={styles.navContactText}>{`${screenName}`}</Text>
-        <Text style={styles.navContactText}>{`${options.title}`}</Text>
+        <Text style={styles.navContactText}>{`${options}`}</Text>
         </Pressable>
         </View>
     );
