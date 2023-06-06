@@ -4,11 +4,11 @@ import { useNavigation } from '@react-navigation/native';
 
 import Colors from './colors';
 
-function NavContact({screenName, title}) {
+function NavContact({screenName}) {
     const navigation = useNavigation();
 
     function selectNavContact() {
-        navigation.navigate(screenName, title);
+        navigation.navigate(screenName);
     }
     
     console.log();
