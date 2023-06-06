@@ -6,7 +6,7 @@ import Colors from './colors';
 
 function NavContact({screenName}) {
     const navigation = useNavigation();
-    console.log(screenName);
+    console.log();
     return (
         <View>
         <Pressable
