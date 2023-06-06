@@ -5,8 +5,11 @@ import { useNavigation } from '@react-navigation/native';
 import Colors from './colors';
 
 function NavContact({screenName}) {
+    
     const navigation = useNavigation();
+    
     console.log();
+
     return (
         <View>
         <Pressable
