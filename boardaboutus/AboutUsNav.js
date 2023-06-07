@@ -15,7 +15,9 @@ function AboutUsNav() {
             screenTitle='About Us' />
         </View>
         <View style={styles.aboutNavChildContainer}>
-        <NavButton screenName='Musings' />
+        <NavButton
+            screenName='Musings'
+            screenTitle='Musings' />
         </View>
         <View style={styles.aboutNavChildContainer}>
         <NavButton
