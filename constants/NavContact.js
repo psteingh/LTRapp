@@ -8,19 +8,15 @@ function NavContact({screenName, screenTitle}) {
     const navigation = useNavigation();
 
     function selectNavContact() {
-        navigation.navigate(screenName);
-    }
+        navigation.navigate(screenName); }
     
-    console.log();
-
     return (
         <View>
         <View>
         <Pressable
             onPress={selectNavContact}
             style={styles.navContactContainer}>
-        <Text style={styles.navContactText}>{`${screenName}`}</Text>
-        <Text style={styles.navContactTextBorder}>{screenTitle}</Text>
+        <Text style={styles.navContactText}>{screenTitle}</Text>
         </Pressable>
         </View>
         </View>
@@ -38,11 +34,5 @@ const styles = StyleSheet.create({
     navContactText: {
         color: Colors.primaryWhite,
         margin: 5
-    },
-    navContactTextBorder: {
-        color: Colors.primaryWhite,
-        margin: 5,
-        borderWidth: 1,
-        borderColor: 'black'
-    },
+    }
 });
