@@ -12,13 +12,11 @@ function NavContact({screenName, screenTitle}) {
     
     return (
         <View>
-        <View>
         <Pressable
             onPress={selectNavContact}
             style={styles.navContactContainer}>
         <Text style={styles.navContactText}>{screenTitle}</Text>
         </Pressable>
-        </View>
         </View>
     );
 }
