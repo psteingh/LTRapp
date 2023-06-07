@@ -25,12 +25,9 @@ export default NavButton;
 
 const styles = StyleSheet.create({
     navButtonContainer: {
-        backgroundColor: Colors.primaryLblue,
-        borderRadius: 6,
         margin: 5
     },
     navButtonText: {
-        color: Colors.primaryWhite,
-        margin: 5
+        color: Colors.primaryWhite
     }
 });
