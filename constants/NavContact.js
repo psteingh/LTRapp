@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import Colors from './colors';
 
-function NavContact({screenName, children}) {
+function NavContact({screenName, screenTitle}) {
     const navigation = useNavigation();
 
     function selectNavContact() {
@@ -20,7 +20,7 @@ function NavContact({screenName, children}) {
             onPress={selectNavContact}
             style={styles.navContactContainer}>
         <Text style={styles.navContactText}>{`${screenName}`}</Text>
-        <Text style={styles.navContactTextBorder}>{children}</Text>
+        <Text style={styles.navContactTextBorder}>{screenTitle}</Text>
         </Pressable>
         </View>
         </View>
