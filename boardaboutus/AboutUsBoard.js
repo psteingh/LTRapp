@@ -12,7 +12,7 @@ function AboutUsBoard() {
         <LinGradScreen />
 
         <AboutUsImage />
-        <AboutUsNav screenName='Home' />
+        <AboutUsNav />
         <AboutUsTop />
 
         </View>
