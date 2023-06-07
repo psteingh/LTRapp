@@ -20,7 +20,7 @@ function NavContact({screenName, children}) {
             onPress={selectNavContact}
             style={styles.navContactContainer}>
         <Text style={styles.navContactText}>{`${screenName}`}</Text>
-        <Text style={styles.navContactText}>{children}</Text>
+        <Text style={styles.navContactTextBorder}>{children}</Text>
         </Pressable>
         </View>
         </View>
@@ -38,5 +38,11 @@ const styles = StyleSheet.create({
     navContactText: {
         color: Colors.primaryWhite,
         margin: 5
-    }
+    },
+    navContactTextBorder: {
+        color: Colors.primaryWhite,
+        margin: 5,
+        borderWidth: 1,
+        borderColor: 'black'
+    },
 });
