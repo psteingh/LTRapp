@@ -17,8 +17,8 @@ function Footer() {
             </View>
             <View>
             <NavContact
-                screenName='LierBoard'
-                screenTitle='Lier Board' />
+                screenName='ContactPage'
+                screenTitle='Contact Us' />
             </View>
         </View>
     );
