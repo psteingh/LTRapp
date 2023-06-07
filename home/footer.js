@@ -16,7 +16,7 @@ function Footer() {
             <NavLtrLogo screenName='ContactPage' />
             </View>
             <View>
-            <NavContact screenName='ContactPage' />
+            <NavContact screenName='LierBoard' />
             </View>
         </View>
     );
