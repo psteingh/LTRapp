@@ -4,14 +4,18 @@ import { useNavigation } from '@react-navigation/native';
 
 import Colors from './colors';
 
-function NavButton({screenName}) {
+function NavButton({screenName, screenTitle}) {
     const navigation = useNavigation();
+
+    function selectNavButton() {
+        navigation.navigate(screenName); }
+
     return (
         <View>
         <Pressable
-            onPress={() => navigation.navigate(screenName)}
+            onPress={selectNavButton}
             style={styles.navButtonContainer}>
-        <Text style={styles.navButtonText}>{`${screenName}`}</Text>
+        <Text style={styles.navButtonText}>{screenTitle}</Text>
         </Pressable>
         </View>
     );
