@@ -10,7 +10,9 @@ import NavContact from '../constants/NavContact';
         <LinGradScreen />
         <TextTitle>Log In</TextTitle>
         <View style={styles.logInNavContactCont}>
-            <NavContact screenName='SignUp' />
+            <NavContact
+                screenName='SignUp'
+                screenTitle='Sign Up' />
         </View>
         </View>
     );
