@@ -5,7 +5,7 @@ import Colors from '../constants/colors';
 function SubTitle() {
     return (
         <View style={styles.subTitleContainer}>
-            <Text style={styles.subTitleText}>This site is to store & track your lies</Text>
+            <Text style={styles.subTitleText}>This app is to store & track your lies</Text>
         </View>
     );
 }
