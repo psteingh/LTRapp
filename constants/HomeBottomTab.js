@@ -13,6 +13,9 @@ import LogIn from '../components/LogIn';
 import SignUp from '../components/SignUp';
 import ContactPage from '../home/ContactPage';
 import MusingsBoard from '../boardmusings/MusingsBoard';
+import BibleBoard from '../boardbible/BibleBoard';
+import GeneralBoard from '../boardgeneral/GeneralBoard';
+import MediaBoard from '../boardmedia/MediaBoard';
 
 const Tab = createBottomTabNavigator();
 
@@ -83,6 +86,24 @@ function HomeBottomTab() {
         name="Musings"
         component={MusingsBoard}
         options={{ tabBarButton: (props) => null }} />
+      <Tab.Screen
+        name="BibleBoard"
+        component={BibleBoard}
+        options={{
+          title: 'Bible Board',
+          tabBarButton: (props) => null }} />
+      <Tab.Screen
+        name="GeneralBoard"
+        component={GeneralBoard}
+        options={{
+          title: 'General Board',
+          tabBarButton: (props) => null }} />
+      <Tab.Screen
+        name="MediaBoard"
+        component={MediaBoard}
+        options={{
+          title: 'Media Board',
+          tabBarButton: (props) => null }} />
     </Tab.Navigator>
   );
 }
