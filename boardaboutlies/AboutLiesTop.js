@@ -6,9 +6,11 @@ import TextMidBottom from '../constants/TextMidBottom';
 function AboutLiesTop() {
     return (
         <View style={styles.boardTopContainer}>
-            <TextTitle>Purpose of Lies</TextTitle>
-            <TextMidBottom>There are many conditions which determine the purpose of lying</TextMidBottom>
-            <TextMidBottom>Our society has fully incorporated lying so why not keep track of them for yourself</TextMidBottom>
+        <TextTitle>Purpose of Lies</TextTitle>
+        <TextMidBottom>There are many conditions which determine</TextMidBottom>
+        <TextMidBottom>the purpose of lying</TextMidBottom>
+        <TextMidBottom>Our society has fully incorporated lying</TextMidBottom>
+        <TextMidBottom>so why not keep track of them for yourself</TextMidBottom>
         </View>
     );
 }
