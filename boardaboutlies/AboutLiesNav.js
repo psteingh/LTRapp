@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import NavLtrLogo from '../constants/NavLtrLogo';
 import NavButton from '../constants/NavButton';
 
-function AboutUsNav() {
+function AboutLiesNav() {
     return (
         <View style={styles.aboutNavContainer}>
         <View style={styles.aboutNavChildContainer}>
@@ -11,13 +11,23 @@ function AboutUsNav() {
         </View>
         <View style={styles.aboutNavChildContainer}>
         <NavButton
-            screenName='AboutUs'
-            screenTitle='About Us' />
+            screenName='AboutLies'
+            screenTitle='About Lies' />
         </View>
         <View style={styles.aboutNavChildContainer}>
         <NavButton
-            screenName='Musings'
-            screenTitle='Musings' />
+            screenName='General'
+            screenTitle='General' />
+        </View>
+        <View style={styles.aboutNavChildContainer}>
+        <NavButton
+            screenName='Bible'
+            screenTitle='Bible' />
+        </View>
+        <View style={styles.aboutNavChildContainer}>
+        <NavButton
+            screenName='Media'
+            screenTitle='Media' />
         </View>
         <View style={styles.aboutNavChildContainer}>
         <NavButton
@@ -28,7 +38,7 @@ function AboutUsNav() {
     );
 }
 
-export default AboutUsNav;
+export default AboutLiesNav;
 
 const styles = StyleSheet.create({
     aboutNavContainer: {
