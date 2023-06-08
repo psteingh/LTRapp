@@ -1,13 +1,13 @@
 import { View, StyleSheet } from 'react-native';
 
 import LinGradScreen from '../constants/LinGradScreen';
-import TextTitle from '../constants/TextTitle';
+import AboutLiesImage from './AboutLiesImage';
 
   function AboutLiesBoard() {
     return (
         <View style={styles.boardContainer}>
         <LinGradScreen />
-        <TextTitle>About Lies Board</TextTitle>
+        <AboutLiesImage />
         </View>
     );
 }

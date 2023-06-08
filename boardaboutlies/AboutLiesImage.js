@@ -3,24 +3,24 @@ import { View, ImageBackground, StyleSheet } from 'react-native';
 import ImageWithText from '../constants/ImageWithText';
 import TextImage from '../constants/TextImage';
 
-function AboutUsImage() {
+function AboutLiesImage() {
   return (
     <View>
       <ImageWithText>
       <ImageBackground
-        style={styles.aboutUsImage}
-        source={require('../assets/images/ltrdeceive.png')}>
-      <TextImage>About Us</TextImage>
+        style={styles.aboutLiesImage}
+        source={require('../assets/images/ltrliestruth.png')}>
+      <TextImage>About Lies</TextImage>
       </ImageBackground>
       </ImageWithText>
     </View>
   );
 }
 
-export default AboutUsImage;
+export default AboutLiesImage;
 
 const styles = StyleSheet.create({
-  aboutUsImage: {
+  aboutLiesImage: {
     width: 400,
     height: 200
   }
