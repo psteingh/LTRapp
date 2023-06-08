@@ -87,22 +87,22 @@ function HomeBottomTab() {
         component={MusingsBoard}
         options={{ tabBarButton: (props) => null }} />
       <Tab.Screen
-        name="BibleBoard"
+        name="Bible"
         component={BibleBoard}
         options={{
-          title: 'Bible Board',
+          title: 'Bible',
           tabBarButton: (props) => null }} />
       <Tab.Screen
-        name="GeneralBoard"
+        name="General"
         component={GeneralBoard}
         options={{
-          title: 'General Board',
+          title: 'General',
           tabBarButton: (props) => null }} />
       <Tab.Screen
-        name="MediaBoard"
+        name="Media"
         component={MediaBoard}
         options={{
-          title: 'Media Board',
+          title: 'Media',
           tabBarButton: (props) => null }} />
     </Tab.Navigator>
   );
