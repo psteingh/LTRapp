@@ -6,15 +6,16 @@ import Colors from '../constants/colors';
 
 function CarouselBS() {
     const width = Dimensions.get('window').width;
+    
     return (
         <View style={styles.carouselContainer}>
         <Carousel
             loop
             width={width}
-            height={width / 2}
+            height={width / 3.5}
             autoPlay={true}
-            data={[...new Array(4).keys()]}
-            scrollAnimationDuration={1000}
+            data={[...new Array(3).keys()]}
+            scrollAnimationDuration={3000}
             
             // onSnapToItem={(index) => console.log('current index:', index)}
             
@@ -41,16 +42,17 @@ const styles = StyleSheet.create({
         margin: 5
     },
     carouselTextContainer: {
-        flex: 1,
-        justifyContent: 'center',
+        // flex: 1,
+        // justifyContent: 'center',
         borderWidth: 1,
-        borderColor: 'yellow'
+        borderColor: 'yellow',
+        margin: 5
     },
     carouselText: {
-        margin: 5,
+        margin: 2,
         textAlign: 'center',
         fontFamily: 'RobotoBold',
-        fontSize: 20,
+        fontSize: 15,
         color: Colors.primaryWhite
     }
 });
