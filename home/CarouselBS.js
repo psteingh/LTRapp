@@ -14,20 +14,21 @@ function CarouselBS() {
             width={width}
             height={width / 3}
             autoPlay={false}
-            data={[...new Array(5).keys()]}
+            data={[...new Array(4).keys()]}
             scrollAnimationDuration={3000}
 
             onSnapToItem={(index) => console.log('current index:', index)}
             
             renderItem={({index}) => (
             <View style={styles.carouselTextContainer}>
-            <Text style={styles.carouselText}>
-                {index}When did I tell them a Lie?</Text>
-            
-            <Text style={styles.carouselText}>
-                {index}Did I tell them a Lie?</Text>
-            <Text style={styles.carouselText}>What Lie did I tell them?</Text>
-            <Text style={styles.carouselText}>Why did I tell them a Lie?</Text>
+            <View><Text style={styles.carouselText}>
+                {index}When did I tell them a Lie?</Text></View>
+            <View><Text style={styles.carouselText}>
+                {index}Did I tell them a Lie?</Text></View>
+            <View><Text style={styles.carouselText}>
+                {index}What Lie did I tell them?</Text></View>
+            <View><Text style={styles.carouselText}>
+                {index}Why did I tell them a Lie?</Text></View>
             </View>
             )}
         />
