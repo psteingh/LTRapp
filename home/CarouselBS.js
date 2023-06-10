@@ -16,12 +16,11 @@ function CarouselBS() {
             autoPlay={true}
             data={[...new Array(3).keys()]}
             scrollAnimationDuration={3000}
+            onSnapToItem={(index) => console.log('current index:', index)}
             
-            // onSnapToItem={(index) => console.log('current index:', index)}
-            
-            renderItem={() => (
+            renderItem={({index}) => (
             <View style={styles.carouselTextContainer}>
-            {/* <Text style={styles.carouselText}>{index}</Text> */}
+            <Text style={styles.carouselText}>{index}</Text>
             
             <Text style={styles.carouselText}>When did I tell them a Lie?</Text>
             <Text style={styles.carouselText}>Did I tell them a Lie?</Text>
@@ -42,8 +41,6 @@ const styles = StyleSheet.create({
         margin: 5
     },
     carouselTextContainer: {
-        // flex: 1,
-        // justifyContent: 'center',
         borderWidth: 1,
         borderColor: 'yellow',
         margin: 5
