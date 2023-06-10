@@ -5,12 +5,17 @@ import Colors from '../constants/colors';
 import Carousel from './Carousel';
 import SubTitle from './SubTitle';
 
+import CarouselTest from './CarouselTest';
+
 function TopHead() {
     return (
         <View style={styles.topHeadContainer}>
             <Text style={styles.topHeadText}>Lies To Remember</Text>
             <View>
                 <Carousel />
+            </View>
+            <View>
+                <CarouselTest />
             </View>
             <View>
                 <SubTitle />
