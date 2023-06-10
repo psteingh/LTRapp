@@ -16,7 +16,9 @@ function CarouselBS() {
             autoPlay={true}
             data={[...new Array(3).keys()]}
             scrollAnimationDuration={3000}
-            onSnapToItem={(index) => console.log('current index:', index)}
+            onSnapToItem={(index)}
+
+            // onSnapToItem={(index) => console.log('current index:', index)}
             
             renderItem={({index}) => (
             <View style={styles.carouselTextContainer}>
