@@ -4,7 +4,7 @@ import Carousel from 'react-native-reanimated-carousel';
 
 import Colors from '../constants/colors';
 
-function Carousel() {
+function CarouselTest() {
     const width = Dimensions.get('window').width;
     return (
         <View style={styles.carouselContainer}>
@@ -27,7 +27,7 @@ function Carousel() {
     );
 }
 
-export default Carousel;
+export default CarouselTest;
 
 const styles = StyleSheet.create({
     carouselContainer: {

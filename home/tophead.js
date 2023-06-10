@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native';
 
 import Colors from '../constants/colors';
 
-import Carousel from './Carousel';
+import CarouselTest from './CarouselTest';
 import SubTitle from './SubTitle';
 
 function TopHead() {
@@ -10,7 +10,7 @@ function TopHead() {
         <View style={styles.topHeadContainer}>
             <Text style={styles.topHeadText}>Lies To Remember</Text>
             <View>
-                <Carousel />
+                <CarouselTest />
             </View>
             <View>
                 <SubTitle />
