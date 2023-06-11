@@ -13,7 +13,7 @@ class Category{
 function CarouselBS() {
     const width = Dimensions.get('window').width;
 
-    const CATEGORIES = [
+    const CarItem = [
         new Category('1', 'When'),
         new Category('2', 'Did'),
         new Category('3', 'What'),
@@ -30,7 +30,7 @@ function CarouselBS() {
             data={[...new Array(4).keys()]}
             scrollAnimationDuration={3000}
 
-            onSnapToItem={(index) => console.log(index, CATEGORIES)}
+            onSnapToItem={(index) => console.log(index)}
             
             renderItem={({index}) => (
             <View>
