@@ -13,7 +13,7 @@ function CarouselBS() {
             loop
             width={width}
             height={width / 3}
-            autoPlay={false}
+            autoPlay={true}
             data={[...new Array(4).keys()]}
             scrollAnimationDuration={3000}
 
@@ -21,10 +21,14 @@ function CarouselBS() {
             
             renderItem={({index}) => (
             <View style={styles.carouselTextContainer}>
-            <View><Text style={styles.carouselText}>
-                {index}When did I tell them a Lie?</Text></View>
-            <View><Text style={styles.carouselText}>
-                {index}Did I tell them a Lie?</Text></View>
+            <Text
+                key={index}
+                style={styles.carouselText}>
+                When did I tell them a Lie?</Text>
+            <Text
+                key={index}
+                style={styles.carouselText}>
+                Did I tell them a Lie?</Text>
             <View><Text style={styles.carouselText}>
                 {index}What Lie did I tell them?</Text></View>
             <View><Text style={styles.carouselText}>
