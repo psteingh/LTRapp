@@ -4,21 +4,14 @@ import Carousel from 'react-native-reanimated-carousel';
 
 import Colors from '../constants/colors';
 
-class Category{
-    constructor(id, title){
-        this.id = id;
-        this.title = title;
-    }}
-
 function CarouselBS() {
     const width = Dimensions.get('window').width;
 
     const CarItem = [
-        new Category('1', 'When'),
-        new Category('2', 'Did'),
-        new Category('3', 'What'),
-        new Category('4', 'Why'),
-    ];
+        'When did',
+        'Did',
+        'What did',
+        'Why did']
     
     return (
         <View style={styles.carouselContainer}>
@@ -26,16 +19,16 @@ function CarouselBS() {
             loop
             width={width}
             height={width / 3}
-            autoPlay={false}
-            data={[...new Array(4).keys()]}
-            scrollAnimationDuration={3000}
+            autoPlay={true}
+            data={CarItem}
+            scrollAnimationDuration={5000}
 
-            onSnapToItem={(index) => console.log(index)}
+            // onSnapToItem={(index) => console.log(index)}
             
-            renderItem={({index}) => (
+            renderItem={item => (
             <View>
             <View style={styles.carouselTextContainer}>            
-            <Text style={styles.carouselText}>{index}</Text>
+            <Text style={styles.carouselText}>{item}</Text>
             </View>
             <View style={styles.carouselTextContainer}>
             <Text style={styles.carouselText}></Text>
