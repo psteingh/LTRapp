@@ -26,7 +26,7 @@ function CarouselBS() {
             loop
             width={width}
             height={width / 3}
-            autoPlay={true}
+            autoPlay={false}
             data={[...new Array(4).keys()]}
             scrollAnimationDuration={3000}
 
