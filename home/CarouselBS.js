@@ -22,16 +22,10 @@ function CarouselBS() {
             autoPlay={true}
             data={CarItem}
             scrollAnimationDuration={5000}
-
-            // onSnapToItem={(index) => console.log(index)}
-            
-            renderItem={item => (
+            renderItem={({item}) => (
             <View>
             <View style={styles.carouselTextContainer}>            
             <Text style={styles.carouselText}>{item}</Text>
-            </View>
-            <View style={styles.carouselTextContainer}>
-            <Text style={styles.carouselText}></Text>
             </View>
 
             {/* <Text style={styles.carouselText}>
