@@ -18,8 +18,8 @@ function CarouselBS() {
         <Carousel
             loop
             width={width}
-            height={width / 3}
-            autoPlay={true}
+            height={width / 8}
+            autoPlay={false}
             data={CarItem}
             scrollAnimationDuration={5000}
             renderItem={({item}) => (
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         margin: 2,
         textAlign: 'center',
         fontFamily: 'RobotoBold',
-        fontSize: 15,
+        fontSize: 25,
         color: Colors.primaryWhite
     }
 });
