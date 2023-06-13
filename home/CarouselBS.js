@@ -8,10 +8,10 @@ function CarouselBS() {
     const width = Dimensions.get('window').width;
 
     const CarItem = [
-        'When did',
-        'Did',
-        'What did',
-        'Why did']
+        'When did I tell them a Lie?',
+        'Did I tell them a Lie?',
+        'What Lie did I tell them?',
+        'Why did I tell them a Lie?']
     
     return (
         <View style={styles.carouselContainer}>
@@ -23,20 +23,8 @@ function CarouselBS() {
             data={CarItem}
             scrollAnimationDuration={5000}
             renderItem={({item}) => (
-            <View>
             <View style={styles.carouselTextContainer}>            
             <Text style={styles.carouselText}>{item}</Text>
-            </View>
-
-            {/* <Text style={styles.carouselText}>
-                When did I tell them a Lie?</Text>
-            <Text style={styles.carouselText}>
-                Did I tell them a Lie?</Text>
-            <Text style={styles.carouselText}>
-                What Lie did I tell them?</Text>
-            <Text style={styles.carouselText}>
-                Why did I tell them a Lie?</Text> */}
-
             </View>
             )}
         />
