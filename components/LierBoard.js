@@ -3,11 +3,16 @@ import { View, StyleSheet } from 'react-native';
 import LinGradScreen from '../constants/LinGradScreen';
 import TextTitle from '../constants/TextTitle';
 
+import NavLtrLogo from '../constants/NavLtrLogo';
+
 function LierBoard() {
     return (
-        <View style={styles.boardContainer}>
+        <View style={styles.lierBoardContainer}>
         <LinGradScreen />
         <TextTitle>Lier Board</TextTitle>
+        <View style={styles.navLtrLogoContainer}>
+        <NavLtrLogo screenName='Home' />
+        </View>
         </View>
     );
 }
@@ -15,7 +20,10 @@ function LierBoard() {
 export default LierBoard;
 
 const styles = StyleSheet.create({
-    boardContainer: {
+    lierBoardContainer: {
         flex: 1
+    },
+    navLtrLogoContainer: {
+        alignItems: 'center'
     }
 });
