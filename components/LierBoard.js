@@ -25,7 +25,8 @@ const styles = StyleSheet.create({
     lierBoardTitleText: {
         color: Colors.primaryDgreen,
         fontSize: 15,
-        fontFamily: 'LibreBaskervilleBold'
+        fontFamily: 'LibreBaskervilleBold',
+        margin: 25
     },
     navLtrLogoContainer: {
         alignItems: 'center'
