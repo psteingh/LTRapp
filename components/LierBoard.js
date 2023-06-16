@@ -5,19 +5,16 @@ import Colors from '../constants/colors';
 import NavLtrLogo from '../constants/NavLtrLogo';
 
 function LierBoard() {
-    const LBName = ['TextName']
-
+    const LBName = ['TestName']
+    const LBSubject = ['TestSubject']
 
     return (
         <View style={styles.lierBoardContainer}>
         <LinGradScreen />
         <Text style={styles.lierBoardTitleText}>Lies made Public</Text>
-        <View>
-            <View
-                data={LBName}
-                renderItem={({item}) => (
-                <Text>Name: {item}</Text>
-                )}>
+        <View style={styles.lierBoardListContainer}>
+            <View>
+                <Text>Name</Text>
             </View>
         </View>
         <View style={styles.navLtrLogoContainer}>
@@ -38,6 +35,12 @@ const styles = StyleSheet.create({
         fontSize: 15,
         fontFamily: 'LibreBaskervilleBold',
         margin: 25
+    },
+    lierBoardListContainer: {
+        margin: 5,
+        backgroundColor: Colors.primaryWhite,
+        borderWidth: 1,
+        borderColor: 'black'
     },
     navLtrLogoContainer: {
         alignItems: 'center'
