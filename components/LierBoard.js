@@ -14,10 +14,10 @@ function LierBoard() {
         <Text style={styles.lierBoardTitleText}>Lies made Public</Text>
         <View style={styles.lierBoardListContainer}>
             <View style={styles.lierBoardNameContainer}>
-                <Text>Name</Text>
+                <Text>Name:</Text>
             </View>
             <View style={styles.lierBoardSubjectContainer}>
-                <Text>Subject</Text>
+                <Text>Subject:</Text>
             </View>
         </View>
         <View style={styles.navLtrLogoContainer}>
@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
         borderRadius: 3
     },
     lierBoardNameContainer: {
-        backgroundColor: 'yellow'
+        backgroundColor: Colors.primaryYellow
     },
     lierBoardSubjectContainer: {
-        backgroundColor: 'yellow'
+        backgroundColor: Colors.primaryYellow
     },
     navLtrLogoContainer: {
         alignItems: 'center'
