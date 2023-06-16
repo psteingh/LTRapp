@@ -38,9 +38,11 @@ const styles = StyleSheet.create({
     },
     lierBoardListContainer: {
         margin: 5,
+        padding: 5,
         backgroundColor: Colors.primaryWhite,
         borderWidth: 1,
-        borderColor: 'black'
+        borderColor: 'black',
+        borderRadius: 3
     },
     navLtrLogoContainer: {
         alignItems: 'center'
