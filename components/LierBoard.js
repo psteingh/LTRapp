@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
         borderRadius: 3
     },
     lierBoardNameContainer: {
-        backgroundColor: Colors.primaryYellow
+        backgroundColor: 'rgba(233, 236, 71, 0.5)'
     },
     lierBoardSubjectContainer: {
-        backgroundColor: Colors.primaryYellow
+        backgroundColor: 'rgba(233, 236, 71, 0.7)'
     },
     lierBoardStuffContainer: {
-        backgroundColor: Colors.primaryYellow
+        backgroundColor: 'rgba(233, 236, 71, 0.9)'
     },
     navLtrLogoContainer: {
         alignItems: 'center'
