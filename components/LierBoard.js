@@ -13,8 +13,11 @@ function LierBoard() {
         <LinGradScreen />
         <Text style={styles.lierBoardTitleText}>Lies made Public</Text>
         <View style={styles.lierBoardListContainer}>
-            <View>
+            <View style={styles.lierBoardNameContainer}>
                 <Text>Name</Text>
+            </View>
+            <View style={styles.lierBoardSubjectContainer}>
+                <Text>Subject</Text>
             </View>
         </View>
         <View style={styles.navLtrLogoContainer}>
@@ -43,6 +46,12 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'black',
         borderRadius: 3
+    },
+    lierBoardNameContainer: {
+        backgroundColor: 'yellow'
+    },
+    lierBoardSubjectContainer: {
+        backgroundColor: 'yellow'
     },
     navLtrLogoContainer: {
         alignItems: 'center'
