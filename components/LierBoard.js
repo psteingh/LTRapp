@@ -19,6 +19,9 @@ function LierBoard() {
             <View style={styles.lierBoardSubjectContainer}>
                 <Text>Subject:</Text>
             </View>
+            <View style={styles.lierBoardStuffContainer}>
+                <Text>Stuff:</Text>
+            </View>
         </View>
         <View style={styles.navLtrLogoContainer}>
         <NavLtrLogo screenName='Home' />
@@ -51,6 +54,9 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.primaryYellow
     },
     lierBoardSubjectContainer: {
+        backgroundColor: Colors.primaryYellow
+    },
+    lierBoardStuffContainer: {
         backgroundColor: Colors.primaryYellow
     },
     navLtrLogoContainer: {
