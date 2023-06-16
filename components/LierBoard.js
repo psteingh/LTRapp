@@ -5,10 +5,21 @@ import Colors from '../constants/colors';
 import NavLtrLogo from '../constants/NavLtrLogo';
 
 function LierBoard() {
+    const LBName = ['TextName']
+
+
     return (
         <View style={styles.lierBoardContainer}>
         <LinGradScreen />
         <Text style={styles.lierBoardTitleText}>Lies made Public</Text>
+        <View>
+            <View
+                data={LBName}
+                renderItem={({item}) => (
+                <Text>Name: {item}</Text>
+                )}>
+            </View>
+        </View>
         <View style={styles.navLtrLogoContainer}>
         <NavLtrLogo screenName='Home' />
         </View>
