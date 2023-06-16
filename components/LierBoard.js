@@ -6,7 +6,8 @@ import NavLtrLogo from '../constants/NavLtrLogo';
 
 function LierBoard() {
     const LBName = ['TestName']
-    const LBSubject = {TestSubject}
+    const LBSubject = ['TestSubject']
+    const LBStuff = ['TestStuff']
 
     return (
         <View style={styles.lierBoardContainer}>
@@ -20,7 +21,7 @@ function LierBoard() {
                 <Text>Subject: {LBSubject}</Text>
             </View>
             <View style={styles.lierBoardStuffContainer}>
-                <Text>Stuff:</Text>
+                <Text>Stuff: {LBStuff}</Text>
             </View>
         </View>
         <View style={styles.navLtrLogoContainer}>
