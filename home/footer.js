@@ -1,4 +1,5 @@
 import { View, StyleSheet } from 'react-native';
+import { Shadow } from 'react-native-shadow-2';
 
 import Colors from '../constants/colors';
 
@@ -8,6 +9,11 @@ import NavContact from '../constants/NavContact';
 
 function Footer() {
     return (
+        <Shadow
+            distance={15}
+            startColor={'#eb9066d8'}
+            endColor={'#ff00ff10'}
+            offset={[3, 4]}>
         <View style={styles.footerContainer}>
             <View>
             <FooterNote />
@@ -21,6 +27,7 @@ function Footer() {
                 screenTitle='Contact Us' />
             </View>
         </View>
+        </Shadow>
     );
 }
 
