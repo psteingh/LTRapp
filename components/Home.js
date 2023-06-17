@@ -5,6 +5,7 @@ import LinGradScreen from '../constants/LinGradScreen';
 import TopHead from '../home/TopHead';
 import HomeMid from '../home/HomeMid';
 import Footer from '../home/Footer';
+import FooterShadow from '../home/FooterShadow';
 
     function Home() {
     return (
@@ -13,6 +14,7 @@ import Footer from '../home/Footer';
         <TopHead />
         <HomeMid />
         <Footer />
+        <FooterShadow />
         </View>
     );
     }
