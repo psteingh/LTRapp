@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     boardTopContainer: {
         alignItems: 'center',
         margin: 5,
-        borderWidth: 1,
+        borderWidth: .5,
         borderColor: 'green'
     }
 });

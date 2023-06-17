@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 5,
         justifyContent: 'space-evenly',
-        borderWidth: 1,
+        borderWidth: .5,
         borderColor: 'green'
     },
     aboutNavChildContainer: {
