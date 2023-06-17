@@ -8,7 +8,8 @@ function FooterShadow() {
         <Shadow
             distance={10}
             startColor={'#7f7f7f'}
-            offset={[0, 0]}>
+            endColor={'#b3b3b3'}
+            offset={[3, 4]}>
         <View style={styles.footerShadowContainer}>
         <Text style={styles.footerShadowText}>Footer Shadow</Text>
         </View>
