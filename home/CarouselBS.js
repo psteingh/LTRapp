@@ -37,12 +37,12 @@ export default CarouselBS;
 const styles = StyleSheet.create({
     carouselContainer: {
         backgroundColor: 'transparent',
-        margin: 5
+        margin: 4
     },
     carouselTextContainer: {
-        borderWidth: 1,
-        borderColor: 'yellow',
-        margin: 5
+        borderWidth: .5,
+        borderColor: 'black',
+        margin: 4
     },
     carouselText: {
         margin: 2,

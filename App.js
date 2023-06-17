@@ -42,6 +42,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   underStatusBar: {
-    marginVertical: 10
+    marginBottom: 20
   }
 });

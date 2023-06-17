@@ -23,6 +23,7 @@ export default AboutUsBoard;
 
 const styles = StyleSheet.create({
     boardContainer: {
-        flex: 1
+        flex: 1,
+        paddingTop: 10
     }
 });

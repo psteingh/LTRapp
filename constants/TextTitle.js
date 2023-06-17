@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
         fontFamily: 'RobotoBold',
         fontSize: 15,
         color: Colors.primaryWhite,
-        borderWidth: 1,
+        borderWidth: .5,
         borderColor: 'green',
         margin: 5,
-        padding: 2
+        padding: 5
     }
 });

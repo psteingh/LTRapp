@@ -35,7 +35,8 @@ export default LierBoard;
 
 const styles = StyleSheet.create({
     lierBoardContainer: {
-        flex: 1
+        flex: 1,
+        paddingTop: 10
     },
     lierBoardTitleText: {
         color: Colors.primaryDgreen,
