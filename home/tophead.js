@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
-import { Shadow } from 'react-native-shadow-2';
+// import { Shadow } from 'react-native-shadow-2';
 
 import Colors from '../constants/colors';
 
@@ -8,11 +8,11 @@ import SubTitle from './SubTitle';
 
 function TopHead() {
     return (
-        <Shadow
-            distance={5}
-            startColor={'#eb9066d8'}
-            endColor={'#ff00ff10'}
-            offset={[10, 4]}>
+        // <Shadow
+        //     distance={5}
+        //     startColor={'#eb9066d8'}
+        //     endColor={'#ff00ff10'}
+        //     offset={[10, 4]}>
         <View style={styles.topHeadContainer}>
             <Text style={styles.topHeadText}>Lies To Remember</Text>
             <View>
@@ -22,7 +22,6 @@ function TopHead() {
                 <SubTitle />
             </View>
         </View>
-        </Shadow>
     );
 }
 
@@ -32,7 +31,7 @@ const styles = StyleSheet.create({
     topHeadContainer: {
         backgroundColor: Colors.primaryDblue,
         alignItems: 'center',
-        margin: 10,
+        margin: 5,
     },
     topHeadText: {
         fontFamily: 'LibreBaskervilleBold',
