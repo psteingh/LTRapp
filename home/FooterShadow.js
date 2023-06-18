@@ -7,10 +7,10 @@ function FooterShadow() {
     return (
         <View style={styles.footerShadowContainer}>
         <Shadow
-            distance={5}
+            distance={2}
             startColor={'#7f7f7f'}
-            endColor={'#b3b3b3'}
-            offset={[0, 0]}>
+            offset={[2, 2]}
+            style={styles.shadowCorner}>
         <View style={styles.footerShadowChildContainer}>
         <Text style={styles.footerShadowText}>Footer Shadow</Text>
         </View>
@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
     footerShadowContainer: {
         alignItems: 'center',
         margin: 5
+    },
+    shadowCorner: {
+        borderRadius: 1
     },
     footerShadowChildContainer: {
         backgroundColor: Colors.primaryDblue,
