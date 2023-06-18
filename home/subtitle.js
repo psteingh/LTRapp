@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     subTitleText: {
-        fontFamily: 'Roboto',
         fontSize: 15,
         color: Colors.primaryWhite,
         margin: 5
