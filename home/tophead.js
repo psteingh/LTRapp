@@ -39,13 +39,13 @@ const styles = StyleSheet.create({
     },
     topHeadChildContainer: {
         backgroundColor: Colors.primaryDblue,
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingVertical: 5
     },
     topHeadText: {
         fontFamily: 'LibreBaskervilleBold',
         fontSize: 35,
         color: Colors.primaryOffWhite,
-        marginVertical: 15,
-        marginHorizontal: 10
+        margin: 10
     }
 });
