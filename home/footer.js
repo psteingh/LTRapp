@@ -9,12 +9,13 @@ import NavContact from '../constants/NavContact';
 
 function Footer() {
     return (
+        <View style={styles.footerContainer}>
         <Shadow
             distance={2}
             startColor={'#7f7f7f'}
             offset={[2, 2]}
             style={styles.shadowCorner}>
-        <View style={styles.footerContainer}>
+        <View style={styles.footerChildContainer}>
             <View>
             <FooterNote />
             </View>
@@ -28,6 +29,7 @@ function Footer() {
             </View>
         </View>
         </Shadow>
+        </View>
     );
 }
 
@@ -35,11 +37,13 @@ export default Footer;
 
 const styles = StyleSheet.create({
     footerContainer: {
-        backgroundColor: Colors.primaryDblue,
-        alignItems: 'center',
         margin: 5
     },
     shadowCorner: {
         borderRadius: 1
-    }
+    },
+    footerChildContainer: {
+        backgroundColor: Colors.primaryDblue,
+        alignItems: 'center'
+    }    
 });
