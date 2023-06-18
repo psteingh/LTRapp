@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         fontFamily: 'LibreBaskervilleBold',
         fontSize: 35,
         color: Colors.primaryOffWhite,
-        margin: 5
+        marginVertical: 15,
+        marginHorizontal: 10
     }
 });

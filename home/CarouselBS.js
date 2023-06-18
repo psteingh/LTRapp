@@ -17,7 +17,7 @@ function CarouselBS() {
         <View style={styles.carouselContainer}>
         <Carousel
             loop
-            width={width}
+            width={width * 0.9}
             height={width / 8}
             autoPlay={false}
             data={CarItem}
@@ -36,16 +36,13 @@ export default CarouselBS;
 
 const styles = StyleSheet.create({
     carouselContainer: {
-        backgroundColor: 'transparent',
-        margin: 4
+        marginTop: 10
     },
     carouselTextContainer: {
         borderWidth: .5,
-        borderColor: 'black',
-        margin: 4
+        borderColor: 'black'
     },
     carouselText: {
-        margin: 2,
         textAlign: 'center',
         fontFamily: 'RobotoBold',
         fontSize: 25,

@@ -14,11 +14,10 @@ export default SubTitle;
 
 const styles = StyleSheet.create({
     subTitleContainer: {
-        backgroundColor: 'transparent',
-        margin: 5
+        marginBottom: 10
     },
     subTitleText: {
-        fontFamily: 'RobotoBold',
+        fontFamily: 'Roboto',
         fontSize: 15,
         color: Colors.primaryWhite,
         margin: 5
