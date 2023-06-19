@@ -1,5 +1,7 @@
 import { useFonts } from 'expo-font';
 
+import { StatusBar } from 'react-native';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -17,6 +19,8 @@ export default function App() {
     if (!loaded) {return null;}
   
   return (
+    <>
+    <StatusBar />
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -27,5 +31,6 @@ export default function App() {
         }} />
     </Stack.Navigator>
     </NavigationContainer>
+    </>
   );
 }
