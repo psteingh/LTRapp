@@ -23,8 +23,7 @@ export default function App() {
   return (
     <>
     <View style={styles.underStatusBar}>
-    <StatusBar
-      backgroundColor='green' />
+    <StatusBar />
     </View>
     <NavigationContainer>
     <Stack.Navigator>
