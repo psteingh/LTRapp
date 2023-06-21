@@ -14,6 +14,7 @@ export default SubTitle;
 
 const styles = StyleSheet.create({
     subTitleContainer: {
+        alignItems: 'center',
         marginBottom: 10
     },
     subTitleText: {

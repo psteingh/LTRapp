@@ -32,15 +32,24 @@ export default TopHead;
 
 const styles = StyleSheet.create({
     topHeadContainer: {
-        margin: 5
+        marginVertical: 0,
+        marginHorizontal: 0,
+        paddingVertical: 0,
+        paddingHorizontal: 5,
+        // flexDirection: 'row',
+        // justifyContent: 'space-evenly',
+        borderWidth: 0.5,
+        borderLeftColor: 'yellow',
+        borderTopColor: 'yellow',
+        borderBottomColor: 'yellow',
+        borderRightColor: 'green'
     },
     shadowCorner: {
         borderRadius: 1
     },
     topHeadChildContainer: {
         backgroundColor: Colors.primaryDblue,
-        alignItems: 'center',
-        paddingVertical: 5
+        paddingVertical: 1
     },
     topHeadText: {
         fontFamily: 'LibreBaskervilleBold',
