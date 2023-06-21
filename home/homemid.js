@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         margin: 5,
         borderWidth: .5,
-        borderColor: 'black'
+        borderColor: 'green'
     },
     homeMidChildContainer: {
         flex: 3,
