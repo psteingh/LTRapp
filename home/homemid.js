@@ -38,7 +38,9 @@ export default HomeMid;
 const styles = StyleSheet.create({
     homeMidContainer: {
         flexDirection: 'row',
-        margin: 5
+        margin: 5,
+        borderWidth: .5,
+        borderColor: 'black'
     },
     homeMidChildContainer: {
         flex: 3,
