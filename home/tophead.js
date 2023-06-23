@@ -32,14 +32,7 @@ export default TopHead;
 
 const styles = StyleSheet.create({
     topHeadContainer: {
-        marginVertical: 0,
-        marginHorizontal: 0,
-        paddingVertical: 0,
-        paddingHorizontal: 0,
-        // alignItems: 'stretch',
-        // flexDirection: 'column',
-        // flexDirection: 'row',
-        // justifyContent: 'space-evenly',
+        margin: 5,
         borderWidth: 0.5,
         borderLeftColor: 'yellow',
         borderTopColor: 'yellow',

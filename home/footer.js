@@ -37,12 +37,7 @@ export default Footer;
 
 const styles = StyleSheet.create({
     footerContainer: {
-        marginVertical: 0,
-        marginHorizontal: 0,
-        paddingVertical: 0,
-        paddingHorizontal: 0,
-        flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        margin: 5,
         borderWidth: 0.5,
         borderLeftColor: 'yellow',
         borderTopColor: 'yellow',
