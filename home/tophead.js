@@ -32,12 +32,7 @@ export default TopHead;
 
 const styles = StyleSheet.create({
     topHeadContainer: {
-        margin: 5,
-        borderWidth: 0.5,
-        borderLeftColor: 'yellow',
-        borderTopColor: 'yellow',
-        borderBottomColor: 'yellow',
-        borderRightColor: 'green'
+        margin: 5
     },
     shadowCorner: {
         borderRadius: 1

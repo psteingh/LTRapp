@@ -37,12 +37,7 @@ export default Footer;
 
 const styles = StyleSheet.create({
     footerContainer: {
-        margin: 5,
-        borderWidth: 0.5,
-        borderLeftColor: 'yellow',
-        borderTopColor: 'yellow',
-        borderBottomColor: 'yellow',
-        borderRightColor: 'green',
+        margin: 5
     },
     shadowCorner: {
         borderRadius: 1
